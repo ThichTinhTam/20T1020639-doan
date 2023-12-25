@@ -37,7 +37,6 @@
             btnKhoGiay = new Button();
             txtMaloai = new TextBox();
             txtTenloai = new TextBox();
-            dgvLoai = new DataGridView();
             btnThem = new Button();
             btnSua = new Button();
             btnXoa = new Button();
@@ -46,6 +45,7 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            dgvLoai = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dgvLoai).BeginInit();
             SuspendLayout();
             // 
@@ -130,89 +130,85 @@
             // 
             // txtMaloai
             // 
-            txtMaloai.Location = new Point(602, 107);
+            txtMaloai.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            txtMaloai.Location = new Point(510, 101);
             txtMaloai.Name = "txtMaloai";
             txtMaloai.Size = new Size(265, 31);
             txtMaloai.TabIndex = 0;
             // 
             // txtTenloai
             // 
-            txtTenloai.Location = new Point(602, 165);
+            txtTenloai.Location = new Point(510, 169);
             txtTenloai.Name = "txtTenloai";
             txtTenloai.Size = new Size(265, 31);
             txtTenloai.TabIndex = 1;
-            // 
-            // dgvLoai
-            // 
-            dgvLoai.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvLoai.Location = new Point(339, 229);
-            dgvLoai.Name = "dgvLoai";
-            dgvLoai.RowHeadersWidth = 62;
-            dgvLoai.RowTemplate.Height = 33;
-            dgvLoai.Size = new Size(752, 341);
-            dgvLoai.TabIndex = 20;
             // 
             // btnThem
             // 
             btnThem.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnThem.ForeColor = SystemColors.ActiveCaption;
-            btnThem.Location = new Point(360, 610);
+            btnThem.Location = new Point(328, 610);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(112, 34);
             btnThem.TabIndex = 2;
             btnThem.Text = "&Thêm";
             btnThem.UseVisualStyleBackColor = true;
+            btnThem.Click += btnThem_Click;
             // 
             // btnSua
             // 
             btnSua.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnSua.ForeColor = SystemColors.ActiveCaption;
-            btnSua.Location = new Point(510, 610);
+            btnSua.Location = new Point(464, 610);
             btnSua.Name = "btnSua";
             btnSua.Size = new Size(112, 34);
             btnSua.TabIndex = 3;
             btnSua.Text = "&Sửa";
             btnSua.UseVisualStyleBackColor = true;
+            btnSua.Click += btnSua_Click;
             // 
             // btnXoa
             // 
             btnXoa.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnXoa.ForeColor = SystemColors.ActiveCaption;
-            btnXoa.Location = new Point(656, 610);
+            btnXoa.Location = new Point(582, 610);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(112, 34);
             btnXoa.TabIndex = 4;
             btnXoa.Text = "&Xóa";
             btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnLuu
             // 
             btnLuu.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnLuu.ForeColor = SystemColors.ActiveCaption;
-            btnLuu.Location = new Point(805, 610);
+            btnLuu.Location = new Point(709, 610);
             btnLuu.Name = "btnLuu";
             btnLuu.Size = new Size(112, 34);
             btnLuu.TabIndex = 5;
             btnLuu.Text = "&Lưu";
             btnLuu.UseVisualStyleBackColor = true;
+            btnLuu.Click += btnLuu_Click;
             // 
             // btnBoqua
             // 
             btnBoqua.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnBoqua.ForeColor = SystemColors.ActiveCaption;
-            btnBoqua.Location = new Point(949, 610);
+            btnBoqua.Location = new Point(827, 610);
             btnBoqua.Name = "btnBoqua";
             btnBoqua.Size = new Size(112, 34);
             btnBoqua.TabIndex = 6;
             btnBoqua.Text = "&Bỏ qua";
             btnBoqua.UseVisualStyleBackColor = true;
+            btnBoqua.Click += btnBoqua_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label2.ForeColor = Color.IndianRed;
-            label2.Location = new Point(483, 107);
+            label2.Location = new Point(413, 107);
             label2.Name = "label2";
             label2.Size = new Size(72, 25);
             label2.TabIndex = 26;
@@ -223,7 +219,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label3.ForeColor = Color.IndianRed;
-            label3.Location = new Point(483, 168);
+            label3.Location = new Point(413, 175);
             label3.Name = "label3";
             label3.Size = new Size(76, 25);
             label3.TabIndex = 27;
@@ -234,17 +230,29 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 22F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label4.ForeColor = Color.DarkOrange;
-            label4.Location = new Point(531, 12);
+            label4.Location = new Point(434, 12);
             label4.Name = "label4";
             label4.Size = new Size(427, 60);
             label4.TabIndex = 28;
             label4.Text = "Danh mục loại giày";
             // 
+            // dgvLoai
+            // 
+            dgvLoai.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvLoai.Location = new Point(320, 219);
+            dgvLoai.Name = "dgvLoai";
+            dgvLoai.RowHeadersWidth = 62;
+            dgvLoai.RowTemplate.Height = 33;
+            dgvLoai.Size = new Size(594, 341);
+            dgvLoai.TabIndex = 20;
+            dgvLoai.Click += dgvLoai_Click;
+            // 
             // FormLoaiGiay
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1103, 672);
+            ClientSize = new Size(943, 672);
+            Controls.Add(dgvLoai);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -253,7 +261,6 @@
             Controls.Add(btnXoa);
             Controls.Add(btnSua);
             Controls.Add(btnThem);
-            Controls.Add(dgvLoai);
             Controls.Add(txtTenloai);
             Controls.Add(txtMaloai);
             Controls.Add(btnLoaiGiay);
@@ -282,7 +289,6 @@
         private Button btnKhoGiay;
         private TextBox txtMaloai;
         private TextBox txtTenloai;
-        private DataGridView dgvLoai;
         private Button btnThem;
         private Button btnSua;
         private Button btnXoa;
@@ -291,5 +297,6 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private DataGridView dgvLoai;
     }
 }

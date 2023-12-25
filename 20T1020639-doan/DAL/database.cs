@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +14,7 @@ namespace _20T1020639_doan.DAL
     public class Database
     {
         string strCon = @"Data Source=LAPTOP-TR2PA795\NHONVIET;Initial Catalog=639_QLBG;Integrated Security=True";
-        protected SqlConnection sqlCon = null;
+        public static SqlConnection sqlCon = null;
 
         public void OpenConnection()
         {
@@ -34,6 +36,55 @@ namespace _20T1020639_doan.DAL
                 sqlCon.Close();
             }
         }
-
+        public static DataTable GetDataToDataTable(string sql)
+        {
+            DataTable table = new DataTable();
+            SqlDataAdapter dap = new SqlDataAdapter(sql, sqlCon);
+            dap.Fill(table);
+            return table;
+        }
+        public static bool CheckKey(string sql)
+        {
+            SqlDataAdapter dap = new SqlDataAdapter(sql, sqlCon);
+            DataTable table = new DataTable();
+            dap.Fill(table);
+            if (table.Rows.Count > 0)
+                return true;
+            else return false;
+        }
+        public static void RunSQL(string sql)
+        {
+            SqlCommand cmd; //Đối tượng thuộc lớp SqlCommand
+            cmd = new SqlCommand();
+            cmd.Connection = sqlCon; //Gán kết nối
+            cmd.CommandText = sql; //Gán lệnh SQL
+            try
+            {
+                cmd.ExecuteNonQuery(); //Thực hiện câu lệnh SQL
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            cmd.Dispose();//Giải phóng bộ nhớ
+            cmd = null;
+        }
+        public static void RunSqlDel(string sql)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = sqlCon;
+            cmd.CommandText = sql;
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("Dữ liệu đang được dùng, không thể xoá...", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show(ex.ToString());
+            }
+            cmd.Dispose();
+            cmd = null;
+        }
     }
 }
