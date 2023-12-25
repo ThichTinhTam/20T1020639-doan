@@ -20,7 +20,7 @@ namespace _20T1020639_doan.GUI
     {
         private dtoTaiKhoan tk;
         private FormDangNhap dn;
-        private Form currentFormChild;
+     
 
         public FormAdmin()
         {

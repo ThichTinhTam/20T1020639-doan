@@ -62,6 +62,7 @@
             btnBoqua.TabIndex = 52;
             btnBoqua.Text = "&Bỏ qua";
             btnBoqua.UseVisualStyleBackColor = true;
+            btnBoqua.Click += btnBoqua_Click;
             // 
             // btnLuu
             // 
@@ -73,6 +74,7 @@
             btnLuu.TabIndex = 51;
             btnLuu.Text = "&Lưu";
             btnLuu.UseVisualStyleBackColor = true;
+            btnLuu.Click += btnLuu_Click;
             // 
             // btnXoa
             // 
@@ -84,6 +86,7 @@
             btnXoa.TabIndex = 50;
             btnXoa.Text = "&Xóa";
             btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnSua
             // 
@@ -95,6 +98,7 @@
             btnSua.TabIndex = 49;
             btnSua.Text = "&Sửa";
             btnSua.UseVisualStyleBackColor = true;
+            btnSua.Click += btnSua_Click;
             // 
             // btnThem
             // 
@@ -106,6 +110,7 @@
             btnThem.TabIndex = 48;
             btnThem.Text = "&Thêm";
             btnThem.UseVisualStyleBackColor = true;
+            btnThem.Click += btnThem_Click;
             // 
             // btnTrangChu
             // 
@@ -116,6 +121,7 @@
             btnTrangChu.TabIndex = 46;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
+            btnTrangChu.Click += btnTrangChu_Click;
             // 
             // label1
             // 
@@ -138,6 +144,7 @@
             btnDangXuat.TabIndex = 44;
             btnDangXuat.Text = "Đăng Xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
+            btnDangXuat.Click += btnDangXuat_Click;
             // 
             // btnDSKH
             // 
@@ -148,6 +155,7 @@
             btnDSKH.TabIndex = 43;
             btnDSKH.Text = "Danh Sách Khách Hàng";
             btnDSKH.UseVisualStyleBackColor = false;
+            btnDSKH.Click += btnDSKH_Click;
             // 
             // btnKhoGiay
             // 
@@ -169,6 +177,7 @@
             btnHoaDon.TabIndex = 42;
             btnHoaDon.Text = "Hóa đơn";
             btnHoaDon.UseVisualStyleBackColor = false;
+            btnHoaDon.Click += btnHoaDon_Click;
             // 
             // label2
             // 
@@ -263,6 +272,7 @@
             dgvKhachhang.RowTemplate.Height = 33;
             dgvKhachhang.Size = new Size(727, 270);
             dgvKhachhang.TabIndex = 62;
+            dgvKhachhang.Click += dgvKhachhang_Click;
             // 
             // FormKhachHang
             // 
@@ -292,6 +302,7 @@
             Controls.Add(btnKhoGiay);
             Name = "FormKhachHang";
             Text = "FormKhachHang";
+            Load += FormKhachHang_Load;
             ((System.ComponentModel.ISupportInitialize)dgvKhachhang).EndInit();
             ResumeLayout(false);
             PerformLayout();

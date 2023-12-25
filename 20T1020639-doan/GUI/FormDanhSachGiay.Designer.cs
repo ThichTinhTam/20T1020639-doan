@@ -45,11 +45,11 @@
             label9 = new Label();
             label10 = new Label();
             dgvGiay = new DataGridView();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
+            txtMagiay = new TextBox();
+            txtTengiay = new TextBox();
+            txtSoluong = new TextBox();
+            txtDongianhap = new TextBox();
+            txtDongiaban = new TextBox();
             btnThem = new Button();
             btnSua = new Button();
             btnXoa = new Button();
@@ -61,6 +61,7 @@
             cboMaLoai = new ComboBox();
             txtAnh = new TextBox();
             txtGhichu = new TextBox();
+            btnOpen = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvGiay).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picAnh).BeginInit();
             SuspendLayout();
@@ -74,6 +75,7 @@
             btnTrangChu.TabIndex = 15;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
+            btnTrangChu.Click += btnTrangChu_Click_2;
             // 
             // label1
             // 
@@ -107,6 +109,7 @@
             btnDSNV.TabIndex = 12;
             btnDSNV.Text = "Danh Sách Nhân Viên";
             btnDSNV.UseVisualStyleBackColor = false;
+            btnDSNV.Click += btnDSNV_Click_2;
             // 
             // btnThongKe
             // 
@@ -117,6 +120,7 @@
             btnThongKe.TabIndex = 11;
             btnThongKe.Text = "Thống Kê";
             btnThongKe.UseVisualStyleBackColor = false;
+            btnThongKe.Click += btnThongKe_Click_2;
             // 
             // btnKhoGiay
             // 
@@ -138,6 +142,7 @@
             btnLoaiGiay.TabIndex = 16;
             btnLoaiGiay.Text = "Loại Giày";
             btnLoaiGiay.UseVisualStyleBackColor = false;
+            btnLoaiGiay.Click += btnLoaiGiay_Click_1;
             // 
             // label2
             // 
@@ -247,41 +252,42 @@
             dgvGiay.RowTemplate.Height = 33;
             dgvGiay.Size = new Size(901, 239);
             dgvGiay.TabIndex = 26;
+            dgvGiay.Click += dgvGiay_Click;
             // 
-            // textBox1
+            // txtMagiay
             // 
-            textBox1.Location = new Point(459, 80);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(231, 31);
-            textBox1.TabIndex = 27;
+            txtMagiay.Location = new Point(459, 80);
+            txtMagiay.Name = "txtMagiay";
+            txtMagiay.Size = new Size(231, 31);
+            txtMagiay.TabIndex = 27;
             // 
-            // textBox2
+            // txtTengiay
             // 
-            textBox2.Location = new Point(459, 122);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(231, 31);
-            textBox2.TabIndex = 28;
+            txtTengiay.Location = new Point(459, 122);
+            txtTengiay.Name = "txtTengiay";
+            txtTengiay.Size = new Size(231, 31);
+            txtTengiay.TabIndex = 28;
             // 
-            // textBox4
+            // txtSoluong
             // 
-            textBox4.Location = new Point(459, 223);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(231, 31);
-            textBox4.TabIndex = 30;
+            txtSoluong.Location = new Point(459, 223);
+            txtSoluong.Name = "txtSoluong";
+            txtSoluong.Size = new Size(231, 31);
+            txtSoluong.TabIndex = 30;
             // 
-            // textBox5
+            // txtDongianhap
             // 
-            textBox5.Location = new Point(462, 261);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(231, 31);
-            textBox5.TabIndex = 31;
+            txtDongianhap.Location = new Point(462, 261);
+            txtDongianhap.Name = "txtDongianhap";
+            txtDongianhap.Size = new Size(231, 31);
+            txtDongianhap.TabIndex = 31;
             // 
-            // textBox6
+            // txtDongiaban
             // 
-            textBox6.Location = new Point(459, 309);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(231, 31);
-            textBox6.TabIndex = 32;
+            txtDongiaban.Location = new Point(459, 309);
+            txtDongiaban.Name = "txtDongiaban";
+            txtDongiaban.Size = new Size(231, 31);
+            txtDongiaban.TabIndex = 32;
             // 
             // btnThem
             // 
@@ -293,6 +299,7 @@
             btnThem.TabIndex = 33;
             btnThem.Text = "&Thêm";
             btnThem.UseVisualStyleBackColor = true;
+            btnThem.Click += btnThem_Click;
             // 
             // btnSua
             // 
@@ -304,6 +311,7 @@
             btnSua.TabIndex = 34;
             btnSua.Text = "&Sửa";
             btnSua.UseVisualStyleBackColor = true;
+            btnSua.Click += btnSua_Click;
             // 
             // btnXoa
             // 
@@ -315,6 +323,7 @@
             btnXoa.TabIndex = 35;
             btnXoa.Text = "&Xóa";
             btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnLuu
             // 
@@ -326,6 +335,7 @@
             btnLuu.TabIndex = 36;
             btnLuu.Text = "&Lưu";
             btnLuu.UseVisualStyleBackColor = true;
+            btnLuu.Click += btnLuu_Click;
             // 
             // btnBoqua
             // 
@@ -337,6 +347,7 @@
             btnBoqua.TabIndex = 37;
             btnBoqua.Text = "&Bỏ qua";
             btnBoqua.UseVisualStyleBackColor = true;
+            btnBoqua.Click += btnBoqua_Click;
             // 
             // btnTimKiem
             // 
@@ -348,6 +359,7 @@
             btnTimKiem.TabIndex = 38;
             btnTimKiem.Text = "&Tìm kiếm";
             btnTimKiem.UseVisualStyleBackColor = true;
+            btnTimKiem.Click += btnTimKiem_Click;
             // 
             // btnHTDS
             // 
@@ -359,6 +371,7 @@
             btnHTDS.TabIndex = 39;
             btnHTDS.Text = "&Hiển thị danh sách";
             btnHTDS.UseVisualStyleBackColor = true;
+            btnHTDS.Click += btnHTDS_Click;
             // 
             // picAnh
             // 
@@ -391,11 +404,23 @@
             txtGhichu.Size = new Size(171, 31);
             txtGhichu.TabIndex = 43;
             // 
+            // btnOpen
+            // 
+            btnOpen.ForeColor = Color.DarkCyan;
+            btnOpen.Location = new Point(811, 119);
+            btnOpen.Name = "btnOpen";
+            btnOpen.Size = new Size(112, 34);
+            btnOpen.TabIndex = 44;
+            btnOpen.Text = "Open";
+            btnOpen.UseVisualStyleBackColor = true;
+            btnOpen.Click += btnOpen_Click;
+            // 
             // FormDanhSachGiay
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1237, 695);
+            Controls.Add(btnOpen);
             Controls.Add(txtGhichu);
             Controls.Add(txtAnh);
             Controls.Add(cboMaLoai);
@@ -407,11 +432,11 @@
             Controls.Add(btnXoa);
             Controls.Add(btnSua);
             Controls.Add(btnThem);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtDongiaban);
+            Controls.Add(txtDongianhap);
+            Controls.Add(txtSoluong);
+            Controls.Add(txtTengiay);
+            Controls.Add(txtMagiay);
             Controls.Add(dgvGiay);
             Controls.Add(label10);
             Controls.Add(label9);
@@ -431,6 +456,7 @@
             Controls.Add(btnKhoGiay);
             Name = "FormDanhSachGiay";
             Text = "FormDanhSachGiay";
+            Load += FormDanhSachGiay_Load_1;
             ((System.ComponentModel.ISupportInitialize)dgvGiay).EndInit();
             ((System.ComponentModel.ISupportInitialize)picAnh).EndInit();
             ResumeLayout(false);
@@ -456,11 +482,11 @@
         private Label label9;
         private Label label10;
         private DataGridView dgvGiay;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        private TextBox txtMagiay;
+        private TextBox txtTengiay;
+        private TextBox txtSoluong;
+        private TextBox txtDongianhap;
+        private TextBox txtDongiaban;
         private Button btnThem;
         private Button btnSua;
         private Button btnXoa;
@@ -472,5 +498,6 @@
         private ComboBox cboMaLoai;
         private TextBox txtAnh;
         private TextBox txtGhichu;
+        private Button btnOpen;
     }
 }

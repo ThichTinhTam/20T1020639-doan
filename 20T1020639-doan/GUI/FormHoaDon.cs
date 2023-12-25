@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _20T1020639_doan.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,10 +11,18 @@ using System.Windows.Forms;
 
 namespace _20T1020639_doan.GUI
 {
-    public partial class FormThemNV : Form
+    public partial class FormHoaDon : Form
     {
-        public FormThemNV()
+        private dtoTaiKhoan tk;
+        private FormDangNhap dn;
+        public FormHoaDon()
         {
+            InitializeComponent();
+        }
+        public FormHoaDon(dtoTaiKhoan tk, FormDangNhap dn)
+        {
+            this.dn = dn;
+            this.tk = tk;
             InitializeComponent();
         }
     }

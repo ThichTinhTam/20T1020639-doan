@@ -15,8 +15,6 @@ namespace _20T1020639_doan.GUI
     {
         private dtoTaiKhoan tk;
         private FormDangNhap dn;
-        private Form currentFormChild;
-        //private Guna2GradientButton currentButton;
 
         public FormNV()
         {
@@ -33,6 +31,32 @@ namespace _20T1020639_doan.GUI
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnKhoGiay_Click(object sender, EventArgs e)
+        {
+            new FormBanGiay();
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            new FormHoaDon();
+        }
+
+        private void btnDSKH_Click(object sender, EventArgs e)
+        {
+            new FormKhachHang();
+        }
+
+        private void btnTrangChu_Click(object sender, EventArgs e)
+        {
+            new FormNV();
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            dn.Show();
+            Close();
         }
     }
 }
