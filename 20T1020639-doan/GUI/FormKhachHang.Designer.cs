@@ -158,6 +158,7 @@
             btnKhoGiay.TabIndex = 41;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
+            btnKhoGiay.Click += btnKhoGiay_Click;
             // 
             // btnHoaDon
             // 

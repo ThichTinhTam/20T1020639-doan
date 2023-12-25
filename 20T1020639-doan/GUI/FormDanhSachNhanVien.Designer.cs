@@ -54,6 +54,7 @@
             txtTennhanvien = new TextBox();
             mtbDienthoai = new MaskedTextBox();
             dtpNgaysinh = new DateTimePicker();
+            chbNu = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)dgvNhanVien).BeginInit();
             SuspendLayout();
             // 
@@ -144,6 +145,7 @@
             dgvNhanVien.RowTemplate.Height = 33;
             dgvNhanVien.Size = new Size(826, 330);
             dgvNhanVien.TabIndex = 28;
+            dgvNhanVien.Click += dgvNhanVien_Click;
             // 
             // label2
             // 
@@ -233,6 +235,7 @@
             btnBoqua.TabIndex = 40;
             btnBoqua.Text = "&Bỏ qua";
             btnBoqua.UseVisualStyleBackColor = true;
+            btnBoqua.Click += btnBoqua_Click;
             // 
             // btnLuu
             // 
@@ -244,6 +247,7 @@
             btnLuu.TabIndex = 39;
             btnLuu.Text = "&Lưu";
             btnLuu.UseVisualStyleBackColor = true;
+            btnLuu.Click += btnLuu_Click;
             // 
             // btnXoa
             // 
@@ -255,6 +259,7 @@
             btnXoa.TabIndex = 38;
             btnXoa.Text = "&Xóa";
             btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnSua
             // 
@@ -266,6 +271,7 @@
             btnSua.TabIndex = 37;
             btnSua.Text = "&Sửa";
             btnSua.UseVisualStyleBackColor = true;
+            btnSua.Click += btnSua_Click;
             // 
             // btnThem
             // 
@@ -282,7 +288,7 @@
             // chkGioiTinh
             // 
             chkGioiTinh.AutoSize = true;
-            chkGioiTinh.Location = new Point(496, 198);
+            chkGioiTinh.Location = new Point(514, 200);
             chkGioiTinh.Name = "chkGioiTinh";
             chkGioiTinh.Size = new Size(76, 29);
             chkGioiTinh.TabIndex = 41;
@@ -328,11 +334,22 @@
             dtpNgaysinh.Size = new Size(215, 31);
             dtpNgaysinh.TabIndex = 46;
             // 
+            // chbNu
+            // 
+            chbNu.AutoSize = true;
+            chbNu.Location = new Point(618, 200);
+            chbNu.Name = "chbNu";
+            chbNu.Size = new Size(61, 29);
+            chbNu.TabIndex = 47;
+            chbNu.Text = "Nu";
+            chbNu.UseVisualStyleBackColor = true;
+            // 
             // FormDanhSachNhanVien
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1143, 672);
+            Controls.Add(chbNu);
             Controls.Add(dtpNgaysinh);
             Controls.Add(mtbDienthoai);
             Controls.Add(txtTennhanvien);
@@ -363,6 +380,7 @@
             ForeColor = SystemColors.ActiveCaptionText;
             Name = "FormDanhSachNhanVien";
             Text = "Danh sách nhân viên";
+            Load += FormDanhSachNhanVien_Load;
             ((System.ComponentModel.ISupportInitialize)dgvNhanVien).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -396,5 +414,6 @@
         private TextBox txtTennhanvien;
         private MaskedTextBox mtbDienthoai;
         private DateTimePicker dtpNgaysinh;
+        private CheckBox chbNu;
     }
 }

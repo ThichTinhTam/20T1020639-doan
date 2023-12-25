@@ -7,22 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using _20T1020639_doan.DAL;
 
 namespace _20T1020639_doan.GUI
 {
-    public partial class FormKhachHang : Form
+    public partial class FormBanGiay : Form
     {
-        DataTable KH;
-        public FormKhachHang()
+        public FormBanGiay()
         {
             InitializeComponent();
-        }
-
-        private void btnKhoGiay_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
