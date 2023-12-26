@@ -171,7 +171,7 @@
             btnDSKH.Name = "btnDSKH";
             btnDSKH.Size = new Size(239, 132);
             btnDSKH.TabIndex = 55;
-            btnDSKH.Text = "Danh Sách Khách giày";
+            btnDSKH.Text = "Danh Sách Khách Hàng";
             btnDSKH.UseVisualStyleBackColor = false;
             btnDSKH.Click += btnDSKH_Click;
             // 
@@ -315,9 +315,9 @@
             label8.ForeColor = SystemColors.ActiveCaption;
             label8.Location = new Point(633, 65);
             label8.Name = "label8";
-            label8.Size = new Size(127, 25);
+            label8.Size = new Size(134, 25);
             label8.TabIndex = 5;
-            label8.Text = "Tên khách giày";
+            label8.Text = "Tên khách hàng";
             // 
             // label7
             // 
@@ -325,9 +325,9 @@
             label7.ForeColor = SystemColors.ActiveCaption;
             label7.Location = new Point(634, 27);
             label7.Name = "label7";
-            label7.Size = new Size(126, 25);
+            label7.Size = new Size(133, 25);
             label7.TabIndex = 4;
-            label7.Text = "Mã khách giày";
+            label7.Text = "Mã khách hàng";
             // 
             // label6
             // 

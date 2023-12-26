@@ -96,7 +96,7 @@ namespace _20T1020639_doan.GUI
             cboMaKhachHang.Text = Database.GetFieldValues(str);
             str = "SELECT TongTien FROM HDBan WHERE MaHDBan = N'" + txtmahoadon.Text + "'";
             txtTongtien.Text = Database.GetFieldValues(str);
-            lblBangchu.Text = "Bằng chữ: " + Database.ChuyenSoSangChu(Double.Parse (txtTongtien.Text));
+            lblBangchu.Text = "Bằng chữ: " + Database.ChuyenSoSangChu(Double.Parse(txtTongtien.Text));
         }
         private void ResetValuesHang()
         {
@@ -448,7 +448,7 @@ namespace _20T1020639_doan.GUI
 
         private void btnIn_Click(object sender, EventArgs e)
         {
-          
+
         }
     }
 }

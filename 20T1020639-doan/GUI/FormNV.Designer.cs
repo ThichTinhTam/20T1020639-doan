@@ -80,7 +80,7 @@
             btnDSKH.Name = "btnDSKH";
             btnDSKH.Size = new Size(283, 89);
             btnDSKH.TabIndex = 49;
-            btnDSKH.Text = "Danh Sách Khách giày";
+            btnDSKH.Text = "Danh Sách Khách Hàng";
             btnDSKH.UseVisualStyleBackColor = false;
             btnDSKH.Click += btnDSKH_Click;
             // 
