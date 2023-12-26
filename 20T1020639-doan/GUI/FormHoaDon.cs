@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using _20T1020639_doan.DAL;
+using System.Reflection.Metadata;
+
 
 namespace _20T1020639_doan.GUI
 {
@@ -94,7 +96,7 @@ namespace _20T1020639_doan.GUI
             cboMaKhachHang.Text = Database.GetFieldValues(str);
             str = "SELECT TongTien FROM HDBan WHERE MaHDBan = N'" + txtmahoadon.Text + "'";
             txtTongtien.Text = Database.GetFieldValues(str);
-            lblBangchu.Text = "Bằng chữ: " + Database.ChuyenSoSangChu(txtTongtien.Text);
+            lblBangchu.Text = "Bằng chữ: " + Database.ChuyenSoSangChu(Double.Parse (txtTongtien.Text));
         }
         private void ResetValuesHang()
         {
@@ -244,7 +246,7 @@ namespace _20T1020639_doan.GUI
             sql = "UPDATE HDBan SET TongTien =" + Tongmoi + " WHERE MaHDBan = N'" + txtmahoadon.Text + "'";
             Database.RunSQL(sql);
             txtTongtien.Text = Tongmoi.ToString();
-            lblBangchu.Text = "Bằng chữ: " + Database.ChuyenSoSangChu(Tongmoi.ToString());
+            lblBangchu.Text = "Bằng chữ: " + Database.ChuyenSoSangChu(Double.Parse(Tongmoi.ToString()));
             ResetValuesHang();
             btnXoa.Enabled = true;
             btnThem.Enabled = true;
@@ -289,7 +291,7 @@ namespace _20T1020639_doan.GUI
                 txtDonGiaBan.Text = "";
             }
             // Khi chọn mã hàng thì các thông tin về hàng hiện ra
-            str = "SELECT TenHang FROM Giay WHERE MaGiay =N'" + cboMaGiay.SelectedValue + "'";
+            str = "SELECT TenGiay FROM Giay WHERE MaGiay =N'" + cboMaGiay.SelectedValue + "'";
             txttengiay.Text = Database.GetFieldValues(str);
             str = "SELECT DonGiaBan FROM Giay WHERE MaGiay =N'" + cboMaGiay.SelectedValue + "'";
             txtDonGiaBan.Text = Database.GetFieldValues(str);
@@ -386,7 +388,7 @@ namespace _20T1020639_doan.GUI
                 sql = "UPDATE HDBan SET TongTien =" + tongmoi + " WHERE MaHDBan = N'" + txtmahoadon.Text + "'";
                 Database.RunSQL(sql);
                 txtTongtien.Text = tongmoi.ToString();
-                lblBangchu.Text = "Bằng chữ: " + Database.ChuyenSoSangChu(tongmoi.ToString());
+                lblBangchu.Text = "Bằng chữ: " + Database.ChuyenSoSangChu(Double.Parse(tongmoi.ToString()));
                 LoadDataGridView();
             }
         }
@@ -396,7 +398,7 @@ namespace _20T1020639_doan.GUI
             double sl, slcon, slxoa;
             if (MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                string sql = "SELECT MaHang,SoLuong FROM ChiTietHDBan WHERE MaHDBan = N'" + txtmahoadon.Text + "'";
+                string sql = "SELECT MaGiay,SoLuong FROM ChiTietHDBan WHERE MaHDBan = N'" + txtmahoadon.Text + "'";
                 DataTable Giay = Database.GetDataToDataTable(sql);
                 for (int giay = 0; giay <= Giay.Rows.Count - 1; giay++)
                 {
@@ -430,9 +432,23 @@ namespace _20T1020639_doan.GUI
 
         private void txtSoLuong_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (((e.KeyChar >= '0') && (e.KeyChar <= '9')) || (Convert.ToInt32(e.KeyChar) == 8))
+            if (char.IsDigit(e.KeyChar) || e.KeyChar == 8)
                 e.Handled = false;
-            else e.Handled = true;
+            else
+                e.Handled = true;
+        }
+
+        private void txtgiamgia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) || e.KeyChar == 8)
+                e.Handled = false;
+            else
+                e.Handled = true;
+        }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }

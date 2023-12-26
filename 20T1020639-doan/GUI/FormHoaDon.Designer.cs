@@ -92,6 +92,7 @@
             btnIn.TabIndex = 63;
             btnIn.Text = "&In hóa đơn";
             btnIn.UseVisualStyleBackColor = true;
+            btnIn.Click += btnIn_Click;
             // 
             // btnLuu
             // 
@@ -451,6 +452,7 @@
             txtgiamgia.Size = new Size(194, 31);
             txtgiamgia.TabIndex = 75;
             txtgiamgia.TextChanged += txtgiamgia_TextChanged;
+            txtgiamgia.KeyPress += txtgiamgia_KeyPress;
             // 
             // txttengiay
             // 
