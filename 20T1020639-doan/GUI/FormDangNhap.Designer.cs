@@ -37,6 +37,8 @@
             txtUser = new TextBox();
             txtPass = new TextBox();
             button2 = new Button();
+            label4 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -123,11 +125,37 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = SystemColors.ControlDark;
+            label4.Font = new Font("Showcard Gothic", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.Yellow;
+            label4.Location = new Point(249, 681);
+            label4.Name = "label4";
+            label4.Size = new Size(255, 26);
+            label4.TabIndex = 9;
+            label4.Text = "Bạn chưa có tài khoản?";
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = Color.IndianRed;
+            button1.Location = new Point(596, 678);
+            button1.Name = "button1";
+            button1.Size = new Size(112, 34);
+            button1.TabIndex = 10;
+            button1.Text = "Đăng ký";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_2;
+            // 
             // FormDangNhap
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1062, 761);
+            Controls.Add(button1);
+            Controls.Add(label4);
             Controls.Add(button2);
             Controls.Add(txtPass);
             Controls.Add(txtUser);
@@ -153,5 +181,7 @@
         private TextBox txtUser;
         private TextBox txtPass;
         private Button button2;
+        private Label label4;
+        private Button button1;
     }
 }

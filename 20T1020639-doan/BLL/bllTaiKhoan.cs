@@ -26,5 +26,9 @@ namespace _20T1020639_doan.BLL
         {
             return dtk.ThemTK(tk);
         }
+        public List<string> DanhSachID()
+        {
+            return dtk.DanhSachID();
+        }
     }
 }

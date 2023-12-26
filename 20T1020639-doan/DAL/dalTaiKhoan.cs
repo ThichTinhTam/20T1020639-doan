@@ -90,5 +90,27 @@ namespace _20T1020639_doan.DAL
                 return false;
             }
         }
+        public List<string> DanhSachID()
+        {
+            List<string> ds = new List<string>();
+            OpenConnection();
+
+            SqlCommand sqlCmd = new SqlCommand();
+            sqlCmd.CommandType = CommandType.Text;
+            sqlCmd.CommandText = "select * from [TaiKhoan]";
+            sqlCmd.Connection = sqlCon;
+
+            SqlDataReader reader = sqlCmd.ExecuteReader();
+            while (reader.Read())
+            {
+                string ma = reader.GetString(0);
+
+                ds.Add(ma);
+            }
+            reader.Close();
+            return ds;
+
+        }
+
     }
 }
