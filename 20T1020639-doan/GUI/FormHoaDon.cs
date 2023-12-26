@@ -108,8 +108,9 @@ namespace _20T1020639_doan.GUI
 
         private void btnKhoGiay_Click(object sender, EventArgs e)
         {
-            //  FormBanGiay mna = new FormBanGiay(tk, dn);
-            //  mna.ShowDialog();
+              Hide();
+              FormBanGiay mna = new FormBanGiay(tk, dn);
+              mna.ShowDialog();
         }
 
         private void btnHoaDon_Click(object sender, EventArgs e)

@@ -60,6 +60,7 @@
             label1.Size = new Size(220, 63);
             label1.TabIndex = 51;
             label1.Text = "Viết Shoe";
+            label1.Click += label1_Click;
             // 
             // btnDangXuat
             // 
@@ -115,6 +116,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 53;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // FormNV
             // 

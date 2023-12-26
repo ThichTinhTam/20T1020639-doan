@@ -33,7 +33,7 @@ namespace _20T1020639_doan.GUI
         private void btnKhoGiay_Click(object sender, EventArgs e)
         {
             Hide();
-            FormBanGiay nma = new FormBanGiay();
+            FormBanGiay nma = new FormBanGiay(tk, dn);
             nma.ShowDialog();
         }
 
