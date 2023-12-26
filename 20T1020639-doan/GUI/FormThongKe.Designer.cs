@@ -36,14 +36,21 @@
             btnKhoGiay = new Button();
             button1 = new Button();
             label2 = new Label();
+            dgvThongke = new DataGridView();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            button6 = new Button();
+            ((System.ComponentModel.ISupportInitialize)dgvThongke).BeginInit();
             SuspendLayout();
             // 
             // btnTrangChu
             // 
             btnTrangChu.BackColor = SystemColors.ActiveCaption;
-            btnTrangChu.Location = new Point(12, 338);
+            btnTrangChu.Location = new Point(12, 316);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(283, 108);
+            btnTrangChu.Size = new Size(283, 91);
             btnTrangChu.TabIndex = 21;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -53,7 +60,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.LightYellow;
             label1.Font = new Font("Blackadder ITC", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(40, 465);
+            label1.Location = new Point(45, 421);
             label1.Name = "label1";
             label1.Size = new Size(220, 63);
             label1.TabIndex = 20;
@@ -63,7 +70,7 @@
             // 
             btnDangXuat.BackColor = Color.Red;
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            btnDangXuat.Location = new Point(12, 541);
+            btnDangXuat.Location = new Point(12, 489);
             btnDangXuat.Name = "btnDangXuat";
             btnDangXuat.Size = new Size(283, 89);
             btnDangXuat.TabIndex = 19;
@@ -74,7 +81,7 @@
             // btnDSNV
             // 
             btnDSNV.BackColor = SystemColors.ActiveCaption;
-            btnDSNV.Location = new Point(12, 232);
+            btnDSNV.Location = new Point(12, 204);
             btnDSNV.Name = "btnDSNV";
             btnDSNV.Size = new Size(283, 100);
             btnDSNV.TabIndex = 18;
@@ -85,9 +92,9 @@
             // btnThongKe
             // 
             btnThongKe.BackColor = SystemColors.ActiveCaption;
-            btnThongKe.Location = new Point(12, 121);
+            btnThongKe.Location = new Point(12, 108);
             btnThongKe.Name = "btnThongKe";
-            btnThongKe.Size = new Size(283, 105);
+            btnThongKe.Size = new Size(283, 90);
             btnThongKe.TabIndex = 17;
             btnThongKe.Text = "Thống Kê";
             btnThongKe.UseVisualStyleBackColor = false;
@@ -98,7 +105,7 @@
             btnKhoGiay.BackColor = SystemColors.ActiveCaption;
             btnKhoGiay.Location = new Point(12, 9);
             btnKhoGiay.Name = "btnKhoGiay";
-            btnKhoGiay.Size = new Size(283, 106);
+            btnKhoGiay.Size = new Size(283, 93);
             btnKhoGiay.TabIndex = 16;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
@@ -106,29 +113,108 @@
             // 
             // button1
             // 
-            button1.Location = new Point(434, 484);
+            button1.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.ActiveCaption;
+            button1.Location = new Point(321, 452);
             button1.Name = "button1";
-            button1.Size = new Size(112, 34);
+            button1.Size = new Size(266, 38);
             button1.TabIndex = 22;
-            button1.Text = "button1";
+            button1.Text = "Thống kê trong ngày";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Showcard Gothic", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label2.ForeColor = Color.IndianRed;
-            label2.Location = new Point(434, 26);
+            label2.Location = new Point(405, 9);
             label2.Name = "label2";
             label2.Size = new Size(458, 89);
             label2.TabIndex = 23;
             label2.Text = "Doanh Thu";
             // 
+            // dgvThongke
+            // 
+            dgvThongke.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvThongke.Location = new Point(321, 101);
+            dgvThongke.Name = "dgvThongke";
+            dgvThongke.RowHeadersWidth = 62;
+            dgvThongke.RowTemplate.Height = 33;
+            dgvThongke.Size = new Size(869, 309);
+            dgvThongke.TabIndex = 24;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
+            button2.ForeColor = SystemColors.ActiveCaption;
+            button2.Location = new Point(321, 496);
+            button2.Name = "button2";
+            button2.Size = new Size(266, 38);
+            button2.TabIndex = 25;
+            button2.Text = "Thống kê trong tháng";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
+            button3.ForeColor = SystemColors.ActiveCaption;
+            button3.Location = new Point(593, 496);
+            button3.Name = "button3";
+            button3.Size = new Size(310, 38);
+            button3.TabIndex = 26;
+            button3.Text = "Thống kê trong năm";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
+            button4.ForeColor = SystemColors.ActiveCaption;
+            button4.Location = new Point(321, 540);
+            button4.Name = "button4";
+            button4.Size = new Size(266, 38);
+            button4.TabIndex = 27;
+            button4.Text = "Thống kê trong tháng trước";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // button5
+            // 
+            button5.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
+            button5.ForeColor = SystemColors.ActiveCaption;
+            button5.Location = new Point(593, 540);
+            button5.Name = "button5";
+            button5.Size = new Size(310, 38);
+            button5.TabIndex = 28;
+            button5.Text = "Thống kê trong năm trước";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // button6
+            // 
+            button6.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
+            button6.ForeColor = SystemColors.ActiveCaption;
+            button6.Location = new Point(593, 452);
+            button6.Name = "button6";
+            button6.Size = new Size(310, 38);
+            button6.TabIndex = 29;
+            button6.Text = "Thống kê trong ngày hôm qua";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
             // FormThongKe
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1030, 637);
+            ClientSize = new Size(1202, 590);
+            Controls.Add(button6);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(dgvThongke);
             Controls.Add(label2);
             Controls.Add(button1);
             Controls.Add(btnTrangChu);
@@ -139,6 +225,8 @@
             Controls.Add(btnKhoGiay);
             Name = "FormThongKe";
             Text = "FormThongKe";
+            Load += FormThongKe_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvThongke).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -153,5 +241,11 @@
         private Button btnKhoGiay;
         private Button button1;
         private Label label2;
+        private DataGridView dgvThongke;
+        private Button button2;
+        private Button button3;
+        private Button button4;
+        private Button button5;
+        private Button button6;
     }
 }
