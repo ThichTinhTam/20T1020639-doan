@@ -32,26 +32,35 @@ namespace _20T1020639_doan.GUI
 
         private void btnKhoGiay_Click(object sender, EventArgs e)
         {
-            new FormBanGiay();
+            Hide();
+            FormBanGiay nma = new FormBanGiay();
+            nma.ShowDialog();
         }
 
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
-            new FormHoaDon();
+            Hide();
+            FormHoaDon nma = new FormHoaDon(tk, dn);
+            nma.ShowDialog();
         }
 
         private void btnDSKH_Click(object sender, EventArgs e)
         {
-            new FormKhachHang();
+            Hide();
+            FormKhachHang nma = new FormKhachHang(tk, dn);
+            nma.ShowDialog();
         }
 
         private void btnTrangChu_Click(object sender, EventArgs e)
         {
-            new FormNV();
+            Hide();
+            FormNV nma = new FormNV(tk, dn);
+            nma.ShowDialog();
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
+            Hide();
             dn.Show();
             Close();
         }
@@ -69,14 +78,14 @@ namespace _20T1020639_doan.GUI
             sql = "SELECT * from Khach";
             KH = Database.GetDataToDataTable(sql);  //Lấy dữ liệu từ bảng
             dgvKhachhang.DataSource = KH; //Hiển thị vào dataGridView
-            dgvKhachhang.Columns[0].HeaderText = "Mã khách hàng";
+            dgvKhachhang.Columns[0].HeaderText = "Mã khách giày";
             dgvKhachhang.Columns[1].HeaderText = "Tên khách";
             dgvKhachhang.Columns[2].HeaderText = "Địa chỉ";
             dgvKhachhang.Columns[3].HeaderText = "Điện thoại";
-            dgvKhachhang.Columns[0].Width = 100;
-            dgvKhachhang.Columns[1].Width = 150;
-            dgvKhachhang.Columns[2].Width = 150;
-            dgvKhachhang.Columns[3].Width = 150;
+            dgvKhachhang.Columns[0].Width = 200;
+            dgvKhachhang.Columns[1].Width = 200;
+            dgvKhachhang.Columns[2].Width = 200;
+            dgvKhachhang.Columns[3].Width = 200;
             dgvKhachhang.AllowUserToAddRows = false;
             dgvKhachhang.EditMode = DataGridViewEditMode.EditProgrammatically;
         }

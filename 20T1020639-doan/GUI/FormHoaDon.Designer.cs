@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnBoqua = new Button();
+            btnIn = new Button();
             btnLuu = new Button();
             btnXoa = new Button();
             btnThem = new Button();
@@ -40,7 +40,7 @@
             btnKhoGiay = new Button();
             groupBox1 = new GroupBox();
             dtpngayban = new DateTimePicker();
-            maskedTextBox1 = new MaskedTextBox();
+            mskDienThoai = new MaskedTextBox();
             txtDiachi = new TextBox();
             txttenKhachhang = new TextBox();
             txttennhanvien = new TextBox();
@@ -82,16 +82,16 @@
             ((System.ComponentModel.ISupportInitialize)dgvHoadon).BeginInit();
             SuspendLayout();
             // 
-            // btnBoqua
+            // btnIn
             // 
-            btnBoqua.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
-            btnBoqua.ForeColor = SystemColors.ActiveCaption;
-            btnBoqua.Location = new Point(684, 411);
-            btnBoqua.Name = "btnBoqua";
-            btnBoqua.Size = new Size(154, 34);
-            btnBoqua.TabIndex = 63;
-            btnBoqua.Text = "&In hóa đơn";
-            btnBoqua.UseVisualStyleBackColor = true;
+            btnIn.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
+            btnIn.ForeColor = SystemColors.ActiveCaption;
+            btnIn.Location = new Point(684, 411);
+            btnIn.Name = "btnIn";
+            btnIn.Size = new Size(154, 34);
+            btnIn.TabIndex = 63;
+            btnIn.Text = "&In hóa đơn";
+            btnIn.UseVisualStyleBackColor = true;
             // 
             // btnLuu
             // 
@@ -103,6 +103,7 @@
             btnLuu.TabIndex = 62;
             btnLuu.Text = "&Lưu hóa đơn";
             btnLuu.UseVisualStyleBackColor = true;
+            btnLuu.Click += btnLuu_Click;
             // 
             // btnXoa
             // 
@@ -114,6 +115,7 @@
             btnXoa.TabIndex = 61;
             btnXoa.Text = "&Xóa hóa đơn";
             btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnThem
             // 
@@ -125,6 +127,7 @@
             btnThem.TabIndex = 59;
             btnThem.Text = "&Thêm hóa đơn";
             btnThem.UseVisualStyleBackColor = true;
+            btnThem.Click += btnThem_Click;
             // 
             // btnTrangChu
             // 
@@ -135,6 +138,7 @@
             btnTrangChu.TabIndex = 58;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
+            btnTrangChu.Click += btnTrangChu_Click;
             // 
             // label1
             // 
@@ -157,6 +161,7 @@
             btnDangXuat.TabIndex = 56;
             btnDangXuat.Text = "Đăng Xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
+            btnDangXuat.Click += btnDangXuat_Click;
             // 
             // btnDSKH
             // 
@@ -165,8 +170,9 @@
             btnDSKH.Name = "btnDSKH";
             btnDSKH.Size = new Size(239, 132);
             btnDSKH.TabIndex = 55;
-            btnDSKH.Text = "Danh Sách Khách Hàng";
+            btnDSKH.Text = "Danh Sách Khách giày";
             btnDSKH.UseVisualStyleBackColor = false;
+            btnDSKH.Click += btnDSKH_Click;
             // 
             // btnHoaDon
             // 
@@ -177,6 +183,7 @@
             btnHoaDon.TabIndex = 54;
             btnHoaDon.Text = "Hóa đơn";
             btnHoaDon.UseVisualStyleBackColor = false;
+            btnHoaDon.Click += btnHoaDon_Click;
             // 
             // btnKhoGiay
             // 
@@ -187,11 +194,12 @@
             btnKhoGiay.TabIndex = 53;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
+            btnKhoGiay.Click += btnKhoGiay_Click;
             // 
             // groupBox1
             // 
             groupBox1.Controls.Add(dtpngayban);
-            groupBox1.Controls.Add(maskedTextBox1);
+            groupBox1.Controls.Add(mskDienThoai);
             groupBox1.Controls.Add(txtDiachi);
             groupBox1.Controls.Add(txttenKhachhang);
             groupBox1.Controls.Add(txttennhanvien);
@@ -221,14 +229,14 @@
             dtpngayban.Size = new Size(300, 31);
             dtpngayban.TabIndex = 15;
             // 
-            // maskedTextBox1
+            // mskDienThoai
             // 
-            maskedTextBox1.Location = new Point(786, 157);
-            maskedTextBox1.Mask = "(098) 000-0000";
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.ReadOnly = true;
-            maskedTextBox1.Size = new Size(253, 31);
-            maskedTextBox1.TabIndex = 14;
+            mskDienThoai.Location = new Point(786, 157);
+            mskDienThoai.Mask = "(098) 000-0000";
+            mskDienThoai.Name = "mskDienThoai";
+            mskDienThoai.ReadOnly = true;
+            mskDienThoai.Size = new Size(253, 31);
+            mskDienThoai.TabIndex = 14;
             // 
             // txtDiachi
             // 
@@ -269,6 +277,7 @@
             cboMaKhachHang.Name = "cboMaKhachHang";
             cboMaKhachHang.Size = new Size(253, 33);
             cboMaKhachHang.TabIndex = 9;
+            cboMaKhachHang.TextChanged += cboMaKhachHang_TextChanged;
             // 
             // cboMaNhanVien
             // 
@@ -277,6 +286,7 @@
             cboMaNhanVien.Name = "cboMaNhanVien";
             cboMaNhanVien.Size = new Size(300, 33);
             cboMaNhanVien.TabIndex = 8;
+            cboMaNhanVien.TextChanged += cboMaNhanVien_TextChanged;
             // 
             // label10
             // 
@@ -304,9 +314,9 @@
             label8.ForeColor = SystemColors.ActiveCaption;
             label8.Location = new Point(633, 65);
             label8.Name = "label8";
-            label8.Size = new Size(134, 25);
+            label8.Size = new Size(127, 25);
             label8.TabIndex = 5;
-            label8.Text = "Tên khách hàng";
+            label8.Text = "Tên khách giày";
             // 
             // label7
             // 
@@ -314,9 +324,9 @@
             label7.ForeColor = SystemColors.ActiveCaption;
             label7.Location = new Point(634, 27);
             label7.Name = "label7";
-            label7.Size = new Size(133, 25);
+            label7.Size = new Size(126, 25);
             label7.TabIndex = 4;
-            label7.Text = "Mã khách hàng";
+            label7.Text = "Mã khách giày";
             // 
             // label6
             // 
@@ -379,7 +389,7 @@
             groupBox2.Controls.Add(label11);
             groupBox2.Controls.Add(btnThem);
             groupBox2.Controls.Add(btnXoa);
-            groupBox2.Controls.Add(btnBoqua);
+            groupBox2.Controls.Add(btnIn);
             groupBox2.Controls.Add(btnLuu);
             groupBox2.Location = new Point(257, 249);
             groupBox2.Name = "groupBox2";
@@ -440,6 +450,7 @@
             txtgiamgia.Name = "txtgiamgia";
             txtgiamgia.Size = new Size(194, 31);
             txtgiamgia.TabIndex = 75;
+            txtgiamgia.TextChanged += txtgiamgia_TextChanged;
             // 
             // txttengiay
             // 
@@ -455,6 +466,8 @@
             txtSoLuong.Name = "txtSoLuong";
             txtSoLuong.Size = new Size(182, 31);
             txtSoLuong.TabIndex = 73;
+            txtSoLuong.TextChanged += txtSoLuong_TextChanged;
+            txtSoLuong.KeyPress += txtSoLuong_KeyPress;
             // 
             // cboMaGiay
             // 
@@ -463,6 +476,7 @@
             cboMaGiay.Name = "cboMaGiay";
             cboMaGiay.Size = new Size(182, 33);
             cboMaGiay.TabIndex = 72;
+            cboMaGiay.TextChanged += cboMaGiay_TextChanged;
             // 
             // label17
             // 
@@ -484,6 +498,7 @@
             dgvHoadon.RowTemplate.Height = 33;
             dgvHoadon.Size = new Size(1066, 212);
             dgvHoadon.TabIndex = 70;
+            dgvHoadon.DoubleClick += dgvHoadon_DoubleClick;
             // 
             // label16
             // 
@@ -552,9 +567,9 @@
             label2.ForeColor = Color.IndianRed;
             label2.Location = new Point(653, 12);
             label2.Name = "label2";
-            label2.Size = new Size(385, 50);
+            label2.Size = new Size(371, 50);
             label2.TabIndex = 66;
-            label2.Text = "Hóa đơn bán hàng";
+            label2.Text = "Hóa đơn bán giày";
             // 
             // label18
             // 
@@ -573,6 +588,7 @@
             cboMaHDBan.Name = "cboMaHDBan";
             cboMaHDBan.Size = new Size(182, 33);
             cboMaHDBan.TabIndex = 68;
+            cboMaHDBan.DropDown += cboMaHDBan_DropDown;
             // 
             // btnTimkiem
             // 
@@ -583,6 +599,7 @@
             btnTimkiem.TabIndex = 69;
             btnTimkiem.Text = "&Tìm kiếm";
             btnTimkiem.UseVisualStyleBackColor = true;
+            btnTimkiem.Click += btnTimkiem_Click;
             // 
             // FormHoaDon
             // 
@@ -603,6 +620,8 @@
             Controls.Add(btnKhoGiay);
             Name = "FormHoaDon";
             Text = "Hóa đơn";
+            FormClosing += FormHoaDon_FormClosing;
+            Load += FormHoaDon_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
@@ -614,7 +633,7 @@
 
         #endregion
 
-        private Button btnBoqua;
+        private Button btnIn;
         private Button btnLuu;
         private Button btnXoa;
         private Button btnThem;
@@ -649,7 +668,7 @@
         private ComboBox cboMaHDBan;
         private Button btnTimkiem;
         private ComboBox cboMaGiay;
-        private MaskedTextBox maskedTextBox1;
+        private MaskedTextBox mskDienThoai;
         private TextBox txtDiachi;
         private TextBox txttenKhachhang;
         private TextBox txttennhanvien;

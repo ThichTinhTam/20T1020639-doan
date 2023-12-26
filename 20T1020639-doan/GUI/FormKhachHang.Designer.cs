@@ -153,7 +153,7 @@
             btnDSKH.Name = "btnDSKH";
             btnDSKH.Size = new Size(283, 89);
             btnDSKH.TabIndex = 43;
-            btnDSKH.Text = "Danh Sách Khách Hàng";
+            btnDSKH.Text = "Danh Sách Khách giày";
             btnDSKH.UseVisualStyleBackColor = false;
             btnDSKH.Click += btnDSKH_Click;
             // 
@@ -188,7 +188,7 @@
             label2.Name = "label2";
             label2.Size = new Size(407, 40);
             label2.TabIndex = 53;
-            label2.Text = "Danh mục khách hàng";
+            label2.Text = "Danh mục khách giày";
             // 
             // label3
             // 

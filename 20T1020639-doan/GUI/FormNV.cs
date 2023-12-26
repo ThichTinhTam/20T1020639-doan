@@ -40,17 +40,20 @@ namespace _20T1020639_doan.GUI
 
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
-            new FormHoaDon();
+            FormHoaDon mna = new FormHoaDon(tk, dn);
+            mna.ShowDialog();
         }
 
         private void btnDSKH_Click(object sender, EventArgs e)
         {
-            new FormKhachHang();
+            FormKhachHang mna = new FormKhachHang(tk, dn);
+            mna.ShowDialog();
         }
 
         private void btnTrangChu_Click(object sender, EventArgs e)
         {
-            new FormNV();
+            FormNV mna = new FormNV(tk, dn);
+            mna.ShowDialog();
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)

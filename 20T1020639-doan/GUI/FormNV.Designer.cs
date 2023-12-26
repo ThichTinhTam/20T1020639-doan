@@ -80,7 +80,7 @@
             btnDSKH.Name = "btnDSKH";
             btnDSKH.Size = new Size(283, 89);
             btnDSKH.TabIndex = 49;
-            btnDSKH.Text = "Danh Sách Khách Hàng";
+            btnDSKH.Text = "Danh Sách Khách giày";
             btnDSKH.UseVisualStyleBackColor = false;
             btnDSKH.Click += btnDSKH_Click;
             // 
@@ -129,7 +129,7 @@
             Controls.Add(btnHoaDon);
             Controls.Add(btnKhoGiay);
             Name = "FormNV";
-            Text = "Bán Hàng";
+            Text = "Bán giày";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

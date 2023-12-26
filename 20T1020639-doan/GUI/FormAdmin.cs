@@ -44,6 +44,7 @@ namespace _20T1020639_doan.GUI
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
+            Hide();
             dn.Show();
             Close();
         }
@@ -51,6 +52,7 @@ namespace _20T1020639_doan.GUI
 
         private void btnTrangChu_Click(object sender, EventArgs e)
         {
+            Hide();
             FormAdmin mna = new FormAdmin(tk, dn);
             mna.ShowDialog();
 
@@ -58,12 +60,14 @@ namespace _20T1020639_doan.GUI
 
         private void btnDSNV_Click(object sender, EventArgs e)
         {
+            Hide();
             FormDanhSachNhanVien mna = new FormDanhSachNhanVien(tk, dn);
             mna.ShowDialog();
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
+            Hide();
             FormThongKe mna = new FormThongKe(tk, dn);
             mna.ShowDialog();
         }
@@ -75,6 +79,7 @@ namespace _20T1020639_doan.GUI
 
         private void btnLoaiGiay_Click(object sender, EventArgs e)
         {
+            Hide();
             FormLoaiGiay mna = new FormLoaiGiay(tk, dn);
             mna.ShowDialog();
         }

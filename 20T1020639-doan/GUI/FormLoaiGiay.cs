@@ -33,33 +33,44 @@ namespace _20T1020639_doan.GUI
 
         private void btnLoaiGiay_Click(object sender, EventArgs e)
         {
-            new FormLoaiGiay();
+            Hide();
+            FormLoaiGiay nma = new FormLoaiGiay(tk, dn);
+            nma.ShowDialog();
         }
 
         private void btnDangXuat_Click_2(object sender, EventArgs e)
         {
+            Hide();
             dn.Show();
             Close();
         }
 
         private void btnTrangChu_Click_1(object sender, EventArgs e)
         {
-            new FormAdmin();
+            Hide();
+            FormAdmin  nma = new FormAdmin(tk, dn);
+            nma.ShowDialog();
         }
 
         private void btnKhoGiay_Click(object sender, EventArgs e)
         {
-            new FormDanhSachGiay();
+            Hide();
+            FormDanhSachGiay nma = new FormDanhSachGiay(tk, dn);
+            nma.ShowDialog();
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            new FormThongKe();
+            Hide();
+            FormThongKe nma = new FormThongKe();
+            nma.ShowDialog();
         }
 
         private void btnDSNV_Click(object sender, EventArgs e)
         {
-            new FormDanhSachNhanVien();
+            Hide();
+            FormDanhSachNhanVien nma = new FormDanhSachNhanVien(tk, dn);
+            nma.ShowDialog();
         }
 
         private void FormLoaiGiay_Load(object sender, EventArgs e)

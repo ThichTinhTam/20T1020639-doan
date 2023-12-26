@@ -75,7 +75,6 @@
             btnTrangChu.TabIndex = 15;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
-            btnTrangChu.Click += btnTrangChu_Click_2;
             // 
             // label1
             // 
@@ -109,7 +108,6 @@
             btnDSNV.TabIndex = 12;
             btnDSNV.Text = "Danh Sách Nhân Viên";
             btnDSNV.UseVisualStyleBackColor = false;
-            btnDSNV.Click += btnDSNV_Click_2;
             // 
             // btnThongKe
             // 
@@ -120,7 +118,6 @@
             btnThongKe.TabIndex = 11;
             btnThongKe.Text = "Thống Kê";
             btnThongKe.UseVisualStyleBackColor = false;
-            btnThongKe.Click += btnThongKe_Click_2;
             // 
             // btnKhoGiay
             // 
