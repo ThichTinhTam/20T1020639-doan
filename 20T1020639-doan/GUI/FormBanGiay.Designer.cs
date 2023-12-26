@@ -127,6 +127,7 @@
             dgvGiay.RowTemplate.Height = 33;
             dgvGiay.Size = new Size(856, 507);
             dgvGiay.TabIndex = 61;
+            dgvGiay.CellDoubleClick += dgvGiay_CellDoubleClick;
             // 
             // button1
             // 

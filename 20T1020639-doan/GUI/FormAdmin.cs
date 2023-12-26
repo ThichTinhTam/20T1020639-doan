@@ -37,7 +37,7 @@ namespace _20T1020639_doan.GUI
 
         private void btnKhoGiay_Click(object sender, EventArgs e)
         {
-
+            Hide();
             FormDanhSachGiay mna = new FormDanhSachGiay(tk, dn);
             mna.ShowDialog();
         }

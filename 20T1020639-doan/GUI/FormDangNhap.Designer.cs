@@ -112,6 +112,7 @@
             txtPass.Name = "txtPass";
             txtPass.Size = new Size(306, 31);
             txtPass.TabIndex = 6;
+            txtPass.UseSystemPasswordChar = true;
             // 
             // button2
             // 

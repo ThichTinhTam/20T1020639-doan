@@ -295,6 +295,10 @@ namespace _20T1020639_doan.DAL
             }
             return h;
         }
-
+        public static DataTable GetProductDetails(string maGiay)
+        {
+            string sql = $"SELECT * FROM Giay WHERE MaGiay = '{maGiay}'";
+            return GetDataToDataTable(sql);
+        }
     }
 }

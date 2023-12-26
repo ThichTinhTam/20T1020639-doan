@@ -32,49 +32,25 @@ namespace _20T1020639_doan.GUI
         private void LoadDataGridView()
         {
             string sql;
-            sql = "SELECT * from Giay";
+            sql = "SELECT MaGiay, TenGiay, MaLoai, DonGiaBan, Anh, GhiChu FROM Giay";
             ShopGiay = Database.GetDataToDataTable(sql);
 
             // Đặt nguồn dữ liệu cho DataGridView trước khi thêm cột hình ảnh
             dgvGiay.DataSource = ShopGiay;
 
-            // Thêm cột hình ảnh vào DataGridView
-            DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-            imageColumn.HeaderText = "Anh";
-            imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom; // Để hiển thị hình ảnh đầy đủ trong ô
-            dgvGiay.Columns.Add(imageColumn);
-
-            foreach (DataRow row in ShopGiay.Rows)
-            {
-                string imagePath = row["Anh"].ToString(); // Giả sử cột ảnh có tên là "Anh"
-                if (!string.IsNullOrEmpty(imagePath) && File.Exists(imagePath))
-                {
-                    // Load hình ảnh từ đường dẫn
-                    Image image = Image.FromFile(imagePath);
-
-                    // Thêm hình ảnh vào cột hình ảnh của dòng tương ứng
-                    int rowIndex = dgvGiay.Rows.Add(row.ItemArray);
-                    dgvGiay.Rows[rowIndex].Cells["Anh"].Value = image;
-                }
-            }
-
-            // Tiếp tục thiết lập các thuộc tính khác cho DataGridView
             dgvGiay.Columns[0].HeaderText = "Mã giày";
             dgvGiay.Columns[1].HeaderText = "Tên giày";
             dgvGiay.Columns[2].HeaderText = "Loại";
-            dgvGiay.Columns[3].HeaderText = "Số lượng";
-            dgvGiay.Columns[4].HeaderText = "Đơn giá nhập";
-            dgvGiay.Columns[5].HeaderText = "Đơn giá bán";
-            dgvGiay.Columns[6].HeaderText = "Ảnh";
-            dgvGiay.Columns[7].HeaderText = "Ghi chú";
-            dgvGiay.Columns[0].Width = 100;
+            dgvGiay.Columns[3].HeaderText = "Đơn giá bán";
+            dgvGiay.Columns[4].HeaderText = "Ảnh";
+            dgvGiay.Columns[5].HeaderText = "Ghi chú";
+            dgvGiay.Columns[0].Width = 150;
             dgvGiay.Columns[1].Width = 200;
-            dgvGiay.Columns[2].Width = 100;
-            dgvGiay.Columns[3].Width = 100;
+            dgvGiay.Columns[2].Width = 150;
+            dgvGiay.Columns[3].Width = 200;
             dgvGiay.Columns[4].Width = 200;
             dgvGiay.Columns[5].Width = 200;
-            dgvGiay.Columns[6].Width = 200;
-            dgvGiay.Columns[7].Width = 200;
+
             dgvGiay.AllowUserToAddRows = false;
             dgvGiay.EditMode = DataGridViewEditMode.EditProgrammatically;
 
@@ -126,6 +102,19 @@ namespace _20T1020639_doan.GUI
             Hide();
             dn.Show();
             Close();
+        }
+
+        private void dgvGiay_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.RowIndex < dgvGiay.Rows.Count)
+            {
+                // Lấy mã giày từ ô đã nhấp đúp
+                string maGiay = dgvGiay.Rows[e.RowIndex].Cells["MaGiay"].Value.ToString(); // Đặt tên cột mã giày là "MAGIAY", hãy thay đổi nếu tên khác
+
+                // Hiển thị form chi tiết sản phẩm
+                FormChiTietSanPham formChiTiet = new FormChiTietSanPham(maGiay);
+                formChiTiet.ShowDialog();
+            }
         }
     }
 }

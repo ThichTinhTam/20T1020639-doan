@@ -120,6 +120,7 @@
             txtMK.Name = "txtMK";
             txtMK.Size = new Size(177, 31);
             txtMK.TabIndex = 7;
+            txtMK.UseSystemPasswordChar = true;
             // 
             // FormDangKi
             // 
