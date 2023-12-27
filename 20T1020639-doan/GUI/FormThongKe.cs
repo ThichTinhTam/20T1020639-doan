@@ -63,7 +63,7 @@ namespace _20T1020639_doan.GUI
 
         private void FormThongKe_Load(object sender, EventArgs e)
         {
-
+            ThucHienThongKe();
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -36,6 +36,7 @@ namespace _20T1020639_doan.GUI
                 txtmagiay.Text = productDetails.Rows[0]["MaGiay"].ToString();
                 txttengiay.Text = productDetails.Rows[0]["TenGiay"].ToString();
                 txtmaloai.Text = productDetails.Rows[0]["MaLoai"].ToString();
+
                 txtdongia.Text = productDetails.Rows[0]["DonGiaBan"].ToString();
                 txtghichu.Text = productDetails.Rows[0]["GhiChu"].ToString();
                 txtAnh.Text = productDetails.Rows[0]["Anh"].ToString();
