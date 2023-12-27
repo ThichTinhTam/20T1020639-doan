@@ -128,7 +128,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Showcard Gothic", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label2.ForeColor = Color.IndianRed;
-            label2.Location = new Point(405, 9);
+            label2.Location = new Point(518, 9);
             label2.Name = "label2";
             label2.Size = new Size(458, 89);
             label2.TabIndex = 23;

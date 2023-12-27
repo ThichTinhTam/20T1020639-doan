@@ -42,6 +42,7 @@ namespace _20T1020639_doan.GUI
 
         private void btnDangXuat_Click_1(object sender, EventArgs e)
         {
+            Hide();
             dn.Show();
             Close();
         }
@@ -205,7 +206,7 @@ namespace _20T1020639_doan.GUI
                 $" ChiTietHDBan cthd\r\nJOIN\r\n    " +
                 $"HDBan hd ON cthd.MaHDBan = hd.MaHDBan\r\n" +
                 $"WHERE\r\n " +
-                $"YEAR(hd.NgayBan) = YEAR(DATEADD(MONTH, -1, GETDATE()));";
+                $"YEAR(hd.NgayBan) = YEAR(DATEADD(YEAR, -1, GETDATE()));";
             ThongKeData = Database.GetDataToDataTable(sql);
 
             // Hiển thị kết quả thống kê lên DataGridView
