@@ -36,7 +36,6 @@ namespace _20T1020639_doan.GUI
             btnThem.Enabled = true;
             btnLuu.Enabled = false;
             btnXoa.Enabled = false;
-            btnIn.Enabled = false;
             txtmahoadon.ReadOnly = true;
             txttennhanvien.ReadOnly = true;
             txttenKhachhang.ReadOnly = true;
@@ -59,7 +58,6 @@ namespace _20T1020639_doan.GUI
             {
                 LoadInfoHoaDon();
                 btnXoa.Enabled = true;
-                btnIn.Enabled = true;
             }
             LoadDataGridView();
         }
@@ -108,9 +106,9 @@ namespace _20T1020639_doan.GUI
 
         private void btnKhoGiay_Click(object sender, EventArgs e)
         {
-              Hide();
-              FormBanGiay mna = new FormBanGiay(tk, dn);
-              mna.ShowDialog();
+            Hide();
+            FormBanGiay mna = new FormBanGiay(tk, dn);
+            mna.ShowDialog();
         }
 
         private void btnHoaDon_Click(object sender, EventArgs e)
@@ -145,7 +143,6 @@ namespace _20T1020639_doan.GUI
         {
             btnXoa.Enabled = false;
             btnLuu.Enabled = true;
-            btnIn.Enabled = false;
             btnThem.Enabled = false;
             ResetValues();
             txtmahoadon.Text = Database.CreateKey("HDB");
@@ -251,7 +248,7 @@ namespace _20T1020639_doan.GUI
             ResetValuesHang();
             btnXoa.Enabled = true;
             btnThem.Enabled = true;
-            btnIn.Enabled = true;
+
         }
 
         private void cboMaNhanVien_TextChanged(object sender, EventArgs e)
@@ -350,7 +347,6 @@ namespace _20T1020639_doan.GUI
             LoadDataGridView();
             btnXoa.Enabled = true;
             btnLuu.Enabled = true;
-            btnIn.Enabled = true;
             cboMaHDBan.SelectedIndex = -1;
         }
 
@@ -421,7 +417,6 @@ namespace _20T1020639_doan.GUI
                 ResetValues();
                 LoadDataGridView();
                 btnXoa.Enabled = false;
-                btnIn.Enabled = false;
             }
         }
 
@@ -448,6 +443,11 @@ namespace _20T1020639_doan.GUI
         }
 
         private void btnIn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTongtien_TextChanged(object sender, EventArgs e)
         {
 
         }

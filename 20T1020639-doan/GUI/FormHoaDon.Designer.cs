@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnIn = new Button();
             btnLuu = new Button();
             btnXoa = new Button();
             btnThem = new Button();
@@ -81,18 +80,6 @@
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvHoadon).BeginInit();
             SuspendLayout();
-            // 
-            // btnIn
-            // 
-            btnIn.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
-            btnIn.ForeColor = SystemColors.ActiveCaption;
-            btnIn.Location = new Point(684, 411);
-            btnIn.Name = "btnIn";
-            btnIn.Size = new Size(154, 34);
-            btnIn.TabIndex = 63;
-            btnIn.Text = "&In hóa đơn";
-            btnIn.UseVisualStyleBackColor = true;
-            btnIn.Click += btnIn_Click;
             // 
             // btnLuu
             // 
@@ -215,7 +202,7 @@
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
-            groupBox1.Location = new Point(257, 47);
+            groupBox1.Location = new Point(263, 47);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(1082, 196);
             groupBox1.TabIndex = 64;
@@ -390,7 +377,6 @@
             groupBox2.Controls.Add(label11);
             groupBox2.Controls.Add(btnThem);
             groupBox2.Controls.Add(btnXoa);
-            groupBox2.Controls.Add(btnIn);
             groupBox2.Controls.Add(btnLuu);
             groupBox2.Location = new Point(257, 249);
             groupBox2.Name = "groupBox2";
@@ -406,6 +392,7 @@
             txtTongtien.ReadOnly = true;
             txtTongtien.Size = new Size(223, 31);
             txtTongtien.TabIndex = 80;
+            txtTongtien.TextChanged += txtTongtien_TextChanged;
             // 
             // label19
             // 
@@ -634,8 +621,6 @@
         }
 
         #endregion
-
-        private Button btnIn;
         private Button btnLuu;
         private Button btnXoa;
         private Button btnThem;
