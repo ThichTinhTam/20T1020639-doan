@@ -20,7 +20,7 @@ namespace _20T1020639_doan.GUI
     {
         private dtoTaiKhoan tk;
         private FormDangNhap dn;
-     
+
 
         public FormAdmin()
         {
@@ -81,6 +81,13 @@ namespace _20T1020639_doan.GUI
         {
             Hide();
             FormLoaiGiay mna = new FormLoaiGiay(tk, dn);
+            mna.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormDanhSachHoaDon mna = new FormDanhSachHoaDon(tk, dn);
             mna.ShowDialog();
         }
     }

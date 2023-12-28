@@ -48,7 +48,7 @@ namespace _20T1020639_doan.GUI
         private void btnTrangChu_Click_1(object sender, EventArgs e)
         {
             Hide();
-            FormAdmin  nma = new FormAdmin(tk, dn);
+            FormAdmin nma = new FormAdmin(tk, dn);
             nma.ShowDialog();
         }
 
@@ -228,6 +228,13 @@ namespace _20T1020639_doan.GUI
             btnSua.Enabled = true;
             btnLuu.Enabled = false;
             txtMaloai.Enabled = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormDanhSachHoaDon nma = new FormDanhSachHoaDon(tk, dn);
+            nma.ShowDialog();
         }
     }
 }

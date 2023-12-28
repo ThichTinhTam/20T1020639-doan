@@ -34,7 +34,7 @@ namespace _20T1020639_doan.GUI
         private void btnKhoGiay_Click(object sender, EventArgs e)
         {
             Hide();
-            FormDanhSachGiay nma = new FormDanhSachGiay();
+            FormDanhSachGiay nma = new FormDanhSachGiay(tk, dn);
             nma.ShowDialog();
         }
 
@@ -50,14 +50,14 @@ namespace _20T1020639_doan.GUI
         private void btnThongKe_Click_1(object sender, EventArgs e)
         {
             Hide();
-            FormThongKe nma = new FormThongKe();
+            FormThongKe nma = new FormThongKe(tk, dn);
             nma.ShowDialog();
         }
 
         private void btnDSNV_Click_1(object sender, EventArgs e)
         {
             Hide();
-            FormDanhSachNhanVien nma = new FormDanhSachNhanVien();
+            FormDanhSachNhanVien nma = new FormDanhSachNhanVien(tk, dn);
             nma.ShowDialog();
         }
 
@@ -244,6 +244,27 @@ namespace _20T1020639_doan.GUI
             dgvThongke.Columns["TongSoLuongTrongHomQua"].Width = 300;
             dgvThongke.Columns["TongDoanhThuTrongHomQua"].Width = 300;
             dgvThongke.Columns["SoLuongHoaDonTrongHomQua"].Width = 300;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormDanhSachHoaDon nma = new FormDanhSachHoaDon(tk, dn);
+            nma.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormLoaiGiay nma = new FormLoaiGiay(tk, dn);
+            nma.ShowDialog();
+        }
+
+        private void btnTrangChu_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormAdmin nma = new FormAdmin(tk, dn);
+            nma.ShowDialog();
         }
     }
 }

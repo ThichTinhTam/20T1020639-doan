@@ -55,15 +55,16 @@
             mtbDienthoai = new MaskedTextBox();
             dtpNgaysinh = new DateTimePicker();
             chbNu = new CheckBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvNhanVien).BeginInit();
             SuspendLayout();
             // 
             // btnKhoGiay
             // 
             btnKhoGiay.BackColor = SystemColors.ActiveCaption;
-            btnKhoGiay.Location = new Point(3, 13);
+            btnKhoGiay.Location = new Point(3, 0);
             btnKhoGiay.Name = "btnKhoGiay";
-            btnKhoGiay.Size = new Size(283, 89);
+            btnKhoGiay.Size = new Size(283, 88);
             btnKhoGiay.TabIndex = 21;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
@@ -72,9 +73,9 @@
             // btnThongKe
             // 
             btnThongKe.BackColor = SystemColors.ActiveCaption;
-            btnThongKe.Location = new Point(3, 207);
+            btnThongKe.Location = new Point(3, 175);
             btnThongKe.Name = "btnThongKe";
-            btnThongKe.Size = new Size(283, 89);
+            btnThongKe.Size = new Size(283, 85);
             btnThongKe.TabIndex = 22;
             btnThongKe.Text = "Thống Kê";
             btnThongKe.UseVisualStyleBackColor = false;
@@ -83,9 +84,9 @@
             // btnDSNV
             // 
             btnDSNV.BackColor = SystemColors.ActiveCaption;
-            btnDSNV.Location = new Point(3, 306);
+            btnDSNV.Location = new Point(3, 332);
             btnDSNV.Name = "btnDSNV";
-            btnDSNV.Size = new Size(283, 89);
+            btnDSNV.Size = new Size(283, 82);
             btnDSNV.TabIndex = 23;
             btnDSNV.Text = "Danh Sách Nhân Viên";
             btnDSNV.UseVisualStyleBackColor = false;
@@ -117,9 +118,9 @@
             // btnTrangChu
             // 
             btnTrangChu.BackColor = SystemColors.ActiveCaption;
-            btnTrangChu.Location = new Point(3, 405);
+            btnTrangChu.Location = new Point(3, 415);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(283, 89);
+            btnTrangChu.Size = new Size(283, 79);
             btnTrangChu.TabIndex = 26;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -128,9 +129,9 @@
             // btnLoaiGiay
             // 
             btnLoaiGiay.BackColor = SystemColors.ActiveCaption;
-            btnLoaiGiay.Location = new Point(3, 108);
+            btnLoaiGiay.Location = new Point(3, 84);
             btnLoaiGiay.Name = "btnLoaiGiay";
-            btnLoaiGiay.Size = new Size(283, 89);
+            btnLoaiGiay.Size = new Size(283, 93);
             btnLoaiGiay.TabIndex = 27;
             btnLoaiGiay.Text = "Loại Giày";
             btnLoaiGiay.UseVisualStyleBackColor = false;
@@ -344,11 +345,23 @@
             chbNu.Text = "Nu";
             chbNu.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ActiveCaption;
+            button1.Location = new Point(3, 255);
+            button1.Name = "button1";
+            button1.Size = new Size(283, 82);
+            button1.TabIndex = 48;
+            button1.Text = "Danh Sách Hóa Đơn";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // FormDanhSachNhanVien
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1143, 672);
+            Controls.Add(button1);
             Controls.Add(chbNu);
             Controls.Add(dtpNgaysinh);
             Controls.Add(mtbDienthoai);
@@ -415,5 +428,6 @@
         private MaskedTextBox mtbDienthoai;
         private DateTimePicker dtpNgaysinh;
         private CheckBox chbNu;
+        private Button button1;
     }
 }

@@ -313,6 +313,13 @@ namespace _20T1020639_doan.GUI
             btnLuu.Enabled = false;
             txtManhanvien.Enabled = false;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormDanhSachHoaDon nma = new FormDanhSachHoaDon(tk, dn);
+            nma.ShowDialog();
+        }
     }
 }
 

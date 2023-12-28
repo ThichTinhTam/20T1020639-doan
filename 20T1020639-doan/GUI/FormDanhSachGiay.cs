@@ -35,7 +35,7 @@ namespace _20T1020639_doan.GUI
         private void btnKhoGiay_Click(object sender, EventArgs e)
         {
             Hide();
-            FormDanhSachGiay nma = new FormDanhSachGiay(tk,dn);
+            FormDanhSachGiay nma = new FormDanhSachGiay(tk, dn);
             nma.ShowDialog();
         }
 
@@ -50,7 +50,7 @@ namespace _20T1020639_doan.GUI
         private void btnTrangChu_Click(object sender, EventArgs e)
         {
             Hide();
-            FormAdmin nma = new FormAdmin(tk,dn);
+            FormAdmin nma = new FormAdmin(tk, dn);
             nma.ShowDialog();
 
         }
@@ -89,7 +89,7 @@ namespace _20T1020639_doan.GUI
             nma.ShowDialog();
         }
 
-        
+
 
         private void FormDanhSachGiay_Load_1(object sender, EventArgs e)
         {
@@ -132,10 +132,10 @@ namespace _20T1020639_doan.GUI
             dgvGiay.Columns[5].HeaderText = "Đơn giá bán";
             dgvGiay.Columns[6].HeaderText = "Ảnh";
             dgvGiay.Columns[7].HeaderText = "Ghi chú";
-            dgvGiay.Columns[0].Width = 100;
+            dgvGiay.Columns[0].Width = 200;
             dgvGiay.Columns[1].Width = 200;
             dgvGiay.Columns[2].Width = 100;
-            dgvGiay.Columns[3].Width = 100;
+            dgvGiay.Columns[3].Width = 200;
             dgvGiay.Columns[4].Width = 200;
             dgvGiay.Columns[5].Width = 200;
             dgvGiay.Columns[6].Width = 200;
@@ -264,7 +264,7 @@ namespace _20T1020639_doan.GUI
             btnThem.Enabled = true;
             btnBoqua.Enabled = false;
             btnLuu.Enabled = false;
-            txtMagiay.Enabled = false;
+            txtMagiay.Enabled = true;
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -360,6 +360,13 @@ namespace _20T1020639_doan.GUI
             sql = "SELECT MaGiay,TenGiay,MaLoai,SoLuong,DonGiaNhap,DonGiaBan,Anh,GhiChu FROM giay";
             DSGiay = Database.GetDataToDataTable(sql);
             dgvGiay.DataSource = DSGiay;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormDanhSachHoaDon nma = new FormDanhSachHoaDon(tk, dn);
+            nma.ShowDialog();
         }
     }
 }
