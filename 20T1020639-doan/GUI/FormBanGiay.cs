@@ -109,12 +109,33 @@ namespace _20T1020639_doan.GUI
             if (e.RowIndex >= 0 && e.RowIndex < dgvGiay.Rows.Count)
             {
                 // Lấy mã giày từ ô đã nhấp đúp
-                string maGiay = dgvGiay.Rows[e.RowIndex].Cells["MaGiay"].Value.ToString(); // Đặt tên cột mã giày là "MAGIAY", hãy thay đổi nếu tên khác
+                string maGiay = dgvGiay.Rows[e.RowIndex].Cells["MaGiay"].Value.ToString();
 
-                // Hiển thị form chi tiết sản phẩm
+              //   Hiển thị form chi tiết sản phẩm
                 FormChiTietSanPham formChiTiet = new FormChiTietSanPham(maGiay);
                 formChiTiet.ShowDialog();
             }
+        }
+
+        // khong truyen du lieu cua magiayquadc li do do da set ben cbomaygiay ben kia 
+        private void dgvGiay_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            string magiay;
+            if (MessageBox.Show("Bạn có muốn mua đôi giày này không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Hide();
+                magiay = dgvGiay.CurrentRow.Cells["MaGiay"].Value.ToString();
+                FormHoaDon frm = new FormHoaDon(tk, dn);
+                frm.cboMaGiay.SelectedValue = magiay;
+                frm.StartPosition = FormStartPosition.CenterParent;
+                frm.ShowDialog();
+
+            }
+        }
+
+        private void dgvGiay_DoubleClick(object sender, EventArgs e)
+        {
+           
         }
     }
 }

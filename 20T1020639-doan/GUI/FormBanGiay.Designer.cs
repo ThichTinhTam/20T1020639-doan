@@ -128,6 +128,8 @@
             dgvGiay.Size = new Size(856, 507);
             dgvGiay.TabIndex = 61;
             dgvGiay.CellDoubleClick += dgvGiay_CellDoubleClick;
+            dgvGiay.DoubleClick += dgvGiay_DoubleClick;
+            dgvGiay.MouseDoubleClick += dgvGiay_MouseDoubleClick;
             // 
             // button1
             // 

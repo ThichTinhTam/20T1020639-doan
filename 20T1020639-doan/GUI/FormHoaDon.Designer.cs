@@ -654,7 +654,7 @@
         private Label label18;
         private ComboBox cboMaHDBan;
         private Button btnTimkiem;
-        private ComboBox cboMaGiay;
+        public ComboBox cboMaGiay;
         private MaskedTextBox mskDienThoai;
         private TextBox txtDiachi;
         private TextBox txttenKhachhang;
