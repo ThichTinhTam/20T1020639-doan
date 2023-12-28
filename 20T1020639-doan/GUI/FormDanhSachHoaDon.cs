@@ -86,13 +86,13 @@ namespace _20T1020639_doan.GUI
             else
                 MessageBox.Show("Có " + HDB.Rows.Count + " hóa đơn thỏa mãn điều kiện!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             dgvHoaDon.DataSource = HDB;
-            LoadDataGridView();
+            ResetValues();
         }
         private void LoadDataGridView()
         {
-           // string sql;
-            //sql = "SELECT MaHDBan,MaNhanVien,NgayBan,MaKhach,TongTien FROM HDBan";
-           // HDB = Database.GetDataToDataTable(sql);
+            string sql;
+            sql = "SELECT MaHDBan,MaNhanVien,NgayBan,MaKhach,TongTien FROM HDBan";
+            HDB = Database.GetDataToDataTable(sql);
 
             // Đặt nguồn dữ liệu cho DataGridView trước khi thêm cột hình ảnh
             dgvHoaDon.DataSource = HDB;
@@ -113,7 +113,7 @@ namespace _20T1020639_doan.GUI
         private void btnTimlai_Click(object sender, EventArgs e)
         {
             ResetValues();
-            dgvHoaDon.DataSource = null;
+            LoadDataGridView();
         }
 
         private void txtTongTien_KeyPress(object sender, KeyPressEventArgs e)
