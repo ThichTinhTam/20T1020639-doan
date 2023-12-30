@@ -20,9 +20,13 @@ namespace _20T1020639_doan.GUI
         DataTable HoaDon;
         private dtoTaiKhoan tk;
         private FormDangNhap dn;
-        public FormHoaDon()
+        private String magiay;
+        public FormHoaDon(String magiay)
         {
+           
             InitializeComponent();
+            this.magiay = magiay;
+            cboMaGiay.SelectedValue = magiay;
         }
         public FormHoaDon(dtoTaiKhoan tk, FormDangNhap dn)
         {

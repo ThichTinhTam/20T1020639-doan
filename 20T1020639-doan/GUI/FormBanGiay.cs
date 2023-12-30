@@ -17,6 +17,8 @@ namespace _20T1020639_doan.GUI
         DataTable ShopGiay;
         private dtoTaiKhoan tk;
         private FormDangNhap dn;
+        string magiay;
+
         public FormBanGiay()
         {
             InitializeComponent();
@@ -65,7 +67,7 @@ namespace _20T1020639_doan.GUI
         private void button1_Click(object sender, EventArgs e)
         {
             Hide();
-            FormHoaDon nma = new FormHoaDon();
+            FormHoaDon nma = new FormHoaDon(magiay);
             nma.ShowDialog();
         }
 
@@ -79,7 +81,7 @@ namespace _20T1020639_doan.GUI
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
             Hide();
-            FormHoaDon nma = new FormHoaDon();
+            FormHoaDon nma = new FormHoaDon(magiay);
             nma.ShowDialog();
         }
 
@@ -106,26 +108,26 @@ namespace _20T1020639_doan.GUI
 
         private void dgvGiay_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.RowIndex < dgvGiay.Rows.Count)
-            {
+           // if (e.RowIndex >= 0 && e.RowIndex < dgvGiay.Rows.Count)
+           // {
                 // Lấy mã giày từ ô đã nhấp đúp
-                string maGiay = dgvGiay.Rows[e.RowIndex].Cells["MaGiay"].Value.ToString();
+             //   string maGiay = dgvGiay.Rows[e.RowIndex].Cells["MaGiay"].Value.ToString();
 
               //   Hiển thị form chi tiết sản phẩm
-                FormChiTietSanPham formChiTiet = new FormChiTietSanPham(maGiay);
-                formChiTiet.ShowDialog();
-            }
+           //     FormChiTietSanPham formChiTiet = new FormChiTietSanPham(maGiay);
+           //     formChiTiet.ShowDialog();
+            //}
         }
 
         // khong truyen du lieu cua magiayquadc li do do da set ben cbomaygiay ben kia 
         private void dgvGiay_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            string magiay;
+           
             if (MessageBox.Show("Bạn có muốn mua đôi giày này không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Hide();
                 magiay = dgvGiay.CurrentRow.Cells["MaGiay"].Value.ToString();
-                FormHoaDon frm = new FormHoaDon(tk, dn);
+                FormHoaDon frm = new FormHoaDon(magiay);
                 frm.cboMaGiay.SelectedValue = magiay;
                 frm.StartPosition = FormStartPosition.CenterParent;
                 frm.ShowDialog();
