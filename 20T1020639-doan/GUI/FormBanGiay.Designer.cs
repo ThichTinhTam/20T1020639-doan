@@ -43,9 +43,11 @@
             // btnTrangChu
             // 
             btnTrangChu.BackColor = SystemColors.ActiveCaption;
+            btnTrangChu.Image = Properties.Resources.home_184_642;
+            btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
             btnTrangChu.Location = new Point(-3, 351);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(295, 109);
+            btnTrangChu.Size = new Size(311, 109);
             btnTrangChu.TabIndex = 59;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -66,9 +68,11 @@
             // 
             btnDangXuat.BackColor = Color.Red;
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            btnDangXuat.Location = new Point(-21, 575);
+            btnDangXuat.Image = Properties.Resources.logout_66_643;
+            btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDangXuat.Location = new Point(-3, 575);
             btnDangXuat.Name = "btnDangXuat";
-            btnDangXuat.Size = new Size(313, 113);
+            btnDangXuat.Size = new Size(311, 113);
             btnDangXuat.TabIndex = 57;
             btnDangXuat.Text = "Đăng Xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
@@ -77,9 +81,11 @@
             // btnDSKH
             // 
             btnDSKH.BackColor = SystemColors.ActiveCaption;
+            btnDSKH.Image = Properties.Resources.user_149_643;
+            btnDSKH.ImageAlign = ContentAlignment.MiddleLeft;
             btnDSKH.Location = new Point(-3, 243);
             btnDSKH.Name = "btnDSKH";
-            btnDSKH.Size = new Size(298, 102);
+            btnDSKH.Size = new Size(311, 102);
             btnDSKH.TabIndex = 56;
             btnDSKH.Text = "Danh Sách Khách Hàng";
             btnDSKH.UseVisualStyleBackColor = false;
@@ -88,9 +94,11 @@
             // btnHoaDon
             // 
             btnHoaDon.BackColor = SystemColors.ActiveCaption;
-            btnHoaDon.Location = new Point(-18, 129);
+            btnHoaDon.Image = Properties.Resources.bill_5_64;
+            btnHoaDon.ImageAlign = ContentAlignment.MiddleLeft;
+            btnHoaDon.Location = new Point(-3, 129);
             btnHoaDon.Name = "btnHoaDon";
-            btnHoaDon.Size = new Size(313, 108);
+            btnHoaDon.Size = new Size(311, 108);
             btnHoaDon.TabIndex = 55;
             btnHoaDon.Text = "Hóa đơn";
             btnHoaDon.UseVisualStyleBackColor = false;
@@ -99,9 +107,11 @@
             // btnKhoGiay
             // 
             btnKhoGiay.BackColor = SystemColors.ActiveCaption;
+            btnKhoGiay.Image = Properties.Resources.canvas_shoe_12_644;
+            btnKhoGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnKhoGiay.Location = new Point(-3, -2);
             btnKhoGiay.Name = "btnKhoGiay";
-            btnKhoGiay.Size = new Size(295, 125);
+            btnKhoGiay.Size = new Size(311, 125);
             btnKhoGiay.TabIndex = 54;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
@@ -121,11 +131,11 @@
             // dgvGiay
             // 
             dgvGiay.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvGiay.Location = new Point(301, 109);
+            dgvGiay.Location = new Point(314, 109);
             dgvGiay.Name = "dgvGiay";
             dgvGiay.RowHeadersWidth = 62;
             dgvGiay.RowTemplate.Height = 33;
-            dgvGiay.Size = new Size(856, 507);
+            dgvGiay.Size = new Size(843, 507);
             dgvGiay.TabIndex = 61;
             dgvGiay.CellDoubleClick += dgvGiay_CellDoubleClick;
             dgvGiay.DoubleClick += dgvGiay_DoubleClick;

@@ -118,31 +118,235 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Button-Refresh-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button-Refresh-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logout-66-646" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout-66-646.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Close-2-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Close-2-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user-149-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-149-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="luu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\luu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logout-66-647" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout-66-647.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home-184-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home-184-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bill-5-644" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bill-5-644.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home-184-645" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home-184-645.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button Add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button Add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fix-1-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fix-1-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home-184-641" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home-184-641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-12-644" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-12-644.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-25-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-25-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-12-643" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-12-643.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-149-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-149-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout-66-645" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout-66-645.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="questionnaire-voting-1-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\questionnaire-voting-1-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statistical-chart-7-645" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statistical-chart-7-645.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home-184-648" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home-184-648.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout-66-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout-66-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bill-5-642" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bill-5-642.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-149-647" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-149-647.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-149-643" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-149-643.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-12-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-12-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home-184-647" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home-184-647.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statistical-chart-7-644" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statistical-chart-7-644.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-25-643" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-25-643.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout-66-642" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout-66-642.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-149-649" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-149-649.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-12-647" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-12-647.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout-66-648" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout-66-648.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bill-5-643" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bill-5-643.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bill-5-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bill-5-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icojam-Blue-Bits-Document-add.256" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icojam-Blue-Bits-Document-add.256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logout-66-321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout-66-321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-25-645" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-25-645.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statistical-chart-7-642" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statistical-chart-7-642.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home-184-644" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home-184-644.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-149-641" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-149-641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-12-645" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-12-645.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="add-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Button-Next-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button-Next-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Search-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Button-Refresh-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button-Refresh-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-149-642" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-149-642.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout-66-644" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout-66-644.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-12-642" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-12-642.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-12-648" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-12-648.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-149-646" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-149-646.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-25-642" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-25-642.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-149-648" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-149-648.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-12-641" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-12-641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statistical-chart-7-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statistical-chart-7-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home-184-643" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home-184-643.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout-66-643" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout-66-643.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close-2-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close-2-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statistical-chart-7-641" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statistical-chart-7-641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home-184-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home-184-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statistical-chart-7-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statistical-chart-7-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-12-646" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-12-646.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-25-644" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-25-644.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="luu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\luu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statistical-chart-7-643" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statistical-chart-7-643.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home-184-642" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home-184-642.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-149-645" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-149-645.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout-66-641" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout-66-641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button Close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button Close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout-66-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout-66-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-25-641" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-25-641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-149-644" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-149-644.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home-184-646" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home-184-646.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bill-5-641" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bill-5-641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout-66-649" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout-66-649.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save-32-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save-32-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-12-649" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-12-649.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="canvas-shoe-12-6410" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\canvas-shoe-12-6410.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

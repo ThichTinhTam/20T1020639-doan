@@ -53,9 +53,11 @@
             // btnLoaiGiay
             // 
             btnLoaiGiay.BackColor = SystemColors.ActiveCaption;
-            btnLoaiGiay.Location = new Point(-18, 83);
+            btnLoaiGiay.Image = Properties.Resources.canvas_shoe_25_644;
+            btnLoaiGiay.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLoaiGiay.Location = new Point(-7, 83);
             btnLoaiGiay.Name = "btnLoaiGiay";
-            btnLoaiGiay.Size = new Size(303, 87);
+            btnLoaiGiay.Size = new Size(309, 87);
             btnLoaiGiay.TabIndex = 17;
             btnLoaiGiay.Text = "Loại Giày";
             btnLoaiGiay.UseVisualStyleBackColor = false;
@@ -64,9 +66,11 @@
             // btnTrangChu
             // 
             btnTrangChu.BackColor = SystemColors.ActiveCaption;
-            btnTrangChu.Location = new Point(-18, 426);
+            btnTrangChu.Image = Properties.Resources.home_184_646;
+            btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
+            btnTrangChu.Location = new Point(-7, 426);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(303, 78);
+            btnTrangChu.Size = new Size(309, 78);
             btnTrangChu.TabIndex = 16;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -88,9 +92,11 @@
             // 
             btnDangXuat.BackColor = Color.Red;
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            btnDangXuat.Image = Properties.Resources.logout_66_647;
+            btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
             btnDangXuat.Location = new Point(-7, 580);
             btnDangXuat.Name = "btnDangXuat";
-            btnDangXuat.Size = new Size(292, 89);
+            btnDangXuat.Size = new Size(309, 89);
             btnDangXuat.TabIndex = 14;
             btnDangXuat.Text = "Đăng Xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
@@ -99,9 +105,11 @@
             // btnDSNV
             // 
             btnDSNV.BackColor = SystemColors.ActiveCaption;
-            btnDSNV.Location = new Point(-18, 343);
+            btnDSNV.Image = Properties.Resources.user_149_647;
+            btnDSNV.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDSNV.Location = new Point(-7, 343);
             btnDSNV.Name = "btnDSNV";
-            btnDSNV.Size = new Size(303, 87);
+            btnDSNV.Size = new Size(309, 87);
             btnDSNV.TabIndex = 13;
             btnDSNV.Text = "Danh Sách Nhân Viên";
             btnDSNV.UseVisualStyleBackColor = false;
@@ -110,9 +118,11 @@
             // btnThongKe
             // 
             btnThongKe.BackColor = SystemColors.ActiveCaption;
-            btnThongKe.Location = new Point(-18, 169);
+            btnThongKe.Image = Properties.Resources.statistical_chart_7_644;
+            btnThongKe.ImageAlign = ContentAlignment.MiddleLeft;
+            btnThongKe.Location = new Point(-7, 169);
             btnThongKe.Name = "btnThongKe";
-            btnThongKe.Size = new Size(303, 89);
+            btnThongKe.Size = new Size(309, 89);
             btnThongKe.TabIndex = 12;
             btnThongKe.Text = "Thống Kê";
             btnThongKe.UseVisualStyleBackColor = false;
@@ -121,9 +131,11 @@
             // btnKhoGiay
             // 
             btnKhoGiay.BackColor = SystemColors.ActiveCaption;
-            btnKhoGiay.Location = new Point(-18, -2);
+            btnKhoGiay.Image = Properties.Resources.canvas_shoe_12_648;
+            btnKhoGiay.ImageAlign = ContentAlignment.MiddleLeft;
+            btnKhoGiay.Location = new Point(-7, -2);
             btnKhoGiay.Name = "btnKhoGiay";
-            btnKhoGiay.Size = new Size(303, 89);
+            btnKhoGiay.Size = new Size(309, 89);
             btnKhoGiay.TabIndex = 11;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
@@ -132,14 +144,14 @@
             // txtMaloai
             // 
             txtMaloai.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            txtMaloai.Location = new Point(510, 101);
+            txtMaloai.Location = new Point(591, 98);
             txtMaloai.Name = "txtMaloai";
             txtMaloai.Size = new Size(265, 31);
             txtMaloai.TabIndex = 0;
             // 
             // txtTenloai
             // 
-            txtTenloai.Location = new Point(510, 169);
+            txtTenloai.Location = new Point(591, 166);
             txtTenloai.Name = "txtTenloai";
             txtTenloai.Size = new Size(265, 31);
             txtTenloai.TabIndex = 1;
@@ -148,7 +160,7 @@
             // 
             btnThem.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnThem.ForeColor = SystemColors.ActiveCaption;
-            btnThem.Image = Properties.Resources.add_icon;
+            btnThem.Image = Properties.Resources.Button_Add;
             btnThem.ImageAlign = ContentAlignment.MiddleLeft;
             btnThem.Location = new Point(314, 604);
             btnThem.Name = "btnThem";
@@ -162,11 +174,11 @@
             // 
             btnSua.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnSua.ForeColor = SystemColors.ActiveCaption;
-            btnSua.Image = Properties.Resources.Button_Refresh_icon;
+            btnSua.Image = Properties.Resources.fix_1_32;
             btnSua.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSua.Location = new Point(449, 604);
+            btnSua.Location = new Point(468, 604);
             btnSua.Name = "btnSua";
-            btnSua.Size = new Size(128, 47);
+            btnSua.Size = new Size(119, 47);
             btnSua.TabIndex = 3;
             btnSua.Text = "&Sửa";
             btnSua.UseVisualStyleBackColor = true;
@@ -176,11 +188,11 @@
             // 
             btnXoa.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnXoa.ForeColor = SystemColors.ActiveCaption;
-            btnXoa.Image = Properties.Resources.Close_2_icon;
+            btnXoa.Image = Properties.Resources.Button_Close;
             btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
-            btnXoa.Location = new Point(583, 604);
+            btnXoa.Location = new Point(612, 604);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(135, 47);
+            btnXoa.Size = new Size(130, 47);
             btnXoa.TabIndex = 4;
             btnXoa.Text = "&Xóa";
             btnXoa.UseVisualStyleBackColor = true;
@@ -190,9 +202,11 @@
             // 
             btnLuu.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnLuu.ForeColor = SystemColors.ActiveCaption;
-            btnLuu.Location = new Point(724, 604);
+            btnLuu.Image = Properties.Resources.save_32_32;
+            btnLuu.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLuu.Location = new Point(765, 604);
             btnLuu.Name = "btnLuu";
-            btnLuu.Size = new Size(129, 50);
+            btnLuu.Size = new Size(128, 50);
             btnLuu.TabIndex = 5;
             btnLuu.Text = "&Lưu";
             btnLuu.UseVisualStyleBackColor = true;
@@ -204,9 +218,9 @@
             btnBoqua.ForeColor = SystemColors.ActiveCaption;
             btnBoqua.Image = Properties.Resources.Button_Next_icon;
             btnBoqua.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBoqua.Location = new Point(859, 604);
+            btnBoqua.Location = new Point(913, 604);
             btnBoqua.Name = "btnBoqua";
-            btnBoqua.Size = new Size(158, 50);
+            btnBoqua.Size = new Size(160, 50);
             btnBoqua.TabIndex = 6;
             btnBoqua.Text = "&Bỏ qua";
             btnBoqua.UseVisualStyleBackColor = true;
@@ -217,7 +231,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label2.ForeColor = Color.IndianRed;
-            label2.Location = new Point(413, 107);
+            label2.Location = new Point(494, 104);
             label2.Name = "label2";
             label2.Size = new Size(72, 25);
             label2.TabIndex = 26;
@@ -228,7 +242,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label3.ForeColor = Color.IndianRed;
-            label3.Location = new Point(413, 175);
+            label3.Location = new Point(494, 172);
             label3.Name = "label3";
             label3.Size = new Size(76, 25);
             label3.TabIndex = 27;
@@ -239,7 +253,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 22F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label4.ForeColor = Color.DarkOrange;
-            label4.Location = new Point(434, 12);
+            label4.Location = new Point(537, 8);
             label4.Name = "label4";
             label4.Size = new Size(427, 60);
             label4.TabIndex = 28;
@@ -259,9 +273,11 @@
             // button1
             // 
             button1.BackColor = SystemColors.ActiveCaption;
-            button1.Location = new Point(-18, 258);
+            button1.Image = Properties.Resources.bill_5_641;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(-7, 258);
             button1.Name = "button1";
-            button1.Size = new Size(303, 90);
+            button1.Size = new Size(309, 90);
             button1.TabIndex = 29;
             button1.Text = "Danh Sách Hóa Đơn";
             button1.UseVisualStyleBackColor = false;

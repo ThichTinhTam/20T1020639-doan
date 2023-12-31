@@ -103,9 +103,11 @@
             // 
             // button1
             // 
-            button1.Location = new Point(50, 519);
+            button1.Image = Properties.Resources.logout_66_32;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(45, 519);
             button1.Name = "button1";
-            button1.Size = new Size(112, 34);
+            button1.Size = new Size(167, 34);
             button1.TabIndex = 7;
             button1.Text = "Quay lại";
             button1.UseVisualStyleBackColor = true;

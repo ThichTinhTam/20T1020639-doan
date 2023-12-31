@@ -118,6 +118,8 @@
             // 
             button2.BackColor = Color.IndianRed;
             button2.Font = new Font("Segoe UI Symbol", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            button2.Image = Properties.Resources.logout_66_321;
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
             button2.Location = new Point(583, 469);
             button2.Name = "button2";
             button2.Size = new Size(206, 46);

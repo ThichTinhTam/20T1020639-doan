@@ -45,6 +45,8 @@
             // btnKhoGiay
             // 
             btnKhoGiay.BackColor = SystemColors.ActiveCaption;
+            btnKhoGiay.Image = Properties.Resources.canvas_shoe_12_643;
+            btnKhoGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnKhoGiay.Location = new Point(1, -2);
             btnKhoGiay.Name = "btnKhoGiay";
             btnKhoGiay.Size = new Size(321, 96);
@@ -56,6 +58,8 @@
             // btnThongKe
             // 
             btnThongKe.BackColor = SystemColors.ActiveCaption;
+            btnThongKe.Image = Properties.Resources.statistical_chart_7_642;
+            btnThongKe.ImageAlign = ContentAlignment.MiddleLeft;
             btnThongKe.Location = new Point(1, 177);
             btnThongKe.Name = "btnThongKe";
             btnThongKe.Size = new Size(324, 85);
@@ -67,6 +71,8 @@
             // btnDSNV
             // 
             btnDSNV.BackColor = SystemColors.ActiveCaption;
+            btnDSNV.Image = Properties.Resources.user_149_642;
+            btnDSNV.ImageAlign = ContentAlignment.MiddleLeft;
             btnDSNV.Location = new Point(1, 355);
             btnDSNV.Name = "btnDSNV";
             btnDSNV.Size = new Size(321, 91);
@@ -79,6 +85,8 @@
             // 
             btnDangXuat.BackColor = Color.Red;
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            btnDangXuat.Image = Properties.Resources.logout_66_642;
+            btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
             btnDangXuat.Location = new Point(1, 621);
             btnDangXuat.Name = "btnDangXuat";
             btnDangXuat.Size = new Size(321, 100);
@@ -102,6 +110,8 @@
             // btnTrangChu
             // 
             btnTrangChu.BackColor = SystemColors.ActiveCaption;
+            btnTrangChu.Image = Properties.Resources.home_184_641;
+            btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
             btnTrangChu.Location = new Point(1, 444);
             btnTrangChu.Name = "btnTrangChu";
             btnTrangChu.Size = new Size(321, 102);
@@ -134,6 +144,8 @@
             // btnLoaiGiay
             // 
             btnLoaiGiay.BackColor = SystemColors.ActiveCaption;
+            btnLoaiGiay.Image = Properties.Resources.canvas_shoe_25_642;
+            btnLoaiGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnLoaiGiay.Location = new Point(1, 93);
             btnLoaiGiay.Name = "btnLoaiGiay";
             btnLoaiGiay.Size = new Size(324, 87);
@@ -145,6 +157,8 @@
             // button1
             // 
             button1.BackColor = SystemColors.ActiveCaption;
+            button1.Image = Properties.Resources.bill_5_641;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
             button1.Location = new Point(1, 264);
             button1.Name = "button1";
             button1.Size = new Size(321, 89);

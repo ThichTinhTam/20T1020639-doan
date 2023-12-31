@@ -62,6 +62,8 @@
             // btnKhoGiay
             // 
             btnKhoGiay.BackColor = SystemColors.ActiveCaption;
+            btnKhoGiay.Image = Properties.Resources.canvas_shoe_12_645;
+            btnKhoGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnKhoGiay.Location = new Point(-7, 0);
             btnKhoGiay.Name = "btnKhoGiay";
             btnKhoGiay.Size = new Size(293, 88);
@@ -73,9 +75,11 @@
             // btnThongKe
             // 
             btnThongKe.BackColor = SystemColors.ActiveCaption;
-            btnThongKe.Location = new Point(-18, 175);
+            btnThongKe.Image = Properties.Resources.statistical_chart_7_643;
+            btnThongKe.ImageAlign = ContentAlignment.MiddleLeft;
+            btnThongKe.Location = new Point(-7, 175);
             btnThongKe.Name = "btnThongKe";
-            btnThongKe.Size = new Size(304, 85);
+            btnThongKe.Size = new Size(293, 97);
             btnThongKe.TabIndex = 22;
             btnThongKe.Text = "Thống Kê";
             btnThongKe.UseVisualStyleBackColor = false;
@@ -84,9 +88,11 @@
             // btnDSNV
             // 
             btnDSNV.BackColor = SystemColors.ActiveCaption;
-            btnDSNV.Location = new Point(-18, 332);
+            btnDSNV.Image = Properties.Resources.user_149_644;
+            btnDSNV.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDSNV.Location = new Point(-7, 352);
             btnDSNV.Name = "btnDSNV";
-            btnDSNV.Size = new Size(304, 82);
+            btnDSNV.Size = new Size(293, 88);
             btnDSNV.TabIndex = 23;
             btnDSNV.Text = "Danh Sách Nhân Viên";
             btnDSNV.UseVisualStyleBackColor = false;
@@ -96,7 +102,9 @@
             // 
             btnDangXuat.BackColor = Color.Red;
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            btnDangXuat.Location = new Point(-7, 577);
+            btnDangXuat.Image = Properties.Resources.logout_66_644;
+            btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDangXuat.Location = new Point(-7, 607);
             btnDangXuat.Name = "btnDangXuat";
             btnDangXuat.Size = new Size(293, 89);
             btnDangXuat.TabIndex = 24;
@@ -109,7 +117,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.LightYellow;
             label1.Font = new Font("Blackadder ITC", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(27, 504);
+            label1.Location = new Point(27, 541);
             label1.Name = "label1";
             label1.Size = new Size(220, 63);
             label1.TabIndex = 25;
@@ -118,9 +126,11 @@
             // btnTrangChu
             // 
             btnTrangChu.BackColor = SystemColors.ActiveCaption;
-            btnTrangChu.Location = new Point(-18, 415);
+            btnTrangChu.Image = Properties.Resources.home_184_643;
+            btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
+            btnTrangChu.Location = new Point(-7, 437);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(304, 79);
+            btnTrangChu.Size = new Size(293, 101);
             btnTrangChu.TabIndex = 26;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -129,6 +139,8 @@
             // btnLoaiGiay
             // 
             btnLoaiGiay.BackColor = SystemColors.ActiveCaption;
+            btnLoaiGiay.Image = Properties.Resources.canvas_shoe_25_643;
+            btnLoaiGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnLoaiGiay.Location = new Point(-7, 84);
             btnLoaiGiay.Name = "btnLoaiGiay";
             btnLoaiGiay.Size = new Size(293, 93);
@@ -244,6 +256,8 @@
             // 
             btnLuu.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnLuu.ForeColor = SystemColors.ActiveCaption;
+            btnLuu.Image = Properties.Resources.save_32_32;
+            btnLuu.ImageAlign = ContentAlignment.MiddleLeft;
             btnLuu.Location = new Point(775, 607);
             btnLuu.Name = "btnLuu";
             btnLuu.Size = new Size(134, 53);
@@ -256,7 +270,7 @@
             // 
             btnXoa.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnXoa.ForeColor = SystemColors.ActiveCaption;
-            btnXoa.Image = Properties.Resources.Close_2_icon;
+            btnXoa.Image = Properties.Resources.Button_Close;
             btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
             btnXoa.Location = new Point(618, 607);
             btnXoa.Name = "btnXoa";
@@ -270,7 +284,7 @@
             // 
             btnSua.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnSua.ForeColor = SystemColors.ActiveCaption;
-            btnSua.Image = Properties.Resources.Button_Refresh_icon;
+            btnSua.Image = Properties.Resources.fix_1_32;
             btnSua.ImageAlign = ContentAlignment.MiddleLeft;
             btnSua.Location = new Point(474, 607);
             btnSua.Name = "btnSua";
@@ -284,7 +298,7 @@
             // 
             btnThem.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnThem.ForeColor = SystemColors.ActiveCaption;
-            btnThem.Image = Properties.Resources.add_icon;
+            btnThem.Image = Properties.Resources.Button_Add;
             btnThem.ImageAlign = ContentAlignment.MiddleLeft;
             btnThem.Location = new Point(312, 607);
             btnThem.Name = "btnThem";
@@ -356,9 +370,11 @@
             // button1
             // 
             button1.BackColor = SystemColors.ActiveCaption;
-            button1.Location = new Point(-18, 255);
+            button1.Image = Properties.Resources.bill_5_642;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(-7, 266);
             button1.Name = "button1";
-            button1.Size = new Size(304, 82);
+            button1.Size = new Size(293, 88);
             button1.TabIndex = 48;
             button1.Text = "Danh Sách Hóa Đơn";
             button1.UseVisualStyleBackColor = false;
@@ -369,7 +385,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1143, 672);
+            ClientSize = new Size(1181, 692);
             Controls.Add(button1);
             Controls.Add(chbNu);
             Controls.Add(dtpNgaysinh);

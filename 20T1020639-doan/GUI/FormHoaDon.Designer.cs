@@ -85,9 +85,11 @@
             // 
             btnLuu.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnLuu.ForeColor = SystemColors.ActiveCaption;
-            btnLuu.Location = new Point(652, 411);
+            btnLuu.Image = Properties.Resources.save_32_32;
+            btnLuu.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLuu.Location = new Point(652, 395);
             btnLuu.Name = "btnLuu";
-            btnLuu.Size = new Size(155, 34);
+            btnLuu.Size = new Size(201, 50);
             btnLuu.TabIndex = 62;
             btnLuu.Text = "&Lưu hóa đơn";
             btnLuu.UseVisualStyleBackColor = true;
@@ -97,11 +99,11 @@
             // 
             btnXoa.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnXoa.ForeColor = SystemColors.ActiveCaption;
-            btnXoa.Image = Properties.Resources.Close_2_icon;
+            btnXoa.Image = Properties.Resources.Button_Close;
             btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
-            btnXoa.Location = new Point(413, 407);
+            btnXoa.Location = new Point(413, 395);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(184, 38);
+            btnXoa.Size = new Size(201, 50);
             btnXoa.TabIndex = 61;
             btnXoa.Text = "&Xóa hóa đơn";
             btnXoa.UseVisualStyleBackColor = true;
@@ -111,11 +113,11 @@
             // 
             btnThem.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnThem.ForeColor = SystemColors.ActiveCaption;
-            btnThem.Image = Properties.Resources.add_icon;
+            btnThem.Image = Properties.Resources.Button_Add;
             btnThem.ImageAlign = ContentAlignment.MiddleLeft;
-            btnThem.Location = new Point(179, 407);
+            btnThem.Location = new Point(179, 395);
             btnThem.Name = "btnThem";
-            btnThem.Size = new Size(185, 42);
+            btnThem.Size = new Size(185, 54);
             btnThem.TabIndex = 59;
             btnThem.Text = "&Thêm hóa đơn";
             btnThem.TextAlign = ContentAlignment.MiddleRight;
@@ -125,9 +127,11 @@
             // btnTrangChu
             // 
             btnTrangChu.BackColor = SystemColors.ActiveCaption;
-            btnTrangChu.Location = new Point(-14, 402);
+            btnTrangChu.Image = Properties.Resources.home_184_644;
+            btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
+            btnTrangChu.Location = new Point(-9, 402);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(265, 137);
+            btnTrangChu.Size = new Size(325, 137);
             btnTrangChu.TabIndex = 58;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -138,7 +142,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.LightYellow;
             label1.Font = new Font("Blackadder ITC", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(12, 543);
+            label1.Location = new Point(36, 565);
             label1.Name = "label1";
             label1.Size = new Size(220, 63);
             label1.TabIndex = 57;
@@ -148,9 +152,11 @@
             // 
             btnDangXuat.BackColor = Color.Red;
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            btnDangXuat.Location = new Point(-39, 629);
+            btnDangXuat.Image = Properties.Resources.logout_66_645;
+            btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDangXuat.Location = new Point(3, 644);
             btnDangXuat.Name = "btnDangXuat";
-            btnDangXuat.Size = new Size(290, 118);
+            btnDangXuat.Size = new Size(313, 118);
             btnDangXuat.TabIndex = 56;
             btnDangXuat.Text = "Đăng Xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
@@ -159,9 +165,11 @@
             // btnDSKH
             // 
             btnDSKH.BackColor = SystemColors.ActiveCaption;
+            btnDSKH.Image = Properties.Resources.user_149_645;
+            btnDSKH.ImageAlign = ContentAlignment.MiddleLeft;
             btnDSKH.Location = new Point(-9, 264);
             btnDSKH.Name = "btnDSKH";
-            btnDSKH.Size = new Size(260, 140);
+            btnDSKH.Size = new Size(325, 140);
             btnDSKH.TabIndex = 55;
             btnDSKH.Text = "Danh Sách Khách Hàng";
             btnDSKH.UseVisualStyleBackColor = false;
@@ -170,9 +178,11 @@
             // btnHoaDon
             // 
             btnHoaDon.BackColor = SystemColors.ActiveCaption;
-            btnHoaDon.Location = new Point(-39, 131);
+            btnHoaDon.Image = Properties.Resources.bill_5_64;
+            btnHoaDon.ImageAlign = ContentAlignment.MiddleLeft;
+            btnHoaDon.Location = new Point(-9, 138);
             btnHoaDon.Name = "btnHoaDon";
-            btnHoaDon.Size = new Size(290, 131);
+            btnHoaDon.Size = new Size(325, 132);
             btnHoaDon.TabIndex = 54;
             btnHoaDon.Text = "Hóa đơn";
             btnHoaDon.UseVisualStyleBackColor = false;
@@ -181,9 +191,11 @@
             // btnKhoGiay
             // 
             btnKhoGiay.BackColor = SystemColors.ActiveCaption;
-            btnKhoGiay.Location = new Point(-39, -6);
+            btnKhoGiay.Image = Properties.Resources.canvas_shoe_12_646;
+            btnKhoGiay.ImageAlign = ContentAlignment.MiddleLeft;
+            btnKhoGiay.Location = new Point(-9, -3);
             btnKhoGiay.Name = "btnKhoGiay";
-            btnKhoGiay.Size = new Size(290, 140);
+            btnKhoGiay.Size = new Size(325, 140);
             btnKhoGiay.TabIndex = 53;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
@@ -207,7 +219,7 @@
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
-            groupBox1.Location = new Point(263, 47);
+            groupBox1.Location = new Point(340, 50);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(1082, 196);
             groupBox1.TabIndex = 64;
@@ -383,7 +395,7 @@
             groupBox2.Controls.Add(btnThem);
             groupBox2.Controls.Add(btnXoa);
             groupBox2.Controls.Add(btnLuu);
-            groupBox2.Location = new Point(257, 249);
+            groupBox2.Location = new Point(340, 249);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(1078, 451);
             groupBox2.TabIndex = 65;
@@ -392,7 +404,7 @@
             // 
             // txtTongtien
             // 
-            txtTongtien.Location = new Point(787, 348);
+            txtTongtien.Location = new Point(786, 318);
             txtTongtien.Name = "txtTongtien";
             txtTongtien.ReadOnly = true;
             txtTongtien.Size = new Size(223, 31);
@@ -404,7 +416,7 @@
             label19.AutoSize = true;
             label19.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label19.ForeColor = SystemColors.ActiveCaption;
-            label19.Location = new Point(669, 351);
+            label19.Location = new Point(671, 318);
             label19.Name = "label19";
             label19.Size = new Size(87, 25);
             label19.TabIndex = 79;
@@ -415,7 +427,7 @@
             lblBangchu.AutoSize = true;
             lblBangchu.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             lblBangchu.ForeColor = SystemColors.ActiveCaption;
-            lblBangchu.Location = new Point(45, 368);
+            lblBangchu.Location = new Point(45, 355);
             lblBangchu.Name = "lblBangchu";
             lblBangchu.Size = new Size(92, 24);
             lblBangchu.TabIndex = 78;
@@ -477,7 +489,7 @@
             label17.AutoSize = true;
             label17.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label17.ForeColor = Color.IndianRed;
-            label17.Location = new Point(45, 332);
+            label17.Location = new Point(45, 318);
             label17.Name = "label17";
             label17.Size = new Size(230, 25);
             label17.TabIndex = 71;
@@ -490,7 +502,7 @@
             dgvHoadon.Name = "dgvHoadon";
             dgvHoadon.RowHeadersWidth = 62;
             dgvHoadon.RowTemplate.Height = 33;
-            dgvHoadon.Size = new Size(1066, 212);
+            dgvHoadon.Size = new Size(1066, 191);
             dgvHoadon.TabIndex = 70;
             dgvHoadon.DoubleClick += dgvHoadon_DoubleClick;
             // 
@@ -559,7 +571,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Showcard Gothic", 20F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.IndianRed;
-            label2.Location = new Point(653, 12);
+            label2.Location = new Point(732, 9);
             label2.Name = "label2";
             label2.Size = new Size(371, 50);
             label2.TabIndex = 66;
@@ -602,7 +614,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1347, 759);
+            ClientSize = new Size(1439, 758);
             Controls.Add(btnTimkiem);
             Controls.Add(cboMaHDBan);
             Controls.Add(label18);
