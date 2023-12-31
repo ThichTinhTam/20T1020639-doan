@@ -320,6 +320,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MistyRose;
             ClientSize = new Size(1114, 714);
             Controls.Add(btnQuayLai);
             Controls.Add(label2);

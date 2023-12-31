@@ -428,6 +428,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MistyRose;
             ClientSize = new Size(1237, 695);
             Controls.Add(button1);
             Controls.Add(btnOpen);

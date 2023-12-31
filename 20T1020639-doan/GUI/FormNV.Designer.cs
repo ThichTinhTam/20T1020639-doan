@@ -122,6 +122,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MistyRose;
             ClientSize = new Size(1039, 575);
             Controls.Add(pictureBox1);
             Controls.Add(btnTrangChu);

@@ -317,6 +317,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MistyRose;
             ClientSize = new Size(1234, 695);
             Controls.Add(txtTongTien);
             Controls.Add(txtMaKhach);

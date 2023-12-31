@@ -23,7 +23,7 @@ namespace _20T1020639_doan.GUI
         private String magiay;
         public FormHoaDon(String magiay)
         {
-           
+
             InitializeComponent();
             this.magiay = magiay;
             cboMaGiay.SelectedValue = magiay;

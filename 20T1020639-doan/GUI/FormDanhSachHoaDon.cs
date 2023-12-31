@@ -135,7 +135,7 @@ namespace _20T1020639_doan.GUI
             if (MessageBox.Show("Bạn có muốn hiển thị thông tin chi tiết?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 mahd = dgvHoaDon.CurrentRow.Cells["MaHDBan"].Value.ToString();
-                FormHienThiHoaDon frm = new FormHienThiHoaDon(tk,dn);
+                FormHienThiHoaDon frm = new FormHienThiHoaDon(tk, dn);
                 frm.txtmahoadon.Text = mahd;
                 frm.StartPosition = FormStartPosition.CenterParent;
                 frm.ShowDialog();

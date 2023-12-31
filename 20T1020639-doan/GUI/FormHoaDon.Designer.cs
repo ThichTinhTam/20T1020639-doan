@@ -85,7 +85,7 @@
             // 
             btnLuu.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnLuu.ForeColor = SystemColors.ActiveCaption;
-            btnLuu.Location = new Point(468, 411);
+            btnLuu.Location = new Point(652, 411);
             btnLuu.Name = "btnLuu";
             btnLuu.Size = new Size(155, 34);
             btnLuu.TabIndex = 62;
@@ -97,7 +97,7 @@
             // 
             btnXoa.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnXoa.ForeColor = SystemColors.ActiveCaption;
-            btnXoa.Location = new Point(251, 411);
+            btnXoa.Location = new Point(457, 411);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(144, 34);
             btnXoa.TabIndex = 61;
@@ -109,11 +109,13 @@
             // 
             btnThem.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnThem.ForeColor = SystemColors.ActiveCaption;
-            btnThem.Location = new Point(45, 411);
+            btnThem.ImageAlign = ContentAlignment.TopLeft;
+            btnThem.Location = new Point(256, 411);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(160, 34);
             btnThem.TabIndex = 59;
             btnThem.Text = "&Thêm hóa đơn";
+            btnThem.TextAlign = ContentAlignment.MiddleRight;
             btnThem.UseVisualStyleBackColor = true;
             btnThem.Click += btnThem_Click;
             // 
@@ -564,7 +566,7 @@
             // 
             label18.AutoSize = true;
             label18.ForeColor = SystemColors.ActiveCaption;
-            label18.Location = new Point(331, 713);
+            label18.Location = new Point(868, 717);
             label18.Name = "label18";
             label18.Size = new Size(109, 25);
             label18.TabIndex = 67;
@@ -573,7 +575,7 @@
             // cboMaHDBan
             // 
             cboMaHDBan.FormattingEnabled = true;
-            cboMaHDBan.Location = new Point(459, 710);
+            cboMaHDBan.Location = new Point(996, 714);
             cboMaHDBan.Name = "cboMaHDBan";
             cboMaHDBan.Size = new Size(182, 33);
             cboMaHDBan.TabIndex = 68;
@@ -582,7 +584,7 @@
             // btnTimkiem
             // 
             btnTimkiem.ForeColor = SystemColors.ActiveCaption;
-            btnTimkiem.Location = new Point(683, 713);
+            btnTimkiem.Location = new Point(1217, 714);
             btnTimkiem.Name = "btnTimkiem";
             btnTimkiem.Size = new Size(112, 34);
             btnTimkiem.TabIndex = 69;
@@ -594,6 +596,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MistyRose;
             ClientSize = new Size(1347, 759);
             Controls.Add(btnTimkiem);
             Controls.Add(cboMaHDBan);

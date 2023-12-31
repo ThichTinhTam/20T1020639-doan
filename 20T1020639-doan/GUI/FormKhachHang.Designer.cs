@@ -186,7 +186,7 @@
             label2.ForeColor = Color.DarkRed;
             label2.Location = new Point(478, 9);
             label2.Name = "label2";
-            label2.Size = new Size(407, 40);
+            label2.Size = new Size(395, 40);
             label2.TabIndex = 53;
             label2.Text = "Danh mục khách giày";
             // 
@@ -278,6 +278,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MistyRose;
             ClientSize = new Size(1055, 573);
             Controls.Add(dgvKhachhang);
             Controls.Add(mtbDienThoai);
@@ -300,8 +301,9 @@
             Controls.Add(btnDSKH);
             Controls.Add(btnHoaDon);
             Controls.Add(btnKhoGiay);
+            ForeColor = SystemColors.ActiveCaptionText;
             Name = "FormKhachHang";
-            Text = "FormKhachHang";
+            Text = "Quản lý khách hàng";
             Load += FormKhachHang_Load;
             ((System.ComponentModel.ISupportInitialize)dgvKhachhang).EndInit();
             ResumeLayout(false);

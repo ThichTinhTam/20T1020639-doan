@@ -30,7 +30,7 @@ namespace _20T1020639_doan
                 return;
             }
             dtoTaiKhoan tk = new dtoTaiKhoan();
-            tk.Username = txtUser.Text.Trim(); 
+            tk.Username = txtUser.Text.Trim();
             tk.Password = txtPass.Text.Trim();
 
             dn = this;

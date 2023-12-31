@@ -190,6 +190,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MistyRose;
             ClientSize = new Size(1022, 623);
             Controls.Add(picAnh);
             Controls.Add(txtAnh);

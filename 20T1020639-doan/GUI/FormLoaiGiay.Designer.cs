@@ -263,6 +263,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MistyRose;
             ClientSize = new Size(943, 672);
             Controls.Add(button1);
             Controls.Add(dgvLoai);
@@ -284,7 +285,7 @@
             Controls.Add(btnThongKe);
             Controls.Add(btnKhoGiay);
             Name = "FormLoaiGiay";
-            Text = "FormLoaiGiay";
+            Text = "Quản lý Loại";
             Load += FormLoaiGiay_Load;
             ((System.ComponentModel.ISupportInitialize)dgvLoai).EndInit();
             ResumeLayout(false);

@@ -157,6 +157,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MistyRose;
             ClientSize = new Size(1207, 730);
             Controls.Add(button1);
             Controls.Add(btnLoaiGiay);
