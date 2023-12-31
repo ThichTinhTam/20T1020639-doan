@@ -160,9 +160,11 @@
             // 
             btnTimKiem.Font = new Font("Showcard Gothic", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnTimKiem.ForeColor = Color.IndianRed;
-            btnTimKiem.Location = new Point(452, 619);
+            btnTimKiem.Image = Properties.Resources.Search_icon;
+            btnTimKiem.ImageAlign = ContentAlignment.MiddleLeft;
+            btnTimKiem.Location = new Point(423, 619);
             btnTimKiem.Name = "btnTimKiem";
-            btnTimKiem.Size = new Size(112, 34);
+            btnTimKiem.Size = new Size(184, 51);
             btnTimKiem.TabIndex = 27;
             btnTimKiem.Text = "Tìm Kiếm";
             btnTimKiem.UseVisualStyleBackColor = true;
@@ -172,9 +174,11 @@
             // 
             btnTimlai.Font = new Font("Showcard Gothic", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnTimlai.ForeColor = Color.IndianRed;
+            btnTimlai.Image = Properties.Resources.Search_icon;
+            btnTimlai.ImageAlign = ContentAlignment.MiddleLeft;
             btnTimlai.Location = new Point(656, 619);
             btnTimlai.Name = "btnTimlai";
-            btnTimlai.Size = new Size(112, 34);
+            btnTimlai.Size = new Size(178, 51);
             btnTimlai.TabIndex = 28;
             btnTimlai.Text = "Tìm lại";
             btnTimlai.UseVisualStyleBackColor = true;
@@ -186,7 +190,7 @@
             btnxemlaithongke.ForeColor = Color.IndianRed;
             btnxemlaithongke.Location = new Point(884, 619);
             btnxemlaithongke.Name = "btnxemlaithongke";
-            btnxemlaithongke.Size = new Size(244, 34);
+            btnxemlaithongke.Size = new Size(244, 51);
             btnxemlaithongke.TabIndex = 29;
             btnxemlaithongke.Text = "Thông kê hôm nay";
             btnxemlaithongke.UseVisualStyleBackColor = true;

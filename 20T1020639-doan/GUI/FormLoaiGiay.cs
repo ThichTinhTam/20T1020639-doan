@@ -89,8 +89,8 @@ namespace _20T1020639_doan.GUI
             dgvLoai.DataSource = Loai; //Nguồn dữ liệu            
             dgvLoai.Columns[0].HeaderText = "Mã Loại";
             dgvLoai.Columns[1].HeaderText = "Mã Loại";
-            dgvLoai.Columns[0].Width = 270;
-            dgvLoai.Columns[1].Width = 270;
+            dgvLoai.Columns[0].Width = 365;
+            dgvLoai.Columns[1].Width = 365;
             dgvLoai.AllowUserToAddRows = false; //Không cho người dùng thêm dữ liệu trực tiếp
             dgvLoai.EditMode = DataGridViewEditMode.EditProgrammatically; //Không cho sửa dữ liệu trực tiếp
         }

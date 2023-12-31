@@ -291,9 +291,11 @@
             // 
             btnThem.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnThem.ForeColor = Color.MediumTurquoise;
-            btnThem.Location = new Point(324, 638);
+            btnThem.Image = Properties.Resources.add_icon;
+            btnThem.ImageAlign = ContentAlignment.MiddleLeft;
+            btnThem.Location = new Point(298, 629);
             btnThem.Name = "btnThem";
-            btnThem.Size = new Size(112, 34);
+            btnThem.Size = new Size(113, 43);
             btnThem.TabIndex = 33;
             btnThem.Text = "&Thêm";
             btnThem.UseVisualStyleBackColor = true;
@@ -303,9 +305,11 @@
             // 
             btnSua.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnSua.ForeColor = Color.MediumTurquoise;
-            btnSua.Location = new Point(442, 638);
+            btnSua.Image = Properties.Resources.Button_Refresh_icon;
+            btnSua.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSua.Location = new Point(417, 629);
             btnSua.Name = "btnSua";
-            btnSua.Size = new Size(112, 34);
+            btnSua.Size = new Size(112, 43);
             btnSua.TabIndex = 34;
             btnSua.Text = "&Sửa";
             btnSua.UseVisualStyleBackColor = true;
@@ -315,9 +319,11 @@
             // 
             btnXoa.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnXoa.ForeColor = Color.MediumTurquoise;
-            btnXoa.Location = new Point(560, 638);
+            btnXoa.Image = Properties.Resources.Close_2_icon;
+            btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
+            btnXoa.Location = new Point(535, 629);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(112, 34);
+            btnXoa.Size = new Size(112, 43);
             btnXoa.TabIndex = 35;
             btnXoa.Text = "&Xóa";
             btnXoa.UseVisualStyleBackColor = true;
@@ -327,9 +333,9 @@
             // 
             btnLuu.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnLuu.ForeColor = Color.MediumTurquoise;
-            btnLuu.Location = new Point(678, 638);
+            btnLuu.Location = new Point(653, 629);
             btnLuu.Name = "btnLuu";
-            btnLuu.Size = new Size(112, 34);
+            btnLuu.Size = new Size(112, 43);
             btnLuu.TabIndex = 36;
             btnLuu.Text = "&Lưu";
             btnLuu.UseVisualStyleBackColor = true;
@@ -339,9 +345,11 @@
             // 
             btnBoqua.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnBoqua.ForeColor = Color.MediumTurquoise;
-            btnBoqua.Location = new Point(796, 638);
+            btnBoqua.Image = Properties.Resources.Button_Next_icon;
+            btnBoqua.ImageAlign = ContentAlignment.MiddleLeft;
+            btnBoqua.Location = new Point(771, 629);
             btnBoqua.Name = "btnBoqua";
-            btnBoqua.Size = new Size(112, 34);
+            btnBoqua.Size = new Size(144, 43);
             btnBoqua.TabIndex = 37;
             btnBoqua.Text = "&Bỏ qua";
             btnBoqua.UseVisualStyleBackColor = true;
@@ -351,9 +359,11 @@
             // 
             btnTimKiem.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnTimKiem.ForeColor = Color.MediumTurquoise;
-            btnTimKiem.Location = new Point(914, 638);
+            btnTimKiem.Image = Properties.Resources.Search_icon;
+            btnTimKiem.ImageAlign = ContentAlignment.MiddleLeft;
+            btnTimKiem.Location = new Point(921, 629);
             btnTimKiem.Name = "btnTimKiem";
-            btnTimKiem.Size = new Size(112, 34);
+            btnTimKiem.Size = new Size(154, 43);
             btnTimKiem.TabIndex = 38;
             btnTimKiem.Text = "&Tìm kiếm";
             btnTimKiem.UseVisualStyleBackColor = true;
@@ -363,9 +373,9 @@
             // 
             btnHTDS.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnHTDS.ForeColor = Color.MediumTurquoise;
-            btnHTDS.Location = new Point(1032, 638);
+            btnHTDS.Location = new Point(1081, 629);
             btnHTDS.Name = "btnHTDS";
-            btnHTDS.Size = new Size(179, 34);
+            btnHTDS.Size = new Size(179, 43);
             btnHTDS.TabIndex = 39;
             btnHTDS.Text = "&Hiển thị danh sách";
             btnHTDS.UseVisualStyleBackColor = true;
@@ -429,7 +439,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1237, 695);
+            ClientSize = new Size(1272, 690);
             Controls.Add(button1);
             Controls.Add(btnOpen);
             Controls.Add(txtGhichu);

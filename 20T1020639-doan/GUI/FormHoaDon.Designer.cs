@@ -97,9 +97,11 @@
             // 
             btnXoa.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnXoa.ForeColor = SystemColors.ActiveCaption;
-            btnXoa.Location = new Point(457, 411);
+            btnXoa.Image = Properties.Resources.Close_2_icon;
+            btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
+            btnXoa.Location = new Point(413, 407);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(144, 34);
+            btnXoa.Size = new Size(184, 38);
             btnXoa.TabIndex = 61;
             btnXoa.Text = "&Xóa hóa đơn";
             btnXoa.UseVisualStyleBackColor = true;
@@ -109,10 +111,11 @@
             // 
             btnThem.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnThem.ForeColor = SystemColors.ActiveCaption;
-            btnThem.ImageAlign = ContentAlignment.TopLeft;
-            btnThem.Location = new Point(256, 411);
+            btnThem.Image = Properties.Resources.add_icon;
+            btnThem.ImageAlign = ContentAlignment.MiddleLeft;
+            btnThem.Location = new Point(179, 407);
             btnThem.Name = "btnThem";
-            btnThem.Size = new Size(160, 34);
+            btnThem.Size = new Size(185, 42);
             btnThem.TabIndex = 59;
             btnThem.Text = "&Thêm hóa đơn";
             btnThem.TextAlign = ContentAlignment.MiddleRight;
@@ -566,7 +569,7 @@
             // 
             label18.AutoSize = true;
             label18.ForeColor = SystemColors.ActiveCaption;
-            label18.Location = new Point(868, 717);
+            label18.Location = new Point(799, 715);
             label18.Name = "label18";
             label18.Size = new Size(109, 25);
             label18.TabIndex = 67;
@@ -575,7 +578,7 @@
             // cboMaHDBan
             // 
             cboMaHDBan.FormattingEnabled = true;
-            cboMaHDBan.Location = new Point(996, 714);
+            cboMaHDBan.Location = new Point(928, 714);
             cboMaHDBan.Name = "cboMaHDBan";
             cboMaHDBan.Size = new Size(182, 33);
             cboMaHDBan.TabIndex = 68;
@@ -584,9 +587,11 @@
             // btnTimkiem
             // 
             btnTimkiem.ForeColor = SystemColors.ActiveCaption;
-            btnTimkiem.Location = new Point(1217, 714);
+            btnTimkiem.Image = Properties.Resources.Search_icon;
+            btnTimkiem.ImageAlign = ContentAlignment.MiddleLeft;
+            btnTimkiem.Location = new Point(1162, 706);
             btnTimkiem.Name = "btnTimkiem";
-            btnTimkiem.Size = new Size(112, 34);
+            btnTimkiem.Size = new Size(167, 42);
             btnTimkiem.TabIndex = 69;
             btnTimkiem.Text = "&Tìm kiếm";
             btnTimkiem.UseVisualStyleBackColor = true;

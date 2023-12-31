@@ -56,9 +56,11 @@
             // 
             btnBoqua.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnBoqua.ForeColor = SystemColors.ActiveCaption;
-            btnBoqua.Location = new Point(917, 505);
+            btnBoqua.Image = Properties.Resources.Button_Next_icon;
+            btnBoqua.ImageAlign = ContentAlignment.MiddleLeft;
+            btnBoqua.Location = new Point(902, 505);
             btnBoqua.Name = "btnBoqua";
-            btnBoqua.Size = new Size(112, 34);
+            btnBoqua.Size = new Size(148, 48);
             btnBoqua.TabIndex = 52;
             btnBoqua.Text = "&Bỏ qua";
             btnBoqua.UseVisualStyleBackColor = true;
@@ -70,7 +72,7 @@
             btnLuu.ForeColor = SystemColors.ActiveCaption;
             btnLuu.Location = new Point(773, 505);
             btnLuu.Name = "btnLuu";
-            btnLuu.Size = new Size(112, 34);
+            btnLuu.Size = new Size(112, 48);
             btnLuu.TabIndex = 51;
             btnLuu.Text = "&Lưu";
             btnLuu.UseVisualStyleBackColor = true;
@@ -80,9 +82,11 @@
             // 
             btnXoa.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnXoa.ForeColor = SystemColors.ActiveCaption;
+            btnXoa.Image = Properties.Resources.Close_2_icon;
+            btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
             btnXoa.Location = new Point(625, 505);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(112, 34);
+            btnXoa.Size = new Size(112, 48);
             btnXoa.TabIndex = 50;
             btnXoa.Text = "&Xóa";
             btnXoa.UseVisualStyleBackColor = true;
@@ -92,9 +96,11 @@
             // 
             btnSua.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnSua.ForeColor = SystemColors.ActiveCaption;
+            btnSua.Image = Properties.Resources.Button_Refresh_icon;
+            btnSua.ImageAlign = ContentAlignment.MiddleLeft;
             btnSua.Location = new Point(478, 505);
             btnSua.Name = "btnSua";
-            btnSua.Size = new Size(112, 34);
+            btnSua.Size = new Size(112, 48);
             btnSua.TabIndex = 49;
             btnSua.Text = "&Sửa";
             btnSua.UseVisualStyleBackColor = true;
@@ -104,9 +110,11 @@
             // 
             btnThem.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
             btnThem.ForeColor = SystemColors.ActiveCaption;
+            btnThem.Image = Properties.Resources.add_icon;
+            btnThem.ImageAlign = ContentAlignment.MiddleLeft;
             btnThem.Location = new Point(323, 505);
             btnThem.Name = "btnThem";
-            btnThem.Size = new Size(112, 34);
+            btnThem.Size = new Size(112, 48);
             btnThem.TabIndex = 48;
             btnThem.Text = "&Thêm";
             btnThem.UseVisualStyleBackColor = true;

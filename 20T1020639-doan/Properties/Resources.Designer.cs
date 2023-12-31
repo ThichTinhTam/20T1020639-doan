@@ -73,6 +73,46 @@ namespace _20T1020639_doan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_icon {
+            get {
+                object obj = ResourceManager.GetObject("add-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button_Next_icon {
+            get {
+                object obj = ResourceManager.GetObject("Button-Next-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button_Refresh_icon {
+            get {
+                object obj = ResourceManager.GetObject("Button-Refresh-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Close_2_icon {
+            get {
+                object obj = ResourceManager.GetObject("Close-2-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cong {
             get {
                 object obj = ResourceManager.GetObject("cong", resourceCulture);
@@ -96,6 +136,16 @@ namespace _20T1020639_doan.Properties {
         internal static System.Drawing.Bitmap luu {
             get {
                 object obj = ResourceManager.GetObject("luu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Search_icon {
+            get {
+                object obj = ResourceManager.GetObject("Search-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
