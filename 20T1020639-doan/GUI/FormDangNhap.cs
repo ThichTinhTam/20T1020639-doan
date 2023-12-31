@@ -24,8 +24,13 @@ namespace _20T1020639_doan
 
         private void btnDn_Click(object sender, EventArgs e)
         {
+            if ((txtUser.Text == "") && (txtPass.Text == "") || (txtUser.Text == "") || (txtPass.Text == ""))
+            {
+                MessageBox.Show("Bạn hãy nhập đầy đủ thông tin đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             dtoTaiKhoan tk = new dtoTaiKhoan();
-            tk.Username = txtUser.Text.Trim();
+            tk.Username = txtUser.Text.Trim(); 
             tk.Password = txtPass.Text.Trim();
 
             dn = this;

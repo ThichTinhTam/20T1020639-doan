@@ -22,6 +22,11 @@ namespace _20T1020639_doan.GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if ((txtID.Text == "") && (txtMK.Text == "") || (txtID.Text == "") || (txtMK.Text == ""))
+            {
+                MessageBox.Show("Bạn hãy nhập đầy đủ thông tin đăng kí", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             bool flag = true;
             string id;
             bllTaiKhoan bllTaiKhoan = new bllTaiKhoan();
@@ -38,7 +43,7 @@ namespace _20T1020639_doan.GUI
             if (flag)
             {
                 dtoTaiKhoan taiKhoan = new dtoTaiKhoan();
-                taiKhoan.Username = txtID.Text.Trim();
+                taiKhoan.Username = txtID.Text.Trim(); 
                 taiKhoan.Password = txtMK.Text.Trim();
                 if (chkAdmin.Checked)
                 {
