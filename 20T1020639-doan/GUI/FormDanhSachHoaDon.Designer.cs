@@ -59,9 +59,9 @@
             // button1
             // 
             button1.BackColor = SystemColors.ActiveCaption;
-            button1.Location = new Point(3, 261);
+            button1.Location = new Point(-7, 261);
             button1.Name = "button1";
-            button1.Size = new Size(283, 94);
+            button1.Size = new Size(293, 94);
             button1.TabIndex = 19;
             button1.Text = "Danh Sách Hóa Đơn";
             button1.UseVisualStyleBackColor = false;
@@ -70,9 +70,9 @@
             // btnLoaiGiay
             // 
             btnLoaiGiay.BackColor = SystemColors.ActiveCaption;
-            btnLoaiGiay.Location = new Point(3, 78);
+            btnLoaiGiay.Location = new Point(-7, 78);
             btnLoaiGiay.Name = "btnLoaiGiay";
-            btnLoaiGiay.Size = new Size(283, 86);
+            btnLoaiGiay.Size = new Size(293, 86);
             btnLoaiGiay.TabIndex = 18;
             btnLoaiGiay.Text = "Loại Giày";
             btnLoaiGiay.UseVisualStyleBackColor = false;
@@ -81,9 +81,9 @@
             // btnTrangChu
             // 
             btnTrangChu.BackColor = SystemColors.ActiveCaption;
-            btnTrangChu.Location = new Point(3, 444);
+            btnTrangChu.Location = new Point(-7, 436);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(283, 70);
+            btnTrangChu.Size = new Size(293, 78);
             btnTrangChu.TabIndex = 17;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -104,9 +104,9 @@
             // 
             btnDangXuat.BackColor = Color.Red;
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            btnDangXuat.Location = new Point(3, 594);
+            btnDangXuat.Location = new Point(-7, 594);
             btnDangXuat.Name = "btnDangXuat";
-            btnDangXuat.Size = new Size(283, 89);
+            btnDangXuat.Size = new Size(293, 105);
             btnDangXuat.TabIndex = 15;
             btnDangXuat.Text = "Đăng Xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
@@ -115,9 +115,9 @@
             // btnDSNV
             // 
             btnDSNV.BackColor = SystemColors.ActiveCaption;
-            btnDSNV.Location = new Point(3, 363);
+            btnDSNV.Location = new Point(-7, 352);
             btnDSNV.Name = "btnDSNV";
-            btnDSNV.Size = new Size(283, 75);
+            btnDSNV.Size = new Size(293, 86);
             btnDSNV.TabIndex = 14;
             btnDSNV.Text = "Danh Sách Nhân Viên";
             btnDSNV.UseVisualStyleBackColor = false;
@@ -126,9 +126,9 @@
             // btnThongKe
             // 
             btnThongKe.BackColor = SystemColors.ActiveCaption;
-            btnThongKe.Location = new Point(3, 165);
+            btnThongKe.Location = new Point(-7, 165);
             btnThongKe.Name = "btnThongKe";
-            btnThongKe.Size = new Size(283, 96);
+            btnThongKe.Size = new Size(293, 96);
             btnThongKe.TabIndex = 13;
             btnThongKe.Text = "Thống Kê";
             btnThongKe.UseVisualStyleBackColor = false;
@@ -137,9 +137,9 @@
             // btnKhoGiay
             // 
             btnKhoGiay.BackColor = SystemColors.ActiveCaption;
-            btnKhoGiay.Location = new Point(3, 2);
+            btnKhoGiay.Location = new Point(-7, -6);
             btnKhoGiay.Name = "btnKhoGiay";
-            btnKhoGiay.Size = new Size(283, 78);
+            btnKhoGiay.Size = new Size(293, 86);
             btnKhoGiay.TabIndex = 12;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;

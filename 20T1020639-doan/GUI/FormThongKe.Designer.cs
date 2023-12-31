@@ -50,9 +50,9 @@
             // btnTrangChu
             // 
             btnTrangChu.BackColor = SystemColors.ActiveCaption;
-            btnTrangChu.Location = new Point(-1, 483);
+            btnTrangChu.Location = new Point(-29, 483);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(283, 81);
+            btnTrangChu.Size = new Size(311, 101);
             btnTrangChu.TabIndex = 21;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -63,7 +63,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.LightYellow;
             label1.Font = new Font("Blackadder ITC", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(22, 567);
+            label1.Location = new Point(25, 587);
             label1.Name = "label1";
             label1.Size = new Size(220, 63);
             label1.TabIndex = 20;
@@ -73,9 +73,9 @@
             // 
             btnDangXuat.BackColor = Color.Red;
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            btnDangXuat.Location = new Point(-1, 633);
+            btnDangXuat.Location = new Point(-20, 653);
             btnDangXuat.Name = "btnDangXuat";
-            btnDangXuat.Size = new Size(283, 96);
+            btnDangXuat.Size = new Size(302, 106);
             btnDangXuat.TabIndex = 19;
             btnDangXuat.Text = "Đăng Xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
@@ -84,9 +84,9 @@
             // btnDSNV
             // 
             btnDSNV.BackColor = SystemColors.ActiveCaption;
-            btnDSNV.Location = new Point(-1, 393);
+            btnDSNV.Location = new Point(-29, 393);
             btnDSNV.Name = "btnDSNV";
-            btnDSNV.Size = new Size(283, 90);
+            btnDSNV.Size = new Size(311, 90);
             btnDSNV.TabIndex = 18;
             btnDSNV.Text = "Danh Sách Nhân Viên";
             btnDSNV.UseVisualStyleBackColor = false;
@@ -95,9 +95,9 @@
             // btnThongKe
             // 
             btnThongKe.BackColor = SystemColors.ActiveCaption;
-            btnThongKe.Location = new Point(-1, 192);
+            btnThongKe.Location = new Point(-29, 192);
             btnThongKe.Name = "btnThongKe";
-            btnThongKe.Size = new Size(283, 99);
+            btnThongKe.Size = new Size(311, 99);
             btnThongKe.TabIndex = 17;
             btnThongKe.Text = "Thống Kê";
             btnThongKe.UseVisualStyleBackColor = false;
@@ -106,9 +106,9 @@
             // btnKhoGiay
             // 
             btnKhoGiay.BackColor = SystemColors.ActiveCaption;
-            btnKhoGiay.Location = new Point(-1, 5);
+            btnKhoGiay.Location = new Point(-43, -2);
             btnKhoGiay.Name = "btnKhoGiay";
-            btnKhoGiay.Size = new Size(283, 90);
+            btnKhoGiay.Size = new Size(325, 97);
             btnKhoGiay.TabIndex = 16;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
@@ -210,9 +210,9 @@
             // button7
             // 
             button7.BackColor = SystemColors.ActiveCaption;
-            button7.Location = new Point(-1, 93);
+            button7.Location = new Point(-43, 93);
             button7.Name = "button7";
-            button7.Size = new Size(283, 97);
+            button7.Size = new Size(325, 106);
             button7.TabIndex = 30;
             button7.Text = "Loại Giày";
             button7.UseVisualStyleBackColor = false;
@@ -221,9 +221,9 @@
             // button8
             // 
             button8.BackColor = SystemColors.ActiveCaption;
-            button8.Location = new Point(-1, 287);
+            button8.Location = new Point(-43, 287);
             button8.Name = "button8";
-            button8.Size = new Size(283, 107);
+            button8.Size = new Size(325, 107);
             button8.TabIndex = 31;
             button8.Text = "Danh Sách Hóa Đơn";
             button8.UseVisualStyleBackColor = false;
@@ -234,7 +234,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1202, 727);
+            ClientSize = new Size(1219, 758);
             Controls.Add(button8);
             Controls.Add(button7);
             Controls.Add(button6);

@@ -42,9 +42,9 @@
             // btnTrangChu
             // 
             btnTrangChu.BackColor = SystemColors.ActiveCaption;
-            btnTrangChu.Location = new Point(1, 287);
+            btnTrangChu.Location = new Point(-23, 276);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(283, 89);
+            btnTrangChu.Size = new Size(310, 100);
             btnTrangChu.TabIndex = 52;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -77,9 +77,9 @@
             // btnDSKH
             // 
             btnDSKH.BackColor = SystemColors.ActiveCaption;
-            btnDSKH.Location = new Point(4, 192);
+            btnDSKH.Location = new Point(-23, 182);
             btnDSKH.Name = "btnDSKH";
-            btnDSKH.Size = new Size(283, 89);
+            btnDSKH.Size = new Size(310, 99);
             btnDSKH.TabIndex = 49;
             btnDSKH.Text = "Danh Sách Khách Hàng";
             btnDSKH.UseVisualStyleBackColor = false;
@@ -88,9 +88,9 @@
             // btnHoaDon
             // 
             btnHoaDon.BackColor = SystemColors.ActiveCaption;
-            btnHoaDon.Location = new Point(4, 97);
+            btnHoaDon.Location = new Point(-15, 97);
             btnHoaDon.Name = "btnHoaDon";
-            btnHoaDon.Size = new Size(283, 89);
+            btnHoaDon.Size = new Size(302, 89);
             btnHoaDon.TabIndex = 48;
             btnHoaDon.Text = "Hóa đơn";
             btnHoaDon.UseVisualStyleBackColor = false;
@@ -99,9 +99,9 @@
             // btnKhoGiay
             // 
             btnKhoGiay.BackColor = SystemColors.ActiveCaption;
-            btnKhoGiay.Location = new Point(1, 2);
+            btnKhoGiay.Location = new Point(-15, -2);
             btnKhoGiay.Name = "btnKhoGiay";
-            btnKhoGiay.Size = new Size(283, 89);
+            btnKhoGiay.Size = new Size(299, 105);
             btnKhoGiay.TabIndex = 47;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
