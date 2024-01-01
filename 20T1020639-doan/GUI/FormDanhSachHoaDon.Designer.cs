@@ -58,7 +58,7 @@
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.ActiveCaption;
+            button1.BackColor = Color.LightCoral;
             button1.Image = Properties.Resources.bill_5_64;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
             button1.Location = new Point(-7, 261);
@@ -71,7 +71,7 @@
             // 
             // btnLoaiGiay
             // 
-            btnLoaiGiay.BackColor = SystemColors.ActiveCaption;
+            btnLoaiGiay.BackColor = Color.LightCoral;
             btnLoaiGiay.Image = Properties.Resources.canvas_shoe_25_641;
             btnLoaiGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnLoaiGiay.Location = new Point(-7, 78);
@@ -84,7 +84,7 @@
             // 
             // btnTrangChu
             // 
-            btnTrangChu.BackColor = SystemColors.ActiveCaption;
+            btnTrangChu.BackColor = Color.LightCoral;
             btnTrangChu.Image = Properties.Resources.home_184_64;
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
             btnTrangChu.Location = new Point(-7, 436);
@@ -122,7 +122,7 @@
             // 
             // btnDSNV
             // 
-            btnDSNV.BackColor = SystemColors.ActiveCaption;
+            btnDSNV.BackColor = Color.LightCoral;
             btnDSNV.Image = Properties.Resources.user_149_641;
             btnDSNV.ImageAlign = ContentAlignment.MiddleLeft;
             btnDSNV.Location = new Point(-7, 352);
@@ -135,7 +135,7 @@
             // 
             // btnThongKe
             // 
-            btnThongKe.BackColor = SystemColors.ActiveCaption;
+            btnThongKe.BackColor = Color.LightCoral;
             btnThongKe.Image = Properties.Resources.statistical_chart_7_641;
             btnThongKe.ImageAlign = ContentAlignment.MiddleLeft;
             btnThongKe.Location = new Point(-7, 165);
@@ -148,7 +148,7 @@
             // 
             // btnKhoGiay
             // 
-            btnKhoGiay.BackColor = SystemColors.ActiveCaption;
+            btnKhoGiay.BackColor = Color.LightCoral;
             btnKhoGiay.Image = Properties.Resources.canvas_shoe_12_642;
             btnKhoGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnKhoGiay.Location = new Point(-7, -6);

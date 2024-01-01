@@ -69,7 +69,7 @@
             // 
             // btnTrangChu
             // 
-            btnTrangChu.BackColor = SystemColors.ActiveCaption;
+            btnTrangChu.BackColor = Color.LightCoral;
             btnTrangChu.Image = Properties.Resources.home_184_64;
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
             btnTrangChu.Location = new Point(-3, 449);
@@ -106,7 +106,7 @@
             // 
             // btnDSNV
             // 
-            btnDSNV.BackColor = SystemColors.ActiveCaption;
+            btnDSNV.BackColor = Color.LightCoral;
             btnDSNV.Image = Properties.Resources.user_149_64;
             btnDSNV.ImageAlign = ContentAlignment.MiddleLeft;
             btnDSNV.Location = new Point(-3, 354);
@@ -118,7 +118,7 @@
             // 
             // btnThongKe
             // 
-            btnThongKe.BackColor = SystemColors.ActiveCaption;
+            btnThongKe.BackColor = Color.LightCoral;
             btnThongKe.Image = Properties.Resources.statistical_chart_7_64;
             btnThongKe.ImageAlign = ContentAlignment.MiddleLeft;
             btnThongKe.Location = new Point(-3, 177);
@@ -130,7 +130,7 @@
             // 
             // btnKhoGiay
             // 
-            btnKhoGiay.BackColor = SystemColors.ActiveCaption;
+            btnKhoGiay.BackColor = Color.LightCoral;
             btnKhoGiay.Image = Properties.Resources.canvas_shoe_12_64;
             btnKhoGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnKhoGiay.Location = new Point(-3, -4);
@@ -143,7 +143,7 @@
             // 
             // btnLoaiGiay
             // 
-            btnLoaiGiay.BackColor = SystemColors.ActiveCaption;
+            btnLoaiGiay.BackColor = Color.LightCoral;
             btnLoaiGiay.Image = Properties.Resources.canvas_shoe_25_64;
             btnLoaiGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnLoaiGiay.Location = new Point(-3, 86);
@@ -301,6 +301,7 @@
             // 
             // btnThem
             // 
+            btnThem.BackColor = Color.White;
             btnThem.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnThem.ForeColor = Color.MediumTurquoise;
             btnThem.Image = Properties.Resources.Button_Add;
@@ -310,11 +311,12 @@
             btnThem.Size = new Size(143, 43);
             btnThem.TabIndex = 33;
             btnThem.Text = "&Thêm";
-            btnThem.UseVisualStyleBackColor = true;
+            btnThem.UseVisualStyleBackColor = false;
             btnThem.Click += btnThem_Click;
             // 
             // btnSua
             // 
+            btnSua.BackColor = Color.White;
             btnSua.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnSua.ForeColor = Color.MediumTurquoise;
             btnSua.Image = Properties.Resources.fix_1_32;
@@ -324,11 +326,12 @@
             btnSua.Size = new Size(112, 43);
             btnSua.TabIndex = 34;
             btnSua.Text = "&Sửa";
-            btnSua.UseVisualStyleBackColor = true;
+            btnSua.UseVisualStyleBackColor = false;
             btnSua.Click += btnSua_Click;
             // 
             // btnXoa
             // 
+            btnXoa.BackColor = Color.White;
             btnXoa.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnXoa.ForeColor = Color.MediumTurquoise;
             btnXoa.Image = Properties.Resources.Button_Close;
@@ -338,11 +341,12 @@
             btnXoa.Size = new Size(124, 43);
             btnXoa.TabIndex = 35;
             btnXoa.Text = "&Xóa";
-            btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.UseVisualStyleBackColor = false;
             btnXoa.Click += btnXoa_Click;
             // 
             // btnLuu
             // 
+            btnLuu.BackColor = Color.White;
             btnLuu.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnLuu.ForeColor = Color.MediumTurquoise;
             btnLuu.Image = Properties.Resources.save_32_32;
@@ -352,11 +356,12 @@
             btnLuu.Size = new Size(112, 43);
             btnLuu.TabIndex = 36;
             btnLuu.Text = "&Lưu";
-            btnLuu.UseVisualStyleBackColor = true;
+            btnLuu.UseVisualStyleBackColor = false;
             btnLuu.Click += btnLuu_Click;
             // 
             // btnBoqua
             // 
+            btnBoqua.BackColor = Color.White;
             btnBoqua.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnBoqua.ForeColor = Color.MediumTurquoise;
             btnBoqua.Image = Properties.Resources.Button_Next_icon;
@@ -366,11 +371,12 @@
             btnBoqua.Size = new Size(141, 43);
             btnBoqua.TabIndex = 37;
             btnBoqua.Text = "&Bỏ qua";
-            btnBoqua.UseVisualStyleBackColor = true;
+            btnBoqua.UseVisualStyleBackColor = false;
             btnBoqua.Click += btnBoqua_Click;
             // 
             // btnTimKiem
             // 
+            btnTimKiem.BackColor = Color.White;
             btnTimKiem.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnTimKiem.ForeColor = Color.MediumTurquoise;
             btnTimKiem.Image = Properties.Resources.Search_icon;
@@ -380,11 +386,12 @@
             btnTimKiem.Size = new Size(154, 43);
             btnTimKiem.TabIndex = 38;
             btnTimKiem.Text = "&Tìm kiếm";
-            btnTimKiem.UseVisualStyleBackColor = true;
+            btnTimKiem.UseVisualStyleBackColor = false;
             btnTimKiem.Click += btnTimKiem_Click;
             // 
             // btnHTDS
             // 
+            btnHTDS.BackColor = Color.White;
             btnHTDS.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnHTDS.ForeColor = Color.MediumTurquoise;
             btnHTDS.Image = Properties.Resources.Button_Refresh_icon;
@@ -394,7 +401,7 @@
             btnHTDS.Size = new Size(239, 43);
             btnHTDS.TabIndex = 39;
             btnHTDS.Text = "&Hiển thị danh sách";
-            btnHTDS.UseVisualStyleBackColor = true;
+            btnHTDS.UseVisualStyleBackColor = false;
             btnHTDS.Click += btnHTDS_Click;
             // 
             // picAnh
@@ -441,7 +448,7 @@
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.ActiveCaption;
+            button1.BackColor = Color.LightCoral;
             button1.Image = Properties.Resources.bill_5_64;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
             button1.Location = new Point(-3, 267);

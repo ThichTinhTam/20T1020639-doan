@@ -41,6 +41,7 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.Linen;
             button1.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = Color.LightSalmon;
             button1.Location = new Point(419, 347);
@@ -48,11 +49,12 @@
             button1.Size = new Size(159, 57);
             button1.TabIndex = 0;
             button1.Text = "Đăng kí";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.BackColor = Color.Linen;
             button2.Font = new Font("Showcard Gothic", 10F, FontStyle.Italic, GraphicsUnit.Point);
             button2.ForeColor = Color.LightSalmon;
             button2.Location = new Point(662, 347);
@@ -60,7 +62,7 @@
             button2.Size = new Size(137, 57);
             button2.TabIndex = 1;
             button2.Text = "Đăng nhập";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // label1

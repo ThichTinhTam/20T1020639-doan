@@ -52,7 +52,7 @@
             // 
             // btnLoaiGiay
             // 
-            btnLoaiGiay.BackColor = SystemColors.ActiveCaption;
+            btnLoaiGiay.BackColor = Color.LightCoral;
             btnLoaiGiay.Image = Properties.Resources.canvas_shoe_25_644;
             btnLoaiGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnLoaiGiay.Location = new Point(-7, 83);
@@ -65,7 +65,7 @@
             // 
             // btnTrangChu
             // 
-            btnTrangChu.BackColor = SystemColors.ActiveCaption;
+            btnTrangChu.BackColor = Color.LightCoral;
             btnTrangChu.Image = Properties.Resources.home_184_646;
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
             btnTrangChu.Location = new Point(-7, 426);
@@ -104,7 +104,7 @@
             // 
             // btnDSNV
             // 
-            btnDSNV.BackColor = SystemColors.ActiveCaption;
+            btnDSNV.BackColor = Color.LightCoral;
             btnDSNV.Image = Properties.Resources.user_149_647;
             btnDSNV.ImageAlign = ContentAlignment.MiddleLeft;
             btnDSNV.Location = new Point(-7, 343);
@@ -117,7 +117,7 @@
             // 
             // btnThongKe
             // 
-            btnThongKe.BackColor = SystemColors.ActiveCaption;
+            btnThongKe.BackColor = Color.LightCoral;
             btnThongKe.Image = Properties.Resources.statistical_chart_7_644;
             btnThongKe.ImageAlign = ContentAlignment.MiddleLeft;
             btnThongKe.Location = new Point(-7, 169);
@@ -130,7 +130,7 @@
             // 
             // btnKhoGiay
             // 
-            btnKhoGiay.BackColor = SystemColors.ActiveCaption;
+            btnKhoGiay.BackColor = Color.LightCoral;
             btnKhoGiay.Image = Properties.Resources.canvas_shoe_12_648;
             btnKhoGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnKhoGiay.Location = new Point(-7, -2);
@@ -272,7 +272,7 @@
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.ActiveCaption;
+            button1.BackColor = Color.LightCoral;
             button1.Image = Properties.Resources.bill_5_641;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
             button1.Location = new Point(-7, 258);

@@ -43,7 +43,7 @@ namespace _20T1020639_doan.GUI
             if (flag)
             {
                 dtoTaiKhoan taiKhoan = new dtoTaiKhoan();
-                taiKhoan.Username = txtID.Text.Trim(); 
+                taiKhoan.Username = txtID.Text.Trim();
                 taiKhoan.Password = txtMK.Text.Trim();
                 if (chkAdmin.Checked)
                 {

@@ -126,7 +126,7 @@
             // 
             // btnTrangChu
             // 
-            btnTrangChu.BackColor = SystemColors.ActiveCaption;
+            btnTrangChu.BackColor = Color.LightCoral;
             btnTrangChu.Image = Properties.Resources.home_184_644;
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
             btnTrangChu.Location = new Point(-9, 402);
@@ -164,7 +164,7 @@
             // 
             // btnDSKH
             // 
-            btnDSKH.BackColor = SystemColors.ActiveCaption;
+            btnDSKH.BackColor = Color.LightCoral;
             btnDSKH.Image = Properties.Resources.user_149_645;
             btnDSKH.ImageAlign = ContentAlignment.MiddleLeft;
             btnDSKH.Location = new Point(-9, 264);
@@ -177,7 +177,7 @@
             // 
             // btnHoaDon
             // 
-            btnHoaDon.BackColor = SystemColors.ActiveCaption;
+            btnHoaDon.BackColor = Color.LightCoral;
             btnHoaDon.Image = Properties.Resources.bill_5_64;
             btnHoaDon.ImageAlign = ContentAlignment.MiddleLeft;
             btnHoaDon.Location = new Point(-9, 138);
@@ -190,7 +190,7 @@
             // 
             // btnKhoGiay
             // 
-            btnKhoGiay.BackColor = SystemColors.ActiveCaption;
+            btnKhoGiay.BackColor = Color.LightCoral;
             btnKhoGiay.Image = Properties.Resources.canvas_shoe_12_646;
             btnKhoGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnKhoGiay.Location = new Point(-9, -3);
