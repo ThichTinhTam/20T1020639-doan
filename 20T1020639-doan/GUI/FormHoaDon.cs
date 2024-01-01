@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using _20T1020639_doan.DAL;
 using System.Reflection.Metadata;
+using Word = Microsoft.Office.Interop.Word;
 
 
 namespace _20T1020639_doan.GUI
@@ -20,13 +21,13 @@ namespace _20T1020639_doan.GUI
         DataTable HoaDon;
         private dtoTaiKhoan tk;
         private FormDangNhap dn;
-        private String magiay;
-        public FormHoaDon(String magiay)
+        private String maHDBan;
+        public FormHoaDon()
         {
 
             InitializeComponent();
-            this.magiay = magiay;
-            cboMaGiay.SelectedValue = magiay;
+           // this.magiay = magiay;
+            //cboMaGiay.SelectedValue = magiay;
         }
         public FormHoaDon(dtoTaiKhoan tk, FormDangNhap dn)
         {
@@ -40,6 +41,7 @@ namespace _20T1020639_doan.GUI
             btnThem.Enabled = true;
             btnLuu.Enabled = false;
             btnXoa.Enabled = false;
+            btnIn.Enabled = false;
             txtmahoadon.ReadOnly = true;
             txttennhanvien.ReadOnly = true;
             txttenKhachhang.ReadOnly = true;
@@ -62,6 +64,7 @@ namespace _20T1020639_doan.GUI
             {
                 LoadInfoHoaDon();
                 btnXoa.Enabled = true;
+                btnIn.Enabled = true;
             }
             LoadDataGridView();
         }
@@ -148,6 +151,7 @@ namespace _20T1020639_doan.GUI
             btnXoa.Enabled = false;
             btnLuu.Enabled = true;
             btnThem.Enabled = false;
+            btnIn.Enabled = false;
             ResetValues();
             txtmahoadon.Text = Database.CreateKey("HDB");
             LoadDataGridView();
@@ -252,7 +256,7 @@ namespace _20T1020639_doan.GUI
             ResetValuesHang();
             btnXoa.Enabled = true;
             btnThem.Enabled = true;
-
+            btnIn.Enabled = true;
         }
 
         private void cboMaNhanVien_TextChanged(object sender, EventArgs e)
@@ -351,6 +355,7 @@ namespace _20T1020639_doan.GUI
             LoadDataGridView();
             btnXoa.Enabled = true;
             btnLuu.Enabled = true;
+            btnIn.Enabled = true;
             cboMaHDBan.SelectedIndex = -1;
         }
 
@@ -421,6 +426,7 @@ namespace _20T1020639_doan.GUI
                 ResetValues();
                 LoadDataGridView();
                 btnXoa.Enabled = false;
+                btnIn.Enabled = false;
             }
         }
 
@@ -454,6 +460,39 @@ namespace _20T1020639_doan.GUI
         private void txtTongtien_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnIn_Click_1(object sender, EventArgs e)
+        {
+            Word.Application wordApp = new Word.Application();
+            Word.Document doc = wordApp.Documents.Add();
+
+            // Thêm dữ liệu từ hóa đơn vào văn bản Word
+            doc.Content.Text += "Hóa Đơn Bán Giày\n\n";
+            doc.Content.Text += "Mã Hóa Đơn: " + txtmahoadon.Text + "\n";
+            doc.Content.Text += "Ngày Bán: " + dtpngayban.Text + "\n";
+            doc.Content.Text += "Khách Hàng: " + txttenKhachhang.Text + "\n";
+            doc.Content.Text += "Nhân Viên: " + txttennhanvien.Text + "\n";
+
+            // Thêm chi tiết hóa đơn từ DataGridView
+            doc.Content.Text += "\nChi Tiết Hóa Đơn:\n";
+            foreach (DataGridViewRow row in dgvHoadon.Rows)
+            {
+                doc.Content.Text += row.Cells["MaGiay"].Value + "\t" +
+                                    row.Cells["SoLuong"].Value + "\t" +
+                                    row.Cells["DonGiaBan"].Value + "\t" +
+                                    row.Cells["GiamGia"].Value + "\t" +
+                                    row.Cells["ThanhTien"].Value + "\n";
+            }
+
+            // Lưu văn bản Word ra file
+            string filePath = "C:\\filein\\" + txtmahoadon.Text + ".docx";
+            doc.SaveAs2(filePath);
+
+            // Đóng ứng dụng Word
+            wordApp.Quit();
+
+            MessageBox.Show("Đã in hóa đơn thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

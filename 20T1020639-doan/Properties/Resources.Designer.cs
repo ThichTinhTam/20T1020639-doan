@@ -613,6 +613,16 @@ namespace _20T1020639_doan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap print_30_32 {
+            get {
+                object obj = ResourceManager.GetObject("print-30-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap questionnaire_voting_1_32 {
             get {
                 object obj = ResourceManager.GetObject("questionnaire-voting-1-32", resourceCulture);

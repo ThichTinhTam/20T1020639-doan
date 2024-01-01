@@ -55,6 +55,7 @@
             label4 = new Label();
             label3 = new Label();
             groupBox2 = new GroupBox();
+            btnIn = new Button();
             txtTongtien = new TextBox();
             label19 = new Label();
             lblBangchu = new Label();
@@ -87,7 +88,7 @@
             btnLuu.ForeColor = SystemColors.ActiveCaption;
             btnLuu.Image = Properties.Resources.save_32_32;
             btnLuu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLuu.Location = new Point(652, 395);
+            btnLuu.Location = new Point(526, 401);
             btnLuu.Name = "btnLuu";
             btnLuu.Size = new Size(201, 50);
             btnLuu.TabIndex = 62;
@@ -101,7 +102,7 @@
             btnXoa.ForeColor = SystemColors.ActiveCaption;
             btnXoa.Image = Properties.Resources.Button_Close;
             btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
-            btnXoa.Location = new Point(413, 395);
+            btnXoa.Location = new Point(295, 401);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(201, 50);
             btnXoa.TabIndex = 61;
@@ -115,7 +116,7 @@
             btnThem.ForeColor = SystemColors.ActiveCaption;
             btnThem.Image = Properties.Resources.Button_Add;
             btnThem.ImageAlign = ContentAlignment.MiddleLeft;
-            btnThem.Location = new Point(179, 395);
+            btnThem.Location = new Point(90, 397);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(185, 54);
             btnThem.TabIndex = 59;
@@ -375,6 +376,7 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(btnIn);
             groupBox2.Controls.Add(txtTongtien);
             groupBox2.Controls.Add(label19);
             groupBox2.Controls.Add(lblBangchu);
@@ -401,6 +403,20 @@
             groupBox2.TabIndex = 65;
             groupBox2.TabStop = false;
             groupBox2.Text = "Thông tin sản phẩm";
+            // 
+            // btnIn
+            // 
+            btnIn.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
+            btnIn.ForeColor = SystemColors.ActiveCaption;
+            btnIn.Image = Properties.Resources.print_30_32;
+            btnIn.ImageAlign = ContentAlignment.MiddleLeft;
+            btnIn.Location = new Point(764, 397);
+            btnIn.Name = "btnIn";
+            btnIn.Size = new Size(201, 50);
+            btnIn.TabIndex = 81;
+            btnIn.Text = "&In hóa đơn";
+            btnIn.UseVisualStyleBackColor = true;
+            btnIn.Click += btnIn_Click_1;
             // 
             // txtTongtien
             // 
@@ -689,5 +705,6 @@
         private TextBox txtTongtien;
         private Label label19;
         private Label lblBangchu;
+        private Button btnIn;
     }
 }

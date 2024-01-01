@@ -129,7 +129,7 @@
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
             btnTrangChu.Location = new Point(-9, 282);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(304, 97);
+            btnTrangChu.Size = new Size(326, 97);
             btnTrangChu.TabIndex = 46;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -154,7 +154,7 @@
             btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
             btnDangXuat.Location = new Point(-9, 475);
             btnDangXuat.Name = "btnDangXuat";
-            btnDangXuat.Size = new Size(301, 100);
+            btnDangXuat.Size = new Size(326, 100);
             btnDangXuat.TabIndex = 44;
             btnDangXuat.Text = "Đăng Xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
@@ -167,7 +167,7 @@
             btnDSKH.ImageAlign = ContentAlignment.MiddleLeft;
             btnDSKH.Location = new Point(-9, 190);
             btnDSKH.Name = "btnDSKH";
-            btnDSKH.Size = new Size(304, 94);
+            btnDSKH.Size = new Size(326, 94);
             btnDSKH.TabIndex = 43;
             btnDSKH.Text = "Danh Sách Khách Hàng";
             btnDSKH.UseVisualStyleBackColor = false;
@@ -180,7 +180,7 @@
             btnKhoGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnKhoGiay.Location = new Point(-9, -2);
             btnKhoGiay.Name = "btnKhoGiay";
-            btnKhoGiay.Size = new Size(301, 96);
+            btnKhoGiay.Size = new Size(326, 96);
             btnKhoGiay.TabIndex = 41;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
@@ -193,7 +193,7 @@
             btnHoaDon.ImageAlign = ContentAlignment.MiddleLeft;
             btnHoaDon.Location = new Point(-9, 92);
             btnHoaDon.Name = "btnHoaDon";
-            btnHoaDon.Size = new Size(301, 97);
+            btnHoaDon.Size = new Size(326, 97);
             btnHoaDon.TabIndex = 42;
             btnHoaDon.Text = "Hóa đơn";
             btnHoaDon.UseVisualStyleBackColor = false;
@@ -204,7 +204,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Showcard Gothic", 16F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label2.ForeColor = Color.DarkRed;
-            label2.Location = new Point(478, 9);
+            label2.Location = new Point(509, 9);
             label2.Name = "label2";
             label2.Size = new Size(395, 40);
             label2.TabIndex = 53;
