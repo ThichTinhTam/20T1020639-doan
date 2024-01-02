@@ -121,7 +121,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Showcard Gothic", 40F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.ForeColor = Color.MediumSeaGreen;
+            label2.ForeColor = Color.IndianRed;
             label2.Location = new Point(499, 8);
             label2.Name = "label2";
             label2.Size = new Size(441, 98);
@@ -135,7 +135,7 @@
             dgvGiay.Name = "dgvGiay";
             dgvGiay.RowHeadersWidth = 62;
             dgvGiay.RowTemplate.Height = 33;
-            dgvGiay.Size = new Size(843, 507);
+            dgvGiay.Size = new Size(843, 458);
             dgvGiay.TabIndex = 61;
             dgvGiay.CellDoubleClick += dgvGiay_CellDoubleClick;
             dgvGiay.DoubleClick += dgvGiay_DoubleClick;
@@ -145,7 +145,7 @@
             // 
             button1.Font = new Font("Showcard Gothic", 20F, FontStyle.Italic, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ActiveCaption;
-            button1.Location = new Point(842, 622);
+            button1.Location = new Point(842, 593);
             button1.Name = "button1";
             button1.Size = new Size(306, 66);
             button1.TabIndex = 62;
@@ -158,7 +158,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1160, 700);
+            ClientSize = new Size(1160, 691);
             Controls.Add(button1);
             Controls.Add(dgvGiay);
             Controls.Add(label2);

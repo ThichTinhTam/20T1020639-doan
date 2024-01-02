@@ -88,9 +88,9 @@
             btnLuu.ForeColor = SystemColors.ActiveCaption;
             btnLuu.Image = Properties.Resources.save_32_32;
             btnLuu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLuu.Location = new Point(526, 401);
+            btnLuu.Location = new Point(526, 397);
             btnLuu.Name = "btnLuu";
-            btnLuu.Size = new Size(201, 50);
+            btnLuu.Size = new Size(201, 54);
             btnLuu.TabIndex = 62;
             btnLuu.Text = "&Lưu hóa đơn";
             btnLuu.UseVisualStyleBackColor = true;
@@ -102,9 +102,9 @@
             btnXoa.ForeColor = SystemColors.ActiveCaption;
             btnXoa.Image = Properties.Resources.Button_Close;
             btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
-            btnXoa.Location = new Point(295, 401);
+            btnXoa.Location = new Point(295, 395);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(201, 50);
+            btnXoa.Size = new Size(201, 56);
             btnXoa.TabIndex = 61;
             btnXoa.Text = "&Xóa hóa đơn";
             btnXoa.UseVisualStyleBackColor = true;
@@ -608,7 +608,7 @@
             cboMaHDBan.FormattingEnabled = true;
             cboMaHDBan.Location = new Point(928, 714);
             cboMaHDBan.Name = "cboMaHDBan";
-            cboMaHDBan.Size = new Size(182, 33);
+            cboMaHDBan.Size = new Size(193, 33);
             cboMaHDBan.TabIndex = 68;
             cboMaHDBan.DropDown += cboMaHDBan_DropDown;
             // 
@@ -619,7 +619,7 @@
             btnTimkiem.ImageAlign = ContentAlignment.MiddleLeft;
             btnTimkiem.Location = new Point(1162, 706);
             btnTimkiem.Name = "btnTimkiem";
-            btnTimkiem.Size = new Size(167, 42);
+            btnTimkiem.Size = new Size(187, 56);
             btnTimkiem.TabIndex = 69;
             btnTimkiem.Text = "&Tìm kiếm";
             btnTimkiem.UseVisualStyleBackColor = true;
@@ -630,7 +630,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1439, 758);
+            ClientSize = new Size(1439, 763);
             Controls.Add(btnTimkiem);
             Controls.Add(cboMaHDBan);
             Controls.Add(label18);

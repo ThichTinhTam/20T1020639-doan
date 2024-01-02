@@ -26,7 +26,7 @@ namespace _20T1020639_doan.GUI
         {
 
             InitializeComponent();
-           // this.magiay = magiay;
+            // this.magiay = magiay;
             //cboMaGiay.SelectedValue = magiay;
         }
         public FormHoaDon(dtoTaiKhoan tk, FormDangNhap dn)
