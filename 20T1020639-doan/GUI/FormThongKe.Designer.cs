@@ -44,6 +44,7 @@
             button6 = new Button();
             button7 = new Button();
             button8 = new Button();
+            button9 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvThongke).BeginInit();
             SuspendLayout();
             // 
@@ -52,9 +53,9 @@
             btnTrangChu.BackColor = Color.LightCoral;
             btnTrangChu.Image = Properties.Resources.home_184_648;
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTrangChu.Location = new Point(0, 526);
+            btnTrangChu.Location = new Point(0, 577);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(300, 101);
+            btnTrangChu.Size = new Size(302, 106);
             btnTrangChu.TabIndex = 21;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -65,7 +66,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.LightYellow;
             label1.Font = new Font("Blackadder ITC", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(32, 633);
+            label1.Location = new Point(32, 684);
             label1.Name = "label1";
             label1.Size = new Size(220, 63);
             label1.TabIndex = 20;
@@ -77,7 +78,7 @@
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnDangXuat.Image = Properties.Resources.logout_66_649;
             btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDangXuat.Location = new Point(-2, 704);
+            btnDangXuat.Location = new Point(0, 748);
             btnDangXuat.Name = "btnDangXuat";
             btnDangXuat.Size = new Size(302, 106);
             btnDangXuat.TabIndex = 19;
@@ -90,9 +91,9 @@
             btnDSNV.BackColor = Color.LightCoral;
             btnDSNV.Image = Properties.Resources.user_149_649;
             btnDSNV.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDSNV.Location = new Point(0, 439);
+            btnDSNV.Location = new Point(0, 363);
             btnDSNV.Name = "btnDSNV";
-            btnDSNV.Size = new Size(300, 90);
+            btnDSNV.Size = new Size(302, 107);
             btnDSNV.TabIndex = 18;
             btnDSNV.Text = "Danh Sách Nhân Viên";
             btnDSNV.UseVisualStyleBackColor = false;
@@ -103,9 +104,9 @@
             btnThongKe.BackColor = Color.LightCoral;
             btnThongKe.Image = Properties.Resources.statistical_chart_7_645;
             btnThongKe.ImageAlign = ContentAlignment.MiddleLeft;
-            btnThongKe.Location = new Point(0, 230);
+            btnThongKe.Location = new Point(0, 169);
             btnThongKe.Name = "btnThongKe";
-            btnThongKe.Size = new Size(300, 111);
+            btnThongKe.Size = new Size(302, 86);
             btnThongKe.TabIndex = 17;
             btnThongKe.Text = "Thống Kê";
             btnThongKe.UseVisualStyleBackColor = false;
@@ -116,9 +117,9 @@
             btnKhoGiay.BackColor = Color.LightCoral;
             btnKhoGiay.Image = Properties.Resources.canvas_shoe_12_6410;
             btnKhoGiay.ImageAlign = ContentAlignment.MiddleLeft;
-            btnKhoGiay.Location = new Point(0, 12);
+            btnKhoGiay.Location = new Point(0, 1);
             btnKhoGiay.Name = "btnKhoGiay";
-            btnKhoGiay.Size = new Size(300, 114);
+            btnKhoGiay.Size = new Size(302, 91);
             btnKhoGiay.TabIndex = 16;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
@@ -222,9 +223,9 @@
             button7.BackColor = Color.LightCoral;
             button7.Image = Properties.Resources.canvas_shoe_25_645;
             button7.ImageAlign = ContentAlignment.MiddleLeft;
-            button7.Location = new Point(0, 123);
+            button7.Location = new Point(0, 89);
             button7.Name = "button7";
-            button7.Size = new Size(300, 110);
+            button7.Size = new Size(300, 83);
             button7.TabIndex = 30;
             button7.Text = "Loại Giày";
             button7.UseVisualStyleBackColor = false;
@@ -235,20 +236,34 @@
             button8.BackColor = Color.LightCoral;
             button8.Image = Properties.Resources.bill_5_644;
             button8.ImageAlign = ContentAlignment.MiddleLeft;
-            button8.Location = new Point(0, 335);
+            button8.Location = new Point(0, 256);
             button8.Name = "button8";
-            button8.Size = new Size(300, 107);
+            button8.Size = new Size(302, 106);
             button8.TabIndex = 31;
             button8.Text = "Danh Sách Hóa Đơn";
             button8.UseVisualStyleBackColor = false;
             button8.Click += button8_Click;
+            // 
+            // button9
+            // 
+            button9.BackColor = Color.LightCoral;
+            button9.Image = Properties.Resources.icon_permission_management_48;
+            button9.ImageAlign = ContentAlignment.MiddleLeft;
+            button9.Location = new Point(0, 470);
+            button9.Name = "button9";
+            button9.Size = new Size(302, 106);
+            button9.TabIndex = 32;
+            button9.Text = "Chức Vụ";
+            button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
             // 
             // FormThongKe
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1255, 806);
+            ClientSize = new Size(1255, 857);
+            Controls.Add(button9);
             Controls.Add(button8);
             Controls.Add(button7);
             Controls.Add(button6);
@@ -291,5 +306,6 @@
         private Button button6;
         private Button button7;
         private Button button8;
+        private Button button9;
     }
 }

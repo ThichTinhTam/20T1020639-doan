@@ -47,6 +47,7 @@
             label4 = new Label();
             dgvLoai = new DataGridView();
             button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvLoai).BeginInit();
             SuspendLayout();
             // 
@@ -68,9 +69,9 @@
             btnTrangChu.BackColor = Color.LightCoral;
             btnTrangChu.Image = Properties.Resources.home_184_646;
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTrangChu.Location = new Point(-7, 426);
+            btnTrangChu.Location = new Point(-7, 511);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(309, 78);
+            btnTrangChu.Size = new Size(309, 90);
             btnTrangChu.TabIndex = 16;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -81,7 +82,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.LightYellow;
             label1.Font = new Font("Blackadder ITC", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(36, 507);
+            label1.Location = new Point(38, 604);
             label1.Name = "label1";
             label1.Size = new Size(220, 63);
             label1.TabIndex = 15;
@@ -94,9 +95,9 @@
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnDangXuat.Image = Properties.Resources.logout_66_647;
             btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDangXuat.Location = new Point(-7, 580);
+            btnDangXuat.Location = new Point(2, 673);
             btnDangXuat.Name = "btnDangXuat";
-            btnDangXuat.Size = new Size(309, 89);
+            btnDangXuat.Size = new Size(300, 89);
             btnDangXuat.TabIndex = 14;
             btnDangXuat.Text = "Đăng Xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
@@ -109,7 +110,7 @@
             btnDSNV.ImageAlign = ContentAlignment.MiddleLeft;
             btnDSNV.Location = new Point(-7, 343);
             btnDSNV.Name = "btnDSNV";
-            btnDSNV.Size = new Size(309, 87);
+            btnDSNV.Size = new Size(309, 98);
             btnDSNV.TabIndex = 13;
             btnDSNV.Text = "Danh Sách Nhân Viên";
             btnDSNV.UseVisualStyleBackColor = false;
@@ -283,12 +284,26 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.BackColor = Color.LightCoral;
+            button2.Image = Properties.Resources.icon_permission_management_48;
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(-7, 436);
+            button2.Name = "button2";
+            button2.Size = new Size(309, 78);
+            button2.TabIndex = 30;
+            button2.Text = "Chức Vụ";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // FormLoaiGiay
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1085, 672);
+            ClientSize = new Size(1085, 763);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(dgvLoai);
             Controls.Add(label4);
@@ -337,5 +352,6 @@
         private Label label4;
         private DataGridView dgvLoai;
         private Button button1;
+        private Button button2;
     }
 }

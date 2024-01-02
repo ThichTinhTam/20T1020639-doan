@@ -320,6 +320,13 @@ namespace _20T1020639_doan.GUI
             FormDanhSachHoaDon nma = new FormDanhSachHoaDon(tk, dn);
             nma.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormChucVu nma = new FormChucVu(tk, dn);
+            nma.ShowDialog();
+        }
     }
 }
 

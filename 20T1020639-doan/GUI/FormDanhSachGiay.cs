@@ -368,5 +368,38 @@ namespace _20T1020639_doan.GUI
             FormDanhSachHoaDon nma = new FormDanhSachHoaDon(tk, dn);
             nma.ShowDialog();
         }
+
+        private void txtAnh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThongKe_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+            FormThongKe nma = new FormThongKe(tk, dn);
+            nma.ShowDialog();
+        }
+
+        private void btnTrangChu_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+            FormAdmin nma = new FormAdmin(tk, dn);
+            nma.ShowDialog();
+        }
+
+        private void btnDSNV_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+            FormDanhSachNhanVien nma = new FormDanhSachNhanVien(tk, dn);
+            nma.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormChucVu nma = new FormChucVu(tk, dn);
+            nma.ShowDialog();
+        }
     }
 }

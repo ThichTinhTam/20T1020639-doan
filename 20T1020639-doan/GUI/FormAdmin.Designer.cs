@@ -39,6 +39,7 @@
             pictureBox1 = new PictureBox();
             btnLoaiGiay = new Button();
             button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             btnKhoGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnKhoGiay.Location = new Point(1, -2);
             btnKhoGiay.Name = "btnKhoGiay";
-            btnKhoGiay.Size = new Size(321, 96);
+            btnKhoGiay.Size = new Size(321, 79);
             btnKhoGiay.TabIndex = 0;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
@@ -60,9 +61,9 @@
             btnThongKe.BackColor = Color.LightCoral;
             btnThongKe.Image = Properties.Resources.statistical_chart_7_642;
             btnThongKe.ImageAlign = ContentAlignment.MiddleLeft;
-            btnThongKe.Location = new Point(1, 177);
+            btnThongKe.Location = new Point(1, 158);
             btnThongKe.Name = "btnThongKe";
-            btnThongKe.Size = new Size(324, 85);
+            btnThongKe.Size = new Size(324, 88);
             btnThongKe.TabIndex = 1;
             btnThongKe.Text = "Thống Kê";
             btnThongKe.UseVisualStyleBackColor = false;
@@ -73,9 +74,9 @@
             btnDSNV.BackColor = Color.LightCoral;
             btnDSNV.Image = Properties.Resources.user_149_642;
             btnDSNV.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDSNV.Location = new Point(1, 355);
+            btnDSNV.Location = new Point(1, 329);
             btnDSNV.Name = "btnDSNV";
-            btnDSNV.Size = new Size(321, 91);
+            btnDSNV.Size = new Size(324, 91);
             btnDSNV.TabIndex = 2;
             btnDSNV.Text = "Danh Sách Nhân Viên";
             btnDSNV.UseVisualStyleBackColor = false;
@@ -87,9 +88,9 @@
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnDangXuat.Image = Properties.Resources.logout_66_642;
             btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDangXuat.Location = new Point(1, 621);
+            btnDangXuat.Location = new Point(1, 674);
             btnDangXuat.Name = "btnDangXuat";
-            btnDangXuat.Size = new Size(321, 100);
+            btnDangXuat.Size = new Size(321, 94);
             btnDangXuat.TabIndex = 3;
             btnDangXuat.Text = "Đăng Xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
@@ -100,7 +101,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.LightYellow;
             label1.Font = new Font("Blackadder ITC", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(50, 552);
+            label1.Location = new Point(48, 596);
             label1.Name = "label1";
             label1.Size = new Size(220, 63);
             label1.TabIndex = 7;
@@ -112,9 +113,9 @@
             btnTrangChu.BackColor = Color.LightCoral;
             btnTrangChu.Image = Properties.Resources.home_184_641;
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTrangChu.Location = new Point(1, 444);
+            btnTrangChu.Location = new Point(1, 500);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(321, 102);
+            btnTrangChu.Size = new Size(321, 90);
             btnTrangChu.TabIndex = 9;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -136,7 +137,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(331, -2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(874, 728);
+            pictureBox1.Size = new Size(874, 760);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -146,9 +147,9 @@
             btnLoaiGiay.BackColor = Color.LightCoral;
             btnLoaiGiay.Image = Properties.Resources.canvas_shoe_25_642;
             btnLoaiGiay.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLoaiGiay.Location = new Point(1, 93);
+            btnLoaiGiay.Location = new Point(1, 77);
             btnLoaiGiay.Name = "btnLoaiGiay";
-            btnLoaiGiay.Size = new Size(324, 87);
+            btnLoaiGiay.Size = new Size(324, 84);
             btnLoaiGiay.TabIndex = 10;
             btnLoaiGiay.Text = "Loại Giày";
             btnLoaiGiay.UseVisualStyleBackColor = false;
@@ -159,20 +160,34 @@
             button1.BackColor = Color.LightCoral;
             button1.Image = Properties.Resources.bill_5_641;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(1, 264);
+            button1.Location = new Point(1, 245);
             button1.Name = "button1";
-            button1.Size = new Size(321, 89);
+            button1.Size = new Size(324, 86);
             button1.TabIndex = 11;
             button1.Text = "Danh Sách Hóa Đơn";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.LightCoral;
+            button2.Image = Properties.Resources.icon_permission_management_48;
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(1, 416);
+            button2.Name = "button2";
+            button2.Size = new Size(321, 87);
+            button2.TabIndex = 21;
+            button2.Text = "Chức Vụ";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // FormAdmin
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1207, 730);
+            ClientSize = new Size(1207, 763);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(btnLoaiGiay);
             Controls.Add(btnTrangChu);
@@ -185,6 +200,7 @@
             Controls.Add(btnKhoGiay);
             Name = "FormAdmin";
             Text = "FormAdmin";
+            Load += FormAdmin_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -202,5 +218,6 @@
         private PictureBox pictureBox1;
         private Button btnLoaiGiay;
         private Button button1;
+        private Button button2;
     }
 }

@@ -483,6 +483,26 @@ namespace _20T1020639_doan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_permission_management_32 {
+            get {
+                object obj = ResourceManager.GetObject("icon-permission-management-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_permission_management_48 {
+            get {
+                object obj = ResourceManager.GetObject("icon-permission-management-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logout_66_32 {
             get {
                 object obj = ResourceManager.GetObject("logout-66-32", resourceCulture);

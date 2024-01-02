@@ -90,5 +90,17 @@ namespace _20T1020639_doan.GUI
             FormDanhSachHoaDon mna = new FormDanhSachHoaDon(tk, dn);
             mna.ShowDialog();
         }
+
+        private void FormAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormChucVu nma = new FormChucVu(tk, dn);
+            nma.ShowDialog();
+        }
     }
 }

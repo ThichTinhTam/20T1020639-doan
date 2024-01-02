@@ -266,5 +266,12 @@ namespace _20T1020639_doan.GUI
             FormAdmin nma = new FormAdmin(tk, dn);
             nma.ShowDialog();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormChucVu nma = new FormChucVu(tk, dn);
+            nma.ShowDialog();
+        }
     }
 }

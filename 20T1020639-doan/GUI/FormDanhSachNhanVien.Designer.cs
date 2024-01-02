@@ -56,6 +56,7 @@
             dtpNgaysinh = new DateTimePicker();
             chbNu = new CheckBox();
             button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvNhanVien).BeginInit();
             SuspendLayout();
             // 
@@ -104,7 +105,7 @@
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnDangXuat.Image = Properties.Resources.logout_66_644;
             btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDangXuat.Location = new Point(-7, 607);
+            btnDangXuat.Location = new Point(-7, 683);
             btnDangXuat.Name = "btnDangXuat";
             btnDangXuat.Size = new Size(293, 89);
             btnDangXuat.TabIndex = 24;
@@ -117,7 +118,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.LightYellow;
             label1.Font = new Font("Blackadder ITC", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(27, 541);
+            label1.Location = new Point(24, 617);
             label1.Name = "label1";
             label1.Size = new Size(220, 63);
             label1.TabIndex = 25;
@@ -128,9 +129,9 @@
             btnTrangChu.BackColor = Color.LightCoral;
             btnTrangChu.Image = Properties.Resources.home_184_643;
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTrangChu.Location = new Point(-7, 437);
+            btnTrangChu.Location = new Point(-7, 528);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(293, 101);
+            btnTrangChu.Size = new Size(293, 86);
             btnTrangChu.TabIndex = 26;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -152,22 +153,22 @@
             // dgvNhanVien
             // 
             dgvNhanVien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvNhanVien.Location = new Point(312, 255);
+            dgvNhanVien.Location = new Point(312, 266);
             dgvNhanVien.Name = "dgvNhanVien";
             dgvNhanVien.RowHeadersWidth = 62;
             dgvNhanVien.RowTemplate.Height = 33;
-            dgvNhanVien.Size = new Size(826, 330);
+            dgvNhanVien.Size = new Size(826, 389);
             dgvNhanVien.TabIndex = 28;
             dgvNhanVien.Click += dgvNhanVien_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label2.Font = new Font("Showcard Gothic", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             label2.ForeColor = Color.IndianRed;
-            label2.Location = new Point(618, 35);
+            label2.Location = new Point(353, 0);
             label2.Name = "label2";
-            label2.Size = new Size(242, 32);
+            label2.Size = new Size(785, 89);
             label2.TabIndex = 29;
             label2.Text = "Danh mục nhân viên";
             label2.Click += label2_Click;
@@ -244,7 +245,7 @@
             btnBoqua.ForeColor = SystemColors.ActiveCaption;
             btnBoqua.Image = Properties.Resources.Button_Next_icon;
             btnBoqua.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBoqua.Location = new Point(940, 607);
+            btnBoqua.Location = new Point(953, 692);
             btnBoqua.Name = "btnBoqua";
             btnBoqua.Size = new Size(158, 53);
             btnBoqua.TabIndex = 40;
@@ -258,7 +259,7 @@
             btnLuu.ForeColor = SystemColors.ActiveCaption;
             btnLuu.Image = Properties.Resources.save_32_32;
             btnLuu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLuu.Location = new Point(775, 607);
+            btnLuu.Location = new Point(788, 692);
             btnLuu.Name = "btnLuu";
             btnLuu.Size = new Size(134, 53);
             btnLuu.TabIndex = 39;
@@ -272,7 +273,7 @@
             btnXoa.ForeColor = SystemColors.ActiveCaption;
             btnXoa.Image = Properties.Resources.Button_Close;
             btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
-            btnXoa.Location = new Point(618, 607);
+            btnXoa.Location = new Point(631, 692);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(127, 53);
             btnXoa.TabIndex = 38;
@@ -286,7 +287,7 @@
             btnSua.ForeColor = SystemColors.ActiveCaption;
             btnSua.Image = Properties.Resources.fix_1_32;
             btnSua.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSua.Location = new Point(474, 607);
+            btnSua.Location = new Point(487, 692);
             btnSua.Name = "btnSua";
             btnSua.Size = new Size(116, 53);
             btnSua.TabIndex = 37;
@@ -300,7 +301,7 @@
             btnThem.ForeColor = SystemColors.ActiveCaption;
             btnThem.Image = Properties.Resources.Button_Add;
             btnThem.ImageAlign = ContentAlignment.MiddleLeft;
-            btnThem.Location = new Point(312, 607);
+            btnThem.Location = new Point(325, 692);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(140, 53);
             btnThem.TabIndex = 36;
@@ -380,12 +381,26 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.BackColor = Color.LightCoral;
+            button2.Image = Properties.Resources.icon_permission_management_48;
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(-7, 437);
+            button2.Name = "button2";
+            button2.Size = new Size(293, 94);
+            button2.TabIndex = 49;
+            button2.Text = "Chức Vụ";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // FormDanhSachNhanVien
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1181, 692);
+            ClientSize = new Size(1181, 766);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(chbNu);
             Controls.Add(dtpNgaysinh);
@@ -454,5 +469,6 @@
         private DateTimePicker dtpNgaysinh;
         private CheckBox chbNu;
         private Button button1;
+        private Button button2;
     }
 }
