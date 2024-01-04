@@ -69,7 +69,7 @@
             btnKhoGiay.Name = "btnKhoGiay";
             btnKhoGiay.Size = new Size(293, 88);
             btnKhoGiay.TabIndex = 21;
-            btnKhoGiay.Text = "Kho Giày";
+            btnKhoGiay.Text = "Quản Lý Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
             btnKhoGiay.Click += btnKhoGiay_Click;
             // 
@@ -95,7 +95,7 @@
             btnDSNV.Name = "btnDSNV";
             btnDSNV.Size = new Size(293, 88);
             btnDSNV.TabIndex = 23;
-            btnDSNV.Text = "Danh Sách Nhân Viên";
+            btnDSNV.Text = "Quản Lý Nhân Viên";
             btnDSNV.UseVisualStyleBackColor = false;
             btnDSNV.Click += btnDSNV_Click;
             // 
@@ -146,7 +146,7 @@
             btnLoaiGiay.Name = "btnLoaiGiay";
             btnLoaiGiay.Size = new Size(293, 93);
             btnLoaiGiay.TabIndex = 27;
-            btnLoaiGiay.Text = "Loại Giày";
+            btnLoaiGiay.Text = "Quản Lý Loại Giày";
             btnLoaiGiay.UseVisualStyleBackColor = false;
             btnLoaiGiay.Click += btnLoaiGiay_Click;
             // 
@@ -363,7 +363,7 @@
             button1.Name = "button1";
             button1.Size = new Size(293, 88);
             button1.TabIndex = 48;
-            button1.Text = "Danh Sách Hóa Đơn";
+            button1.Text = "Quản Lý Hóa Đơn";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
@@ -376,7 +376,7 @@
             button2.Name = "button2";
             button2.Size = new Size(293, 94);
             button2.TabIndex = 49;
-            button2.Text = "Chức Vụ";
+            button2.Text = "Quản Lý Chức Vụ";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 

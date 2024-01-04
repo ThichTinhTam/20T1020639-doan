@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNV));
             btnTrangChu = new Button();
             label1 = new Label();
             btnDangXuat = new Button();
@@ -120,7 +119,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Image = Properties.Resources.dia_chi_ban_giay_second_hand_duoc_ua_chuong_nhat_tai_thanh_pho_ho_chi_minh_683090;
             pictureBox1.Location = new Point(327, -2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(831, 683);

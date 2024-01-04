@@ -363,6 +363,17 @@ namespace _20T1020639_doan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dia_chi_ban_giay_second_hand_duoc_ua_chuong_nhat_tai_thanh_pho_ho_chi_minh_683090 {
+            get {
+                object obj = ResourceManager.GetObject("dia-chi-ban-giay-second-hand-duoc-ua-chuong-nhat-tai-thanh-pho-ho-chi-minh-683090" +
+                        "", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fix_1_32 {
             get {
                 object obj = ResourceManager.GetObject("fix-1-32", resourceCulture);
@@ -516,6 +527,16 @@ namespace _20T1020639_doan.Properties {
         internal static System.Drawing.Bitmap information_19_48 {
             get {
                 object obj = ResourceManager.GetObject("information-19-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kinh_doanh_giay_dep_thoi_trang {
+            get {
+                object obj = ResourceManager.GetObject("kinh-doanh-giay-dep-thoi-trang", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -53,7 +53,7 @@
             btnTrangChu.BackColor = Color.LightCoral;
             btnTrangChu.Image = Properties.Resources.home_184_648;
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTrangChu.Location = new Point(0, 577);
+            btnTrangChu.Location = new Point(0, 580);
             btnTrangChu.Name = "btnTrangChu";
             btnTrangChu.Size = new Size(302, 106);
             btnTrangChu.TabIndex = 21;
@@ -91,11 +91,11 @@
             btnDSNV.BackColor = Color.LightCoral;
             btnDSNV.Image = Properties.Resources.user_149_649;
             btnDSNV.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDSNV.Location = new Point(0, 363);
+            btnDSNV.Location = new Point(0, 367);
             btnDSNV.Name = "btnDSNV";
             btnDSNV.Size = new Size(302, 107);
             btnDSNV.TabIndex = 18;
-            btnDSNV.Text = "Danh Sách Nhân Viên";
+            btnDSNV.Text = "Quản Lý Nhân Viên";
             btnDSNV.UseVisualStyleBackColor = false;
             btnDSNV.Click += btnDSNV_Click_1;
             // 
@@ -104,9 +104,9 @@
             btnThongKe.BackColor = Color.LightCoral;
             btnThongKe.Image = Properties.Resources.statistical_chart_7_645;
             btnThongKe.ImageAlign = ContentAlignment.MiddleLeft;
-            btnThongKe.Location = new Point(0, 169);
+            btnThongKe.Location = new Point(0, 175);
             btnThongKe.Name = "btnThongKe";
-            btnThongKe.Size = new Size(302, 86);
+            btnThongKe.Size = new Size(302, 104);
             btnThongKe.TabIndex = 17;
             btnThongKe.Text = "Thống Kê";
             btnThongKe.UseVisualStyleBackColor = false;
@@ -121,7 +121,7 @@
             btnKhoGiay.Name = "btnKhoGiay";
             btnKhoGiay.Size = new Size(302, 91);
             btnKhoGiay.TabIndex = 16;
-            btnKhoGiay.Text = "Kho Giày";
+            btnKhoGiay.Text = "Quản Lý Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
             btnKhoGiay.Click += btnKhoGiay_Click;
             // 
@@ -223,11 +223,11 @@
             button7.BackColor = Color.LightCoral;
             button7.Image = Properties.Resources.canvas_shoe_25_645;
             button7.ImageAlign = ContentAlignment.MiddleLeft;
-            button7.Location = new Point(0, 89);
+            button7.Location = new Point(2, 92);
             button7.Name = "button7";
             button7.Size = new Size(300, 83);
             button7.TabIndex = 30;
-            button7.Text = "Loại Giày";
+            button7.Text = "Quản Lý Loại Giày";
             button7.UseVisualStyleBackColor = false;
             button7.Click += button7_Click;
             // 
@@ -236,11 +236,11 @@
             button8.BackColor = Color.LightCoral;
             button8.Image = Properties.Resources.bill_5_644;
             button8.ImageAlign = ContentAlignment.MiddleLeft;
-            button8.Location = new Point(0, 256);
+            button8.Location = new Point(0, 277);
             button8.Name = "button8";
-            button8.Size = new Size(302, 106);
+            button8.Size = new Size(302, 90);
             button8.TabIndex = 31;
-            button8.Text = "Danh Sách Hóa Đơn";
+            button8.Text = "Quản Lý Hóa Đơn";
             button8.UseVisualStyleBackColor = false;
             button8.Click += button8_Click;
             // 
@@ -249,11 +249,11 @@
             button9.BackColor = Color.LightCoral;
             button9.Image = Properties.Resources.icon_permission_management_48;
             button9.ImageAlign = ContentAlignment.MiddleLeft;
-            button9.Location = new Point(0, 470);
+            button9.Location = new Point(0, 474);
             button9.Name = "button9";
             button9.Size = new Size(302, 106);
             button9.TabIndex = 32;
-            button9.Text = "Chức Vụ";
+            button9.Text = "Quản Lý Chức Vụ";
             button9.UseVisualStyleBackColor = false;
             button9.Click += button9_Click;
             // 

@@ -115,7 +115,7 @@
             btnDSNV.Name = "btnDSNV";
             btnDSNV.Size = new Size(302, 98);
             btnDSNV.TabIndex = 12;
-            btnDSNV.Text = "Danh Sách Nhân Viên";
+            btnDSNV.Text = "Quản Lý Nhân Viên";
             btnDSNV.UseVisualStyleBackColor = false;
             btnDSNV.Click += btnDSNV_Click_1;
             // 
@@ -141,7 +141,7 @@
             btnKhoGiay.Name = "btnKhoGiay";
             btnKhoGiay.Size = new Size(302, 92);
             btnKhoGiay.TabIndex = 10;
-            btnKhoGiay.Text = "Kho Giày";
+            btnKhoGiay.Text = "Quản Lý Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
             btnKhoGiay.Click += btnKhoGiay_Click;
             // 
@@ -154,7 +154,7 @@
             btnLoaiGiay.Name = "btnLoaiGiay";
             btnLoaiGiay.Size = new Size(302, 96);
             btnLoaiGiay.TabIndex = 16;
-            btnLoaiGiay.Text = "Loại Giày";
+            btnLoaiGiay.Text = "Quản Lý Loại Giày";
             btnLoaiGiay.UseVisualStyleBackColor = false;
             btnLoaiGiay.Click += btnLoaiGiay_Click_1;
             // 
@@ -187,9 +187,9 @@
             label4.ForeColor = Color.IndianRed;
             label4.Location = new Point(662, 12);
             label4.Name = "label4";
-            label4.Size = new Size(271, 40);
+            label4.Size = new Size(240, 40);
             label4.TabIndex = 19;
-            label4.Text = "Danh mục giày";
+            label4.Text = "Quản Lý Giày";
             // 
             // label5
             // 
@@ -460,7 +460,7 @@
             button1.Name = "button1";
             button1.Size = new Size(302, 81);
             button1.TabIndex = 45;
-            button1.Text = "Danh Sách Hóa Đơn";
+            button1.Text = "Quản Lý Hóa Đơn";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
@@ -473,7 +473,7 @@
             button2.Name = "button2";
             button2.Size = new Size(302, 90);
             button2.TabIndex = 46;
-            button2.Text = "Chức Vụ";
+            button2.Text = "Quản Lý Chức Vụ";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
