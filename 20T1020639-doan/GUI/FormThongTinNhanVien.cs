@@ -1,4 +1,5 @@
-﻿using _20T1020639_doan.DTO;
+﻿using _20T1020639_doan.DAL;
+using _20T1020639_doan.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -68,6 +69,25 @@ namespace _20T1020639_doan.GUI
             Hide();
             dn.Show();
             Close();
+        }
+
+        private void FormThongTinNhanVien_Load(object sender, EventArgs e)
+        {
+            string str;
+
+            str = "SELECT * FROM NhanVien WHERE MaNhanVien = N'" + tk.Username + "'";
+            txtmanhanvien.Text = Database.GetFieldValues(str);
+            str = "SELECT TenNhanVien FROM NhanVien WHERE MaNhanVien = N'" + txtmanhanvien.Text + "'";
+            txtTennhanvien.Text = Database.GetFieldValues(str);
+            str = "SELECT GioiTinh FROM NhanVien WHERE MaNhanVien = N'" + txtmanhanvien.Text + "'";
+            txtGioitinh.Text = Database.GetFieldValues(str);
+            str = "SELECT DiaChi FROM NhanVien WHERE MaNhanVien = N'" + txtmanhanvien.Text + "'";
+            txtdiachi.Text = Database.GetFieldValues(str);
+            str = "SELECT DienThoai FROM NhanVien WHERE MaNhanVien = N'" + txtmanhanvien.Text + "'";
+            txtDienthoai.Text = Database.GetFieldValues(str);
+            str = "SELECT NgaySinh FROM NhanVien WHERE MaNhanVien = N'" + txtmanhanvien.Text + "'";
+            dtpngaysinh.Text = Database.ConvertDateTime(Database.GetFieldValues(str));
+
         }
     }
 }
