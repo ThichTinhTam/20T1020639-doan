@@ -594,9 +594,9 @@
             label2.ForeColor = Color.IndianRed;
             label2.Location = new Point(684, 6);
             label2.Name = "label2";
-            label2.Size = new Size(450, 60);
+            label2.Size = new Size(472, 60);
             label2.TabIndex = 66;
-            label2.Text = "Hóa đơn bán giày";
+            label2.Text = "Hóa Đơn Bán Hàng";
             // 
             // label18
             // 

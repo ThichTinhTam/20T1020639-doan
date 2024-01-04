@@ -153,7 +153,7 @@ namespace _20T1020639_doan.GUI
             btnThem.Enabled = false;
             btnIn.Enabled = false;
             ResetValues();
-            txtmahoadon.Text = Database.CreateKey("HDB");
+            txtmahoadon.Text = Database.CreateKey("TNV");
             LoadDataGridView();
         }
         private void ResetValues()
