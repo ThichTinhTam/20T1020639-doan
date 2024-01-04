@@ -639,7 +639,7 @@
             button1.Name = "button1";
             button1.Size = new Size(320, 119);
             button1.TabIndex = 70;
-            button1.Text = "Thông Tin Nhân Viên";
+            button1.Text = "Thông Tin Cá Nhân";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
@@ -648,7 +648,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1439, 763);
+            ClientSize = new Size(1436, 763);
             Controls.Add(button1);
             Controls.Add(btnTimkiem);
             Controls.Add(cboMaHDBan);

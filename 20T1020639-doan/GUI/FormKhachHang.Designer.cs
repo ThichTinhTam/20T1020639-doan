@@ -304,7 +304,7 @@
             button1.Name = "button1";
             button1.Size = new Size(320, 92);
             button1.TabIndex = 63;
-            button1.Text = "Thông Tin Nhân Viên";
+            button1.Text = "Thông Tin Cá Nhân";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
