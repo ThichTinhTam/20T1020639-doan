@@ -104,9 +104,9 @@
             btnThongKe.BackColor = Color.LightCoral;
             btnThongKe.Image = Properties.Resources.statistical_chart_7_645;
             btnThongKe.ImageAlign = ContentAlignment.MiddleLeft;
-            btnThongKe.Location = new Point(0, 175);
+            btnThongKe.Location = new Point(0, 193);
             btnThongKe.Name = "btnThongKe";
-            btnThongKe.Size = new Size(302, 104);
+            btnThongKe.Size = new Size(302, 86);
             btnThongKe.TabIndex = 17;
             btnThongKe.Text = "Thống Kê";
             btnThongKe.UseVisualStyleBackColor = false;
@@ -225,7 +225,7 @@
             button7.ImageAlign = ContentAlignment.MiddleLeft;
             button7.Location = new Point(2, 92);
             button7.Name = "button7";
-            button7.Size = new Size(300, 83);
+            button7.Size = new Size(300, 104);
             button7.TabIndex = 30;
             button7.Text = "Quản Lý Loại Giày";
             button7.UseVisualStyleBackColor = false;
