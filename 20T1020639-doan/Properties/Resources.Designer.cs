@@ -503,6 +503,26 @@ namespace _20T1020639_doan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap information_19_32 {
+            get {
+                object obj = ResourceManager.GetObject("information-19-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap information_19_48 {
+            get {
+                object obj = ResourceManager.GetObject("information-19-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logout_66_32 {
             get {
                 object obj = ResourceManager.GetObject("logout-66-32", resourceCulture);

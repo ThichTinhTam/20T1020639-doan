@@ -13,8 +13,8 @@ namespace _20T1020639_doan.DAL
 {
     public class Database
     {
-        // string strCon = @"Data Source=LAPTOP-TR2PA795\NHONVIET;Initial Catalog=639_QLBG;Integrated Security=True";
-        string strCon = @"Data Source=LAPTOP-TR2PA795\NHONVIET;Initial Catalog=6399;Integrated Security=True";
+         string strCon = @"Data Source=LAPTOP-TR2PA795\NHONVIET;Initial Catalog=639_QLBG;Integrated Security=True";
+        //string strCon = @"Data Source=LAPTOP-TR2PA795\NHONVIET;Initial Catalog=6399;Integrated Security=True";
 
         public static SqlConnection sqlCon = null;
 

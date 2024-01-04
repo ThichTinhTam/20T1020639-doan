@@ -128,6 +128,7 @@
             // btnTrangChu
             // 
             btnTrangChu.BackColor = Color.LightCoral;
+            btnTrangChu.ForeColor = SystemColors.InactiveCaptionText;
             btnTrangChu.Image = Properties.Resources.home_184_644;
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
             btnTrangChu.Location = new Point(-9, 402);
@@ -166,6 +167,7 @@
             // btnDSKH
             // 
             btnDSKH.BackColor = Color.LightCoral;
+            btnDSKH.ForeColor = SystemColors.InactiveCaptionText;
             btnDSKH.Image = Properties.Resources.user_149_645;
             btnDSKH.ImageAlign = ContentAlignment.MiddleLeft;
             btnDSKH.Location = new Point(-9, 264);
@@ -179,6 +181,7 @@
             // btnHoaDon
             // 
             btnHoaDon.BackColor = Color.LightCoral;
+            btnHoaDon.ForeColor = SystemColors.InactiveCaptionText;
             btnHoaDon.Image = Properties.Resources.bill_5_64;
             btnHoaDon.ImageAlign = ContentAlignment.MiddleLeft;
             btnHoaDon.Location = new Point(-9, 138);
@@ -192,6 +195,7 @@
             // btnKhoGiay
             // 
             btnKhoGiay.BackColor = Color.LightCoral;
+            btnKhoGiay.ForeColor = SystemColors.InactiveCaptionText;
             btnKhoGiay.Image = Properties.Resources.canvas_shoe_12_646;
             btnKhoGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnKhoGiay.Location = new Point(-9, -3);
@@ -220,7 +224,7 @@
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
-            groupBox1.Location = new Point(340, 50);
+            groupBox1.Location = new Point(340, 98);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(1082, 196);
             groupBox1.TabIndex = 64;
@@ -238,7 +242,7 @@
             // mskDienThoai
             // 
             mskDienThoai.Location = new Point(786, 157);
-            mskDienThoai.Mask = "(098) 000-0000";
+            mskDienThoai.Mask = "(034) 000-0000";
             mskDienThoai.Name = "mskDienThoai";
             mskDienThoai.ReadOnly = true;
             mskDienThoai.Size = new Size(253, 31);
@@ -297,7 +301,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.ForeColor = SystemColors.ActiveCaption;
+            label10.ForeColor = SystemColors.Highlight;
             label10.Location = new Point(634, 154);
             label10.Name = "label10";
             label10.Size = new Size(93, 25);
@@ -307,7 +311,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.ForeColor = SystemColors.ActiveCaption;
+            label9.ForeColor = SystemColors.Highlight;
             label9.Location = new Point(633, 111);
             label9.Name = "label9";
             label9.Size = new Size(65, 25);
@@ -317,7 +321,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.ForeColor = SystemColors.ActiveCaption;
+            label8.ForeColor = SystemColors.Highlight;
             label8.Location = new Point(633, 65);
             label8.Name = "label8";
             label8.Size = new Size(134, 25);
@@ -327,7 +331,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.ForeColor = SystemColors.ActiveCaption;
+            label7.ForeColor = SystemColors.Highlight;
             label7.Location = new Point(634, 27);
             label7.Name = "label7";
             label7.Size = new Size(133, 25);
@@ -337,7 +341,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.ForeColor = SystemColors.ActiveCaption;
+            label6.ForeColor = SystemColors.Highlight;
             label6.Location = new Point(38, 154);
             label6.Name = "label6";
             label6.Size = new Size(119, 25);
@@ -347,7 +351,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.ForeColor = SystemColors.ActiveCaption;
+            label5.ForeColor = SystemColors.Highlight;
             label5.Location = new Point(38, 111);
             label5.Name = "label5";
             label5.Size = new Size(118, 25);
@@ -357,7 +361,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.ForeColor = SystemColors.ActiveCaption;
+            label4.ForeColor = SystemColors.Highlight;
             label4.Location = new Point(38, 65);
             label4.Name = "label4";
             label4.Size = new Size(89, 25);
@@ -367,7 +371,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.ForeColor = SystemColors.ActiveCaption;
+            label3.ForeColor = SystemColors.Highlight;
             label3.Location = new Point(38, 27);
             label3.Name = "label3";
             label3.Size = new Size(109, 25);
@@ -397,7 +401,7 @@
             groupBox2.Controls.Add(btnThem);
             groupBox2.Controls.Add(btnXoa);
             groupBox2.Controls.Add(btnLuu);
-            groupBox2.Location = new Point(340, 249);
+            groupBox2.Location = new Point(344, 300);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(1078, 451);
             groupBox2.TabIndex = 65;
@@ -525,7 +529,7 @@
             // label16
             // 
             label16.AutoSize = true;
-            label16.ForeColor = SystemColors.ActiveCaption;
+            label16.ForeColor = SystemColors.Highlight;
             label16.Location = new Point(669, 73);
             label16.Name = "label16";
             label16.Size = new Size(94, 25);
@@ -535,7 +539,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.ForeColor = SystemColors.ActiveCaption;
+            label15.ForeColor = SystemColors.Highlight;
             label15.Location = new Point(669, 37);
             label15.Name = "label15";
             label15.Size = new Size(75, 25);
@@ -545,7 +549,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.ForeColor = SystemColors.ActiveCaption;
+            label14.ForeColor = SystemColors.Highlight;
             label14.Location = new Point(340, 73);
             label14.Name = "label14";
             label14.Size = new Size(102, 25);
@@ -555,7 +559,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.ForeColor = SystemColors.ActiveCaption;
+            label13.ForeColor = SystemColors.Highlight;
             label13.Location = new Point(340, 37);
             label13.Name = "label13";
             label13.Size = new Size(76, 25);
@@ -565,7 +569,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.ForeColor = SystemColors.ActiveCaption;
+            label12.ForeColor = SystemColors.Highlight;
             label12.Location = new Point(30, 73);
             label12.Name = "label12";
             label12.Size = new Size(85, 25);
@@ -575,7 +579,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.ForeColor = SystemColors.ActiveCaption;
+            label11.ForeColor = SystemColors.Highlight;
             label11.Location = new Point(30, 37);
             label11.Name = "label11";
             label11.Size = new Size(75, 25);
@@ -585,19 +589,19 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Showcard Gothic", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Showcard Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.IndianRed;
-            label2.Location = new Point(732, 9);
+            label2.Location = new Point(684, 6);
             label2.Name = "label2";
-            label2.Size = new Size(371, 50);
+            label2.Size = new Size(450, 60);
             label2.TabIndex = 66;
             label2.Text = "Hóa đơn bán giày";
             // 
             // label18
             // 
             label18.AutoSize = true;
-            label18.ForeColor = SystemColors.ActiveCaption;
-            label18.Location = new Point(799, 715);
+            label18.ForeColor = SystemColors.Highlight;
+            label18.Location = new Point(884, 70);
             label18.Name = "label18";
             label18.Size = new Size(109, 25);
             label18.TabIndex = 67;
@@ -606,7 +610,7 @@
             // cboMaHDBan
             // 
             cboMaHDBan.FormattingEnabled = true;
-            cboMaHDBan.Location = new Point(928, 714);
+            cboMaHDBan.Location = new Point(1013, 69);
             cboMaHDBan.Name = "cboMaHDBan";
             cboMaHDBan.Size = new Size(193, 33);
             cboMaHDBan.TabIndex = 68;
@@ -617,9 +621,9 @@
             btnTimkiem.ForeColor = SystemColors.ActiveCaption;
             btnTimkiem.Image = Properties.Resources.Search_icon;
             btnTimkiem.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTimkiem.Location = new Point(1162, 706);
+            btnTimkiem.Location = new Point(1247, 60);
             btnTimkiem.Name = "btnTimkiem";
-            btnTimkiem.Size = new Size(187, 56);
+            btnTimkiem.Size = new Size(175, 42);
             btnTimkiem.TabIndex = 69;
             btnTimkiem.Text = "&Tìm kiếm";
             btnTimkiem.UseVisualStyleBackColor = true;

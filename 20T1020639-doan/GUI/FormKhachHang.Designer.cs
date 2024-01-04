@@ -278,7 +278,7 @@
             // mtbDienThoai
             // 
             mtbDienThoai.Location = new Point(836, 129);
-            mtbDienThoai.Mask = "(098) 000-0000";
+            mtbDienThoai.Mask = "(034) 000-0000";
             mtbDienThoai.Name = "mtbDienThoai";
             mtbDienThoai.Size = new Size(193, 31);
             mtbDienThoai.TabIndex = 61;
