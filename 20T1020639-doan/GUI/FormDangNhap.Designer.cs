@@ -46,7 +46,7 @@
             // 
             btnDn.BackColor = SystemColors.ControlDark;
             btnDn.Font = new Font("Segoe UI Symbol", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            btnDn.Location = new Point(331, 469);
+            btnDn.Location = new Point(361, 469);
             btnDn.Name = "btnDn";
             btnDn.Size = new Size(206, 46);
             btnDn.TabIndex = 0;
@@ -69,7 +69,7 @@
             label1.AutoSize = true;
             label1.BackColor = SystemColors.ControlDark;
             label1.Font = new Font("Showcard Gothic", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(331, 84);
+            label1.Location = new Point(385, 71);
             label1.Name = "label1";
             label1.Size = new Size(443, 89);
             label1.TabIndex = 2;
@@ -120,7 +120,7 @@
             button2.Font = new Font("Segoe UI Symbol", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             button2.Image = Properties.Resources.logout_66_321;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(583, 469);
+            button2.Location = new Point(666, 469);
             button2.Name = "button2";
             button2.Size = new Size(206, 46);
             button2.TabIndex = 7;
@@ -132,11 +132,11 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = SystemColors.ControlDark;
-            label4.Font = new Font("Showcard Gothic", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Showcard Gothic", 16F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.Yellow;
-            label4.Location = new Point(249, 681);
+            label4.Location = new Point(293, 668);
             label4.Name = "label4";
-            label4.Size = new Size(255, 26);
+            label4.Size = new Size(403, 40);
             label4.TabIndex = 9;
             label4.Text = "Bạn chưa có tài khoản?";
             // 
@@ -144,9 +144,9 @@
             // 
             button1.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = Color.IndianRed;
-            button1.Location = new Point(596, 678);
+            button1.Location = new Point(721, 668);
             button1.Name = "button1";
-            button1.Size = new Size(112, 34);
+            button1.Size = new Size(206, 43);
             button1.TabIndex = 10;
             button1.Text = "Đăng ký";
             button1.UseVisualStyleBackColor = true;

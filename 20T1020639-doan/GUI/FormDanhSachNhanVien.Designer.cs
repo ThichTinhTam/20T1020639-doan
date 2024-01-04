@@ -47,7 +47,6 @@
             btnLuu = new Button();
             btnXoa = new Button();
             btnSua = new Button();
-            btnThem = new Button();
             chkGioiTinh = new CheckBox();
             txtManhanvien = new TextBox();
             txtDiachi = new TextBox();
@@ -57,6 +56,7 @@
             chbNu = new CheckBox();
             button1 = new Button();
             button2 = new Button();
+            btnThem = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvNhanVien).BeginInit();
             SuspendLayout();
             // 
@@ -295,20 +295,6 @@
             btnSua.UseVisualStyleBackColor = true;
             btnSua.Click += btnSua_Click;
             // 
-            // btnThem
-            // 
-            btnThem.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
-            btnThem.ForeColor = SystemColors.ActiveCaption;
-            btnThem.Image = Properties.Resources.Button_Add;
-            btnThem.ImageAlign = ContentAlignment.MiddleLeft;
-            btnThem.Location = new Point(325, 692);
-            btnThem.Name = "btnThem";
-            btnThem.Size = new Size(140, 53);
-            btnThem.TabIndex = 36;
-            btnThem.Text = "&Thêm";
-            btnThem.UseVisualStyleBackColor = true;
-            btnThem.Click += btnThem_Click;
-            // 
             // chkGioiTinh
             // 
             chkGioiTinh.AutoSize = true;
@@ -394,6 +380,20 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // btnThem
+            // 
+            btnThem.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
+            btnThem.ForeColor = SystemColors.ActiveCaption;
+            btnThem.Image = Properties.Resources.Button_Add;
+            btnThem.ImageAlign = ContentAlignment.MiddleLeft;
+            btnThem.Location = new Point(325, 692);
+            btnThem.Name = "btnThem";
+            btnThem.Size = new Size(140, 53);
+            btnThem.TabIndex = 36;
+            btnThem.Text = "&Thêm";
+            btnThem.UseVisualStyleBackColor = true;
+            btnThem.Click += btnThem_Click;
+            // 
             // FormDanhSachNhanVien
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -460,7 +460,6 @@
         private Button btnLuu;
         private Button btnXoa;
         private Button btnSua;
-        private Button btnThem;
         private CheckBox chkGioiTinh;
         private TextBox txtManhanvien;
         private TextBox txtDiachi;
@@ -470,5 +469,6 @@
         private CheckBox chbNu;
         private Button button1;
         private Button button2;
+        private Button btnThem;
     }
 }
