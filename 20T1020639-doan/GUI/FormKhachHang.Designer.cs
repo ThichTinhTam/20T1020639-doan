@@ -49,6 +49,7 @@
             txtDiachi = new TextBox();
             mtbDienThoai = new MaskedTextBox();
             dgvKhachhang = new DataGridView();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvKhachhang).BeginInit();
             SuspendLayout();
             // 
@@ -58,7 +59,7 @@
             btnBoqua.ForeColor = SystemColors.ActiveCaption;
             btnBoqua.Image = Properties.Resources.Button_Next_icon;
             btnBoqua.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBoqua.Location = new Point(902, 505);
+            btnBoqua.Location = new Point(901, 566);
             btnBoqua.Name = "btnBoqua";
             btnBoqua.Size = new Size(148, 48);
             btnBoqua.TabIndex = 52;
@@ -72,7 +73,7 @@
             btnLuu.ForeColor = SystemColors.ActiveCaption;
             btnLuu.Image = Properties.Resources.save_32_32;
             btnLuu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLuu.Location = new Point(773, 505);
+            btnLuu.Location = new Point(772, 566);
             btnLuu.Name = "btnLuu";
             btnLuu.Size = new Size(112, 48);
             btnLuu.TabIndex = 51;
@@ -86,7 +87,7 @@
             btnXoa.ForeColor = SystemColors.ActiveCaption;
             btnXoa.Image = Properties.Resources.Button_Close;
             btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
-            btnXoa.Location = new Point(625, 505);
+            btnXoa.Location = new Point(624, 566);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(126, 48);
             btnXoa.TabIndex = 50;
@@ -100,7 +101,7 @@
             btnSua.ForeColor = SystemColors.ActiveCaption;
             btnSua.Image = Properties.Resources.fix_1_32;
             btnSua.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSua.Location = new Point(478, 505);
+            btnSua.Location = new Point(477, 566);
             btnSua.Name = "btnSua";
             btnSua.Size = new Size(112, 48);
             btnSua.TabIndex = 49;
@@ -114,7 +115,7 @@
             btnThem.ForeColor = SystemColors.ActiveCaption;
             btnThem.Image = Properties.Resources.Button_Add;
             btnThem.ImageAlign = ContentAlignment.MiddleLeft;
-            btnThem.Location = new Point(323, 505);
+            btnThem.Location = new Point(322, 566);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(135, 48);
             btnThem.TabIndex = 48;
@@ -127,9 +128,9 @@
             btnTrangChu.BackColor = Color.LightCoral;
             btnTrangChu.Image = Properties.Resources.home_184_645;
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTrangChu.Location = new Point(-9, 282);
+            btnTrangChu.Location = new Point(-3, 374);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(326, 97);
+            btnTrangChu.Size = new Size(320, 94);
             btnTrangChu.TabIndex = 46;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -140,7 +141,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.LightYellow;
             label1.Font = new Font("Blackadder ITC", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(40, 392);
+            label1.Location = new Point(43, 471);
             label1.Name = "label1";
             label1.Size = new Size(220, 63);
             label1.TabIndex = 45;
@@ -152,7 +153,7 @@
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnDangXuat.Image = Properties.Resources.logout_66_646;
             btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDangXuat.Location = new Point(-9, 475);
+            btnDangXuat.Location = new Point(-9, 537);
             btnDangXuat.Name = "btnDangXuat";
             btnDangXuat.Size = new Size(326, 100);
             btnDangXuat.TabIndex = 44;
@@ -206,9 +207,9 @@
             label2.ForeColor = Color.DarkRed;
             label2.Location = new Point(509, 9);
             label2.Name = "label2";
-            label2.Size = new Size(395, 40);
+            label2.Size = new Size(425, 40);
             label2.TabIndex = 53;
-            label2.Text = "Danh mục khách giày";
+            label2.Text = "Danh Sách Khách Hàng";
             // 
             // label3
             // 
@@ -290,16 +291,30 @@
             dgvKhachhang.Name = "dgvKhachhang";
             dgvKhachhang.RowHeadersWidth = 62;
             dgvKhachhang.RowTemplate.Height = 33;
-            dgvKhachhang.Size = new Size(727, 270);
+            dgvKhachhang.Size = new Size(727, 336);
             dgvKhachhang.TabIndex = 62;
             dgvKhachhang.Click += dgvKhachhang_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.LightCoral;
+            button1.Image = Properties.Resources.information_19_48;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(-3, 283);
+            button1.Name = "button1";
+            button1.Size = new Size(320, 92);
+            button1.TabIndex = 63;
+            button1.Text = "Thông Tin Nhân Viên";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // FormKhachHang
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1055, 573);
+            ClientSize = new Size(1055, 637);
+            Controls.Add(button1);
             Controls.Add(dgvKhachhang);
             Controls.Add(mtbDienThoai);
             Controls.Add(txtDiachi);
@@ -353,5 +368,6 @@
         private TextBox txtDiachi;
         private MaskedTextBox mtbDienThoai;
         private DataGridView dgvKhachhang;
+        private Button button1;
     }
 }

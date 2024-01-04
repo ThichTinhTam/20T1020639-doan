@@ -494,6 +494,13 @@ namespace _20T1020639_doan.GUI
 
             MessageBox.Show("Đã in hóa đơn thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormThongTinNhanVien mna = new FormThongTinNhanVien(tk, dn);
+            mna.ShowDialog();
+        }
     }
 }
 

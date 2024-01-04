@@ -253,5 +253,12 @@ namespace _20T1020639_doan.GUI
             btnLuu.Enabled = false;
             txtMakhach.Enabled = false;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormThongTinNhanVien mna = new FormThongTinNhanVien(tk, dn);
+            mna.ShowDialog();
+        }
     }
 }

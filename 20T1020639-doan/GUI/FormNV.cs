@@ -79,6 +79,13 @@ namespace _20T1020639_doan.GUI
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            Hide();
+            FormThongTinNhanVien mna = new FormThongTinNhanVien(tk, dn);
+            mna.ShowDialog();
+        }
+
+        private void FormNV_Load(object sender, EventArgs e)
+        {
 
         }
     }

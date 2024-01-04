@@ -77,6 +77,7 @@
             label18 = new Label();
             cboMaHDBan = new ComboBox();
             btnTimkiem = new Button();
+            button1 = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvHoadon).BeginInit();
@@ -131,9 +132,9 @@
             btnTrangChu.ForeColor = SystemColors.InactiveCaptionText;
             btnTrangChu.Image = Properties.Resources.home_184_644;
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTrangChu.Location = new Point(-9, 402);
+            btnTrangChu.Location = new Point(-9, 417);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(325, 137);
+            btnTrangChu.Size = new Size(325, 122);
             btnTrangChu.TabIndex = 58;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -170,9 +171,9 @@
             btnDSKH.ForeColor = SystemColors.InactiveCaptionText;
             btnDSKH.Image = Properties.Resources.user_149_645;
             btnDSKH.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDSKH.Location = new Point(-9, 264);
+            btnDSKH.Location = new Point(-9, 200);
             btnDSKH.Name = "btnDSKH";
-            btnDSKH.Size = new Size(325, 140);
+            btnDSKH.Size = new Size(325, 100);
             btnDSKH.TabIndex = 55;
             btnDSKH.Text = "Danh Sách Khách Hàng";
             btnDSKH.UseVisualStyleBackColor = false;
@@ -184,9 +185,9 @@
             btnHoaDon.ForeColor = SystemColors.InactiveCaptionText;
             btnHoaDon.Image = Properties.Resources.bill_5_64;
             btnHoaDon.ImageAlign = ContentAlignment.MiddleLeft;
-            btnHoaDon.Location = new Point(-9, 138);
+            btnHoaDon.Location = new Point(-9, 98);
             btnHoaDon.Name = "btnHoaDon";
-            btnHoaDon.Size = new Size(325, 132);
+            btnHoaDon.Size = new Size(325, 107);
             btnHoaDon.TabIndex = 54;
             btnHoaDon.Text = "Hóa đơn";
             btnHoaDon.UseVisualStyleBackColor = false;
@@ -200,7 +201,7 @@
             btnKhoGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnKhoGiay.Location = new Point(-9, -3);
             btnKhoGiay.Name = "btnKhoGiay";
-            btnKhoGiay.Size = new Size(325, 140);
+            btnKhoGiay.Size = new Size(325, 105);
             btnKhoGiay.TabIndex = 53;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
@@ -629,12 +630,26 @@
             btnTimkiem.UseVisualStyleBackColor = true;
             btnTimkiem.Click += btnTimkiem_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.LightCoral;
+            button1.Image = Properties.Resources.information_19_48;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(-4, 300);
+            button1.Name = "button1";
+            button1.Size = new Size(320, 119);
+            button1.TabIndex = 70;
+            button1.Text = "Thông Tin Nhân Viên";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // FormHoaDon
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
             ClientSize = new Size(1439, 763);
+            Controls.Add(button1);
             Controls.Add(btnTimkiem);
             Controls.Add(cboMaHDBan);
             Controls.Add(label18);
@@ -710,5 +725,6 @@
         private Label label19;
         private Label lblBangchu;
         private Button btnIn;
+        private Button button1;
     }
 }

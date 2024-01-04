@@ -158,6 +158,7 @@
             Controls.Add(btnKhoGiay);
             Name = "FormNV";
             Text = "Bán giày";
+            Load += FormNV_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

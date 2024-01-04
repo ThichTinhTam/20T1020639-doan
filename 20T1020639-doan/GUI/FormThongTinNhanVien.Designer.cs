@@ -48,6 +48,7 @@
             button1.TabIndex = 61;
             button1.Text = "Thông Tin Nhân Viên";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // btnTrangChu
             // 
@@ -60,6 +61,7 @@
             btnTrangChu.TabIndex = 60;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
+            btnTrangChu.Click += btnTrangChu_Click;
             // 
             // label1
             // 
@@ -84,6 +86,7 @@
             btnDangXuat.TabIndex = 58;
             btnDangXuat.Text = "Đăng Xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
+            btnDangXuat.Click += btnDangXuat_Click;
             // 
             // btnDSKH
             // 
@@ -96,6 +99,7 @@
             btnDSKH.TabIndex = 57;
             btnDSKH.Text = "Danh Sách Khách Hàng";
             btnDSKH.UseVisualStyleBackColor = false;
+            btnDSKH.Click += btnDSKH_Click;
             // 
             // btnHoaDon
             // 
@@ -108,6 +112,7 @@
             btnHoaDon.TabIndex = 56;
             btnHoaDon.Text = "Hóa đơn";
             btnHoaDon.UseVisualStyleBackColor = false;
+            btnHoaDon.Click += btnHoaDon_Click;
             // 
             // btnKhoGiay
             // 
@@ -120,6 +125,7 @@
             btnKhoGiay.TabIndex = 55;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
+            btnKhoGiay.Click += btnKhoGiay_Click;
             // 
             // FormThongTinNhanVien
             // 
