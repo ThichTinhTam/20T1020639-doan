@@ -648,7 +648,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1436, 763);
+            ClientSize = new Size(1432, 763);
             Controls.Add(button1);
             Controls.Add(btnTimkiem);
             Controls.Add(cboMaHDBan);

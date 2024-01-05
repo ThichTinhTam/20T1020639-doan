@@ -28,7 +28,7 @@ namespace _20T1020639_doan.GUI
 
             InitializeComponent();
             this.Magiay = MaGiay;
-           
+
             // this.magiay = magiay;
             //cboMaGiay.SelectedValue = magiay;
         }
@@ -37,6 +37,7 @@ namespace _20T1020639_doan.GUI
             this.dn = dn;
             this.tk = tk;
             InitializeComponent();
+            //  LoadDataToListView();
         }
         private void LoadProductDetails()
         {
@@ -82,6 +83,7 @@ namespace _20T1020639_doan.GUI
                 btnIn.Enabled = true;
             }
             LoadDataGridView();
+
         }
         private void LoadDataGridView()
         {
@@ -179,7 +181,7 @@ namespace _20T1020639_doan.GUI
             cboMaKhachHang.Text = "";
             txtTongtien.Text = "0";
             lblBangchu.Text = "Bằng chữ: ";
-         //   cboMaGiay.Text = "";
+            //   cboMaGiay.Text = "";
             txtSoLuong.Text = "";
             txtgiamgia.Text = "0";
             txtThanhtien.Text = "0";
@@ -516,6 +518,64 @@ namespace _20T1020639_doan.GUI
             FormThongTinNhanVien mna = new FormThongTinNhanVien(tk, dn);
             mna.ShowDialog();
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void LoadDataToListView()
+        {
+
+            string query = "SELECT MaGiay,TenGiay,Anh FROM Giay";
+            DataTable dataTable = Database.GetDataToDataTable(query);
+
+            // Tạo FlowLayoutPanel để chứa các sản phẩm
+            FlowLayoutPanel flowLayoutPanel = new FlowLayoutPanel();
+            flowLayoutPanel.Dock = DockStyle.Fill;
+            flowLayoutPanel.AutoScroll = true;
+
+            // Thêm FlowLayoutPanel vào Panel
+            panel1.Controls.Add(flowLayoutPanel);
+
+            // Thêm các sản phẩm vào FlowLayoutPanel
+            foreach (DataRow row in dataTable.Rows)
+            {
+
+
+                // Lấy tên file ảnh từ cột Anh
+                //  string imageName = row["TenGiay"].ToString();
+                string image = row["Anh"].ToString();
+
+                // Tạo đường dẫn đầy đủ đến tệp ảnh
+                string imagePath = Path.Combine(image);
+                pictureBox1.Image = Image.FromFile(imagePath);
+
+
+
+
+                // Tạo Label để hiển thị MaGiay và TenGiay
+                Label label = new Label();
+                label.Text = $"Mã giày: {row["MaGiay"].ToString()}\n" +
+                    $"Tên giày: {row["TenGiay"].ToString()}";
+                label.TextAlign = ContentAlignment.MiddleCenter;
+
+                // Tạo Panel để chứa PictureBox và Label
+                Panel panel = new Panel();
+                panel.Width = 120; // Độ rộng của Panel (có thể điều chỉnh)
+                panel.Height = 160; // Chiều cao của Panel (có thể điều chỉnh)
+                panel.Margin = new Padding(5); // Khoảng cách giữa các Panel (có thể điều chỉnh)
+                panel.BorderStyle = BorderStyle.FixedSingle;
+
+                // Thêm PictureBox và Label vào Panel
+                panel.Controls.Add(pictureBox1);
+                panel.Controls.Add(label);
+
+                // Thêm Panel vào FlowLayoutPanel
+                flowLayoutPanel.Controls.Add(panel);
+            }
+        }
+
     }
 }
+
 
