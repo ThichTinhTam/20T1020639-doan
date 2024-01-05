@@ -22,10 +22,13 @@ namespace _20T1020639_doan.GUI
         private dtoTaiKhoan tk;
         private FormDangNhap dn;
         private String maHDBan;
-        public FormHoaDon()
+        private string Magiay;
+        public FormHoaDon(String MaGiay)
         {
 
             InitializeComponent();
+            this.Magiay = MaGiay;
+           
             // this.magiay = magiay;
             //cboMaGiay.SelectedValue = magiay;
         }
@@ -35,7 +38,17 @@ namespace _20T1020639_doan.GUI
             this.tk = tk;
             InitializeComponent();
         }
-
+        private void LoadProductDetails()
+        {
+            DataTable productDetails = Database.GetProductDetails(Magiay);
+            if (productDetails.Rows.Count > 0)
+            {
+                // Hiển thị thông tin chi tiết sản phẩm lên form
+                cboMaGiay.Text = productDetails.Rows[0]["MaGiay"].ToString();
+                txttengiay.Text = productDetails.Rows[0]["TenGiay"].ToString();
+                txtDonGiaBan.Text = productDetails.Rows[0]["DonGiaBan"].ToString();
+            }
+        }
         private void FormHoaDon_Load(object sender, EventArgs e)
         {
             btnThem.Enabled = true;
@@ -56,9 +69,11 @@ namespace _20T1020639_doan.GUI
             Database.FillCombo("SELECT MaKhach, TenKhach FROM Khach", cboMaKhachHang, "MaKhach", "MaKhach");
             cboMaKhachHang.SelectedIndex = -1;
             Database.FillCombo("SELECT MaNhanVien, TenNhanVien FROM NhanVien", cboMaNhanVien, "MaNhanVien", "MaNhanVien");
-            cboMaNhanVien.SelectedIndex = -1;
+            cboMaNhanVien.Text = tk.Username;
+            // cboMaNhanVien.SelectedIndex = -1;
             Database.FillCombo("SELECT MaGiay, TenGiay FROM Giay", cboMaGiay, "MaGiay", "MaGiay");
             cboMaGiay.SelectedIndex = -1;
+            LoadProductDetails();
             //Hiển thị thông tin của một hóa đơn được gọi từ form tìm kiếm
             if (txtmahoadon.Text != "")
             {
@@ -164,7 +179,7 @@ namespace _20T1020639_doan.GUI
             cboMaKhachHang.Text = "";
             txtTongtien.Text = "0";
             lblBangchu.Text = "Bằng chữ: ";
-            cboMaGiay.Text = "";
+         //   cboMaGiay.Text = "";
             txtSoLuong.Text = "";
             txtgiamgia.Text = "0";
             txtThanhtien.Text = "0";

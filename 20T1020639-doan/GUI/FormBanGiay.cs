@@ -18,6 +18,7 @@ namespace _20T1020639_doan.GUI
         private dtoTaiKhoan tk;
         private FormDangNhap dn;
         string magiay;
+        String Magiay;
 
         public FormBanGiay()
         {
@@ -67,7 +68,7 @@ namespace _20T1020639_doan.GUI
         private void button1_Click(object sender, EventArgs e)
         {
             Hide();
-            FormHoaDon nma = new FormHoaDon();
+            FormHoaDon nma = new FormHoaDon(Magiay);
             nma.ShowDialog();
         }
 
@@ -81,7 +82,7 @@ namespace _20T1020639_doan.GUI
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
             Hide();
-            FormHoaDon nma = new FormHoaDon();
+            FormHoaDon nma = new FormHoaDon(Magiay);
             nma.ShowDialog();
         }
 
@@ -126,9 +127,9 @@ namespace _20T1020639_doan.GUI
             if (MessageBox.Show("Bạn có muốn mua đôi giày này không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Hide();
-                magiay = dgvGiay.CurrentRow.Cells["MaGiay"].Value.ToString(); // thu auto bang ma nhan vien
-                FormHoaDon frm = new FormHoaDon();
-                frm.cboMaGiay.SelectedValue = magiay;
+                Magiay = dgvGiay.CurrentRow.Cells["MaGiay"].Value.ToString(); // thu auto bang ma nhan vien
+                FormHoaDon frm = new FormHoaDon(Magiay);
+                frm.cboMaGiay.SelectedValue = Magiay;
                 frm.StartPosition = FormStartPosition.CenterParent;
                 frm.ShowDialog();
 
