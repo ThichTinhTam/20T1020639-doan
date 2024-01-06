@@ -156,6 +156,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.BackColor = Color.LightSalmon;
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(txtmanhanvien);
             groupBox1.Controls.Add(dtpngaysinh);
@@ -170,7 +171,7 @@
             groupBox1.Controls.Add(label4);
             groupBox1.Location = new Point(347, 73);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(787, 489);
+            groupBox1.Size = new Size(787, 464);
             groupBox1.TabIndex = 77;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin chi tiết";
@@ -196,7 +197,7 @@
             // dtpngaysinh
             // 
             dtpngaysinh.Format = DateTimePickerFormat.Short;
-            dtpngaysinh.Location = new Point(266, 392);
+            dtpngaysinh.Location = new Point(272, 404);
             dtpngaysinh.Name = "dtpngaysinh";
             dtpngaysinh.Size = new Size(393, 31);
             dtpngaysinh.TabIndex = 86;
@@ -204,21 +205,21 @@
             // 
             // txtDienthoai
             // 
-            txtDienthoai.Location = new Point(266, 307);
+            txtDienthoai.Location = new Point(267, 327);
             txtDienthoai.Name = "txtDienthoai";
             txtDienthoai.Size = new Size(394, 31);
             txtDienthoai.TabIndex = 85;
             // 
             // txtdiachi
             // 
-            txtdiachi.Location = new Point(266, 234);
+            txtdiachi.Location = new Point(267, 245);
             txtdiachi.Name = "txtdiachi";
             txtdiachi.Size = new Size(398, 31);
             txtdiachi.TabIndex = 84;
             // 
             // txtGioitinh
             // 
-            txtGioitinh.Location = new Point(266, 155);
+            txtGioitinh.Location = new Point(266, 161);
             txtGioitinh.Name = "txtGioitinh";
             txtGioitinh.Size = new Size(398, 31);
             txtGioitinh.TabIndex = 83;
@@ -229,13 +230,14 @@
             txtTennhanvien.Name = "txtTennhanvien";
             txtTennhanvien.Size = new Size(397, 31);
             txtTennhanvien.TabIndex = 82;
+            txtTennhanvien.TextChanged += txtTennhanvien_TextChanged;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("SimSun", 11F, FontStyle.Italic, GraphicsUnit.Point);
             label8.ForeColor = SystemColors.MenuHighlight;
-            label8.Location = new Point(87, 398);
+            label8.Location = new Point(90, 404);
             label8.Name = "label8";
             label8.Size = new Size(109, 22);
             label8.TabIndex = 81;
@@ -246,7 +248,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("SimSun", 11F, FontStyle.Italic, GraphicsUnit.Point);
             label7.ForeColor = SystemColors.MenuHighlight;
-            label7.Location = new Point(89, 313);
+            label7.Location = new Point(90, 327);
             label7.Name = "label7";
             label7.Size = new Size(117, 22);
             label7.TabIndex = 80;
@@ -257,7 +259,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("SimSun", 11F, FontStyle.Italic, GraphicsUnit.Point);
             label6.ForeColor = SystemColors.MenuHighlight;
-            label6.Location = new Point(88, 234);
+            label6.Location = new Point(90, 245);
             label6.Name = "label6";
             label6.Size = new Size(74, 22);
             label6.TabIndex = 79;
@@ -268,7 +270,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("SimSun", 11F, FontStyle.Italic, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.MenuHighlight;
-            label5.Location = new Point(88, 155);
+            label5.Location = new Point(88, 161);
             label5.Name = "label5";
             label5.Size = new Size(107, 22);
             label5.TabIndex = 78;
@@ -284,17 +286,19 @@
             label4.Size = new Size(153, 22);
             label4.TabIndex = 77;
             label4.Text = "Tên nhân viên";
+            label4.Click += label4_Click;
             // 
             // button2
             // 
             button2.Image = Properties.Resources.Button_Refresh_icon;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(469, 580);
+            button2.Location = new Point(495, 580);
             button2.Name = "button2";
-            button2.Size = new Size(206, 60);
+            button2.Size = new Size(209, 62);
             button2.TabIndex = 78;
             button2.Text = "&Đổi mật khẩu";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // FormThongTinNhanVien
             // 

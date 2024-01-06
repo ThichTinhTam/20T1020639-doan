@@ -89,5 +89,20 @@ namespace _20T1020639_doan.GUI
             dtpngaysinh.Text = Database.ConvertDateTime(Database.GetFieldValues(str));
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTennhanvien_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormDoiMatKhau mna = new FormDoiMatKhau(tk, dn);
+            mna.ShowDialog();
+        }
     }
 }
