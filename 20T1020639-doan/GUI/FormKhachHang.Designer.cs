@@ -50,6 +50,7 @@
             mtbDienThoai = new MaskedTextBox();
             dgvKhachhang = new DataGridView();
             button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvKhachhang).BeginInit();
             SuspendLayout();
             // 
@@ -128,9 +129,9 @@
             btnTrangChu.BackColor = Color.LightCoral;
             btnTrangChu.Image = Properties.Resources.home_184_645;
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTrangChu.Location = new Point(-3, 374);
+            btnTrangChu.Location = new Point(-9, 447);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(320, 94);
+            btnTrangChu.Size = new Size(320, 87);
             btnTrangChu.TabIndex = 46;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -141,7 +142,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.LightYellow;
             label1.Font = new Font("Blackadder ITC", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(43, 471);
+            label1.Location = new Point(40, 537);
             label1.Name = "label1";
             label1.Size = new Size(220, 63);
             label1.TabIndex = 45;
@@ -153,9 +154,9 @@
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnDangXuat.Image = Properties.Resources.logout_66_646;
             btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDangXuat.Location = new Point(-9, 537);
+            btnDangXuat.Location = new Point(-10, 614);
             btnDangXuat.Name = "btnDangXuat";
-            btnDangXuat.Size = new Size(326, 100);
+            btnDangXuat.Size = new Size(326, 79);
             btnDangXuat.TabIndex = 44;
             btnDangXuat.Text = "Đăng Xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
@@ -166,9 +167,9 @@
             btnDSKH.BackColor = Color.LightCoral;
             btnDSKH.Image = Properties.Resources.user_149_646;
             btnDSKH.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDSKH.Location = new Point(-9, 190);
+            btnDSKH.Location = new Point(-9, 176);
             btnDSKH.Name = "btnDSKH";
-            btnDSKH.Size = new Size(326, 94);
+            btnDSKH.Size = new Size(320, 103);
             btnDSKH.TabIndex = 43;
             btnDSKH.Text = "Danh Sách Khách Hàng";
             btnDSKH.UseVisualStyleBackColor = false;
@@ -181,7 +182,7 @@
             btnKhoGiay.ImageAlign = ContentAlignment.MiddleLeft;
             btnKhoGiay.Location = new Point(-9, -2);
             btnKhoGiay.Name = "btnKhoGiay";
-            btnKhoGiay.Size = new Size(326, 96);
+            btnKhoGiay.Size = new Size(320, 96);
             btnKhoGiay.TabIndex = 41;
             btnKhoGiay.Text = "Kho Giày";
             btnKhoGiay.UseVisualStyleBackColor = false;
@@ -192,9 +193,9 @@
             btnHoaDon.BackColor = Color.LightCoral;
             btnHoaDon.Image = Properties.Resources.bill_5_641;
             btnHoaDon.ImageAlign = ContentAlignment.MiddleLeft;
-            btnHoaDon.Location = new Point(-9, 92);
+            btnHoaDon.Location = new Point(-9, 90);
             btnHoaDon.Name = "btnHoaDon";
-            btnHoaDon.Size = new Size(326, 97);
+            btnHoaDon.Size = new Size(320, 88);
             btnHoaDon.TabIndex = 42;
             btnHoaDon.Text = "Hóa đơn";
             btnHoaDon.UseVisualStyleBackColor = false;
@@ -300,20 +301,34 @@
             button1.BackColor = Color.LightCoral;
             button1.Image = Properties.Resources.information_19_48;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(-3, 283);
+            button1.Location = new Point(-3, 279);
             button1.Name = "button1";
-            button1.Size = new Size(320, 92);
+            button1.Size = new Size(314, 94);
             button1.TabIndex = 63;
             button1.Text = "Thông Tin Cá Nhân";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.LightCoral;
+            button2.Image = Properties.Resources.history_15_48;
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(-4, 368);
+            button2.Name = "button2";
+            button2.Size = new Size(315, 83);
+            button2.TabIndex = 64;
+            button2.Text = "Lịch Sử Bán Hàng";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // FormKhachHang
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1055, 637);
+            ClientSize = new Size(1055, 692);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(dgvKhachhang);
             Controls.Add(mtbDienThoai);
@@ -369,5 +384,6 @@
         private MaskedTextBox mtbDienThoai;
         private DataGridView dgvKhachhang;
         private Button button1;
+        private Button button2;
     }
 }

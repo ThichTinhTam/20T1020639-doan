@@ -163,6 +163,7 @@
             ForeColor = SystemColors.ActiveCaptionText;
             Margin = new Padding(3, 2, 3, 2);
             Name = "FormDoiMatKhau";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormDoiMatKhau";
             Load += FormDoiMatKhau_Load;
             ResumeLayout(false);

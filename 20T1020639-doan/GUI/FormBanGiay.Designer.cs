@@ -36,8 +36,8 @@
             btnKhoGiay = new Button();
             label2 = new Label();
             dgvGiay = new DataGridView();
-            button1 = new Button();
             button2 = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvGiay).BeginInit();
             SuspendLayout();
             // 
@@ -46,9 +46,9 @@
             btnTrangChu.BackColor = Color.LightCoral;
             btnTrangChu.Image = Properties.Resources.home_184_642;
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTrangChu.Location = new Point(-3, 373);
+            btnTrangChu.Location = new Point(-3, 455);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(311, 109);
+            btnTrangChu.Size = new Size(311, 102);
             btnTrangChu.TabIndex = 59;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -59,7 +59,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.LightYellow;
             label1.Font = new Font("Blackadder ITC", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(41, 494);
+            label1.Location = new Point(39, 560);
             label1.Name = "label1";
             label1.Size = new Size(220, 63);
             label1.TabIndex = 58;
@@ -71,9 +71,9 @@
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnDangXuat.Image = Properties.Resources.logout_66_643;
             btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDangXuat.Location = new Point(-3, 575);
+            btnDangXuat.Location = new Point(-3, 626);
             btnDangXuat.Name = "btnDangXuat";
-            btnDangXuat.Size = new Size(311, 113);
+            btnDangXuat.Size = new Size(311, 79);
             btnDangXuat.TabIndex = 57;
             btnDangXuat.Text = "Đăng Xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
@@ -136,23 +136,11 @@
             dgvGiay.Name = "dgvGiay";
             dgvGiay.RowHeadersWidth = 62;
             dgvGiay.RowTemplate.Height = 33;
-            dgvGiay.Size = new Size(843, 458);
+            dgvGiay.Size = new Size(843, 495);
             dgvGiay.TabIndex = 61;
             dgvGiay.CellDoubleClick += dgvGiay_CellDoubleClick;
             dgvGiay.DoubleClick += dgvGiay_DoubleClick;
             dgvGiay.MouseDoubleClick += dgvGiay_MouseDoubleClick;
-            // 
-            // button1
-            // 
-            button1.Font = new Font("Showcard Gothic", 20F, FontStyle.Italic, GraphicsUnit.Point);
-            button1.ForeColor = SystemColors.ActiveCaption;
-            button1.Location = new Point(842, 593);
-            button1.Name = "button1";
-            button1.Size = new Size(306, 66);
-            button1.TabIndex = 62;
-            button1.Text = "Mua hàng";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -167,14 +155,27 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.LightCoral;
+            button1.Image = Properties.Resources.history_15_48;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(-3, 373);
+            button1.Name = "button1";
+            button1.Size = new Size(311, 85);
+            button1.TabIndex = 64;
+            button1.Text = "Lịch Sử Bán Hàng";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
+            // 
             // FormBanGiay
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
-            ClientSize = new Size(1160, 691);
-            Controls.Add(button2);
+            ClientSize = new Size(1160, 706);
             Controls.Add(button1);
+            Controls.Add(button2);
             Controls.Add(dgvGiay);
             Controls.Add(label2);
             Controls.Add(btnTrangChu);
@@ -201,7 +202,7 @@
         private Button btnKhoGiay;
         private Label label2;
         private DataGridView dgvGiay;
-        private Button button1;
         private Button button2;
+        private Button button1;
     }
 }

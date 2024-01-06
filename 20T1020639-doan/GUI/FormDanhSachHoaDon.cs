@@ -118,10 +118,7 @@ namespace _20T1020639_doan.GUI
 
         private void txtTongTien_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (((e.KeyChar >= '0') && (e.KeyChar <= '9')) || (Convert.ToInt32(e.KeyChar) == 8))
-                e.Handled = false;
-            else
-                e.Handled = true;
+           
         }
 
         private void FormDanhSachHoaDon_FormClosing(object sender, FormClosingEventArgs e)

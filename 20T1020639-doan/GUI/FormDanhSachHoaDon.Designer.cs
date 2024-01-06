@@ -227,6 +227,7 @@
             // 
             txtMaHDBan.Location = new Point(477, 106);
             txtMaHDBan.Name = "txtMaHDBan";
+            txtMaHDBan.ReadOnly = true;
             txtMaHDBan.Size = new Size(357, 31);
             txtMaHDBan.TabIndex = 31;
             // 
@@ -234,6 +235,7 @@
             // 
             txtThang.Location = new Point(477, 170);
             txtThang.Name = "txtThang";
+            txtThang.ReadOnly = true;
             txtThang.Size = new Size(130, 31);
             txtThang.TabIndex = 32;
             // 
@@ -241,6 +243,7 @@
             // 
             txtNam.Location = new Point(678, 173);
             txtNam.Name = "txtNam";
+            txtNam.ReadOnly = true;
             txtNam.Size = new Size(156, 31);
             txtNam.TabIndex = 33;
             // 
@@ -248,6 +251,7 @@
             // 
             txtMaNhanVien.Location = new Point(477, 227);
             txtMaNhanVien.Name = "txtMaNhanVien";
+            txtMaNhanVien.ReadOnly = true;
             txtMaNhanVien.Size = new Size(357, 31);
             txtMaNhanVien.TabIndex = 34;
             // 
@@ -255,6 +259,7 @@
             // 
             txtMaKhach.Location = new Point(1023, 103);
             txtMaKhach.Name = "txtMaKhach";
+            txtMaKhach.ReadOnly = true;
             txtMaKhach.Size = new Size(199, 31);
             txtMaKhach.TabIndex = 35;
             txtMaKhach.TextChanged += textBox5_TextChanged;
@@ -263,6 +268,7 @@
             // 
             txtTongTien.Location = new Point(1023, 170);
             txtTongTien.Name = "txtTongTien";
+            txtTongTien.ReadOnly = true;
             txtTongTien.Size = new Size(202, 31);
             txtTongTien.TabIndex = 36;
             txtTongTien.KeyPress += txtTongTien_KeyPress;

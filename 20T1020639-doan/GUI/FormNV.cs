@@ -1,4 +1,5 @@
-﻿using _20T1020639_doan.DTO;
+﻿using _20T1020639_doan.DAL;
+using _20T1020639_doan.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -86,7 +87,26 @@ namespace _20T1020639_doan.GUI
 
         private void FormNV_Load(object sender, EventArgs e)
         {
+            string str;
+            str = "SELECT TenNhanVien FROM NhanVien WHERE MaNhanVien = N'" + tk.Username + "'";
+            textBox1.Text = Database.GetFieldValues(str);
+        }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormLichSuBanHang mna = new FormLichSuBanHang(tk, dn);
+            mna.ShowDialog();
         }
     }
 }

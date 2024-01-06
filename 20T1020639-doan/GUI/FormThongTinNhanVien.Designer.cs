@@ -50,6 +50,7 @@
             label5 = new Label();
             label4 = new Label();
             button2 = new Button();
+            button3 = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -58,9 +59,9 @@
             button1.BackColor = Color.LightCoral;
             button1.Image = Properties.Resources.information_19_48;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(0, 284);
+            button1.Location = new Point(0, 275);
             button1.Name = "button1";
-            button1.Size = new Size(320, 99);
+            button1.Size = new Size(320, 83);
             button1.TabIndex = 61;
             button1.Text = "Thông Tin Cá Nhân";
             button1.UseVisualStyleBackColor = false;
@@ -71,9 +72,9 @@
             btnTrangChu.BackColor = Color.LightCoral;
             btnTrangChu.Image = Properties.Resources.home_184_647;
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTrangChu.Location = new Point(0, 380);
+            btnTrangChu.Location = new Point(0, 439);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Size = new Size(320, 100);
+            btnTrangChu.Size = new Size(320, 80);
             btnTrangChu.TabIndex = 60;
             btnTrangChu.Text = "Trang Chủ";
             btnTrangChu.UseVisualStyleBackColor = false;
@@ -84,7 +85,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.LightYellow;
             label1.Font = new Font("Blackadder ITC", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(44, 499);
+            label1.Location = new Point(40, 539);
             label1.Name = "label1";
             label1.Size = new Size(220, 63);
             label1.TabIndex = 59;
@@ -96,9 +97,9 @@
             btnDangXuat.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             btnDangXuat.Image = Properties.Resources.logout_66_648;
             btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDangXuat.Location = new Point(0, 580);
+            btnDangXuat.Location = new Point(0, 605);
             btnDangXuat.Name = "btnDangXuat";
-            btnDangXuat.Size = new Size(320, 106);
+            btnDangXuat.Size = new Size(320, 81);
             btnDangXuat.TabIndex = 58;
             btnDangXuat.Text = "Đăng Xuất";
             btnDangXuat.UseVisualStyleBackColor = false;
@@ -111,7 +112,7 @@
             btnDSKH.ImageAlign = ContentAlignment.MiddleLeft;
             btnDSKH.Location = new Point(0, 187);
             btnDSKH.Name = "btnDSKH";
-            btnDSKH.Size = new Size(320, 101);
+            btnDSKH.Size = new Size(320, 91);
             btnDSKH.TabIndex = 57;
             btnDSKH.Text = "Danh Sách Khách Hàng";
             btnDSKH.UseVisualStyleBackColor = false;
@@ -300,12 +301,26 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // button3
+            // 
+            button3.BackColor = Color.LightCoral;
+            button3.Image = Properties.Resources.history_15_48;
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(0, 354);
+            button3.Name = "button3";
+            button3.Size = new Size(320, 89);
+            button3.TabIndex = 79;
+            button3.Text = "Lịch Sử Bán Hàng";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // FormThongTinNhanVien
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
             ClientSize = new Size(1166, 684);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(groupBox1);
             Controls.Add(label2);
@@ -349,5 +364,6 @@
         private Label label5;
         private Label label4;
         private Button button2;
+        private Button button3;
     }
 }

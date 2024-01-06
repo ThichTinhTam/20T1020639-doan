@@ -104,5 +104,12 @@ namespace _20T1020639_doan.GUI
             FormDoiMatKhau mna = new FormDoiMatKhau(tk, dn);
             mna.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormLichSuBanHang mna = new FormLichSuBanHang(tk, dn);
+            mna.ShowDialog();
+        }
     }
 }

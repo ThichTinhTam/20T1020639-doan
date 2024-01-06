@@ -384,6 +384,16 @@ namespace _20T1020639_doan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap history_15_48 {
+            get {
+                object obj = ResourceManager.GetObject("history-15-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home_184_32 {
             get {
                 object obj = ResourceManager.GetObject("home-184-32", resourceCulture);

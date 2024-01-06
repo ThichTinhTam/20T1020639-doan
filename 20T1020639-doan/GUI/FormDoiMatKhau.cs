@@ -50,10 +50,10 @@ namespace _20T1020639_doan.GUI
                 MessageBox.Show("Bạn hãy nhập đầy đủ thông tin để đổi mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if((txtPass.Text == txtenterpassword.Text))
+            if ((txtPass.Text == txtenterpassword.Text))
             {
                 MessageBox.Show("Mật khẩu mới trùng với mật khẩu cũ, vui lòng nhập lại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-               // return;
+                // return;
                 ResetValuesHang();
             }
             if ((txtPass.Text == tk.Password))
@@ -67,7 +67,7 @@ namespace _20T1020639_doan.GUI
             else
             {
                 MessageBox.Show("Sai mật khẩu, vui lòng nhập lại mật khẩu !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-               // return;
+                // return;
                 ResetValuesHang();
             }
 

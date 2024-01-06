@@ -147,5 +147,12 @@ namespace _20T1020639_doan.GUI
             FormThongTinNhanVien mna = new FormThongTinNhanVien(tk, dn);
             mna.ShowDialog();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+            FormLichSuBanHang mna = new FormLichSuBanHang(tk, dn);
+            mna.ShowDialog();
+        }
     }
 }
