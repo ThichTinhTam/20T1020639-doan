@@ -150,9 +150,8 @@ namespace _20T1020639_doan.GUI
         private void btnDangXuat_Click_1(object sender, EventArgs e)
         {
             Hide();
-            dn.Show();
-            Close();
-
+            FormDangNhap nma = new FormDangNhap();
+            nma.ShowDialog();
         }
 
         private void btnDSNV_Click_1(object sender, EventArgs e)

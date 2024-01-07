@@ -103,8 +103,8 @@ namespace _20T1020639_doan.GUI
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             Hide();
-            dn.Show();
-            Close();
+            FormDangNhap nma = new FormDangNhap();
+            nma.ShowDialog();
         }
 
         private void dgvGiay_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -153,6 +153,13 @@ namespace _20T1020639_doan.GUI
             Hide();
             FormLichSuBanHang mna = new FormLichSuBanHang(tk, dn);
             mna.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormHoaDon nma = new FormHoaDon(Magiay);
+            nma.ShowDialog();
         }
     }
 }

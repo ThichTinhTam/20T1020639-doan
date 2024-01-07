@@ -72,8 +72,8 @@ namespace _20T1020639_doan.GUI
         private void btnDangXuat_Click_1(object sender, EventArgs e)
         {
             Hide();
-            dn.Show();
-            Close();
+            FormDangNhap nma = new FormDangNhap();
+            nma.ShowDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -108,9 +108,9 @@ namespace _20T1020639_doan.GUI
             txtMagiay.Text = "";
             txtTengiay.Text = "";
             cboMaLoai.Text = "";
-            txtSoluong.Text = "0";
-            txtDongianhap.Text = "0";
-            txtDongiaban.Text = "0";
+            txtSoluong.Text = "";
+            txtDongianhap.Text = "";
+            txtDongiaban.Text = "";
             txtSoluong.Enabled = true;
             txtDongianhap.Enabled = false;
             txtDongiaban.Enabled = false;

@@ -181,6 +181,7 @@
             // 
             txtPass.Location = new Point(718, 173);
             txtPass.Name = "txtPass";
+            txtPass.ReadOnly = true;
             txtPass.Size = new Size(242, 31);
             txtPass.TabIndex = 51;
             // 
@@ -188,6 +189,7 @@
             // 
             txtID.Location = new Point(718, 118);
             txtID.Name = "txtID";
+            txtID.ReadOnly = true;
             txtID.Size = new Size(242, 31);
             txtID.TabIndex = 50;
             // 

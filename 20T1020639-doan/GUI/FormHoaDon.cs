@@ -37,7 +37,7 @@ namespace _20T1020639_doan.GUI
             this.dn = dn;
             this.tk = tk;
             InitializeComponent();
-            //  LoadDataToListView();
+
         }
         private void LoadProductDetails()
         {
@@ -70,8 +70,8 @@ namespace _20T1020639_doan.GUI
             Database.FillCombo("SELECT MaKhach, TenKhach FROM Khach", cboMaKhachHang, "MaKhach", "MaKhach");
             cboMaKhachHang.SelectedIndex = -1;
             Database.FillCombo("SELECT MaNhanVien, TenNhanVien FROM NhanVien", cboMaNhanVien, "MaNhanVien", "MaNhanVien");
-            cboMaNhanVien.Text = tk.Username;
-            // cboMaNhanVien.SelectedIndex = -1;
+            // cboMaNhanVien.Text = tk.Username;
+            cboMaNhanVien.SelectedIndex = -1;
             Database.FillCombo("SELECT MaGiay, TenGiay FROM Giay", cboMaGiay, "MaGiay", "MaGiay");
             cboMaGiay.SelectedIndex = -1;
             LoadProductDetails();
@@ -159,8 +159,8 @@ namespace _20T1020639_doan.GUI
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             Hide();
-            dn.Show();
-            Close();
+            FormDangNhap nma = new FormDangNhap();
+            nma.ShowDialog();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -177,14 +177,14 @@ namespace _20T1020639_doan.GUI
         {
             txtmahoadon.Text = "";
             dtpngayban.Text = DateTime.Now.ToShortDateString();
-            cboMaNhanVien.Text = "";
-            cboMaKhachHang.Text = "";
+            //  cboMaNhanVien.Text = "";
+            //  cboMaKhachHang.Text = "";
             txtTongtien.Text = "0";
             lblBangchu.Text = "Bằng chữ: ";
-            //   cboMaGiay.Text = "";
+            //cboMaGiay.Text = "";
             txtSoLuong.Text = "";
             txtgiamgia.Text = "0";
-            txtThanhtien.Text = "0";
+            txtThanhtien.Text = "";
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -271,6 +271,8 @@ namespace _20T1020639_doan.GUI
             txtTongtien.Text = Tongmoi.ToString();
             lblBangchu.Text = "Bằng chữ: " + Database.ChuyenSoSangChu(Double.Parse(Tongmoi.ToString()));
             ResetValuesHang();
+            txttengiay.Text = "";
+            txtDonGiaBan.Text = "";
             btnXoa.Enabled = true;
             btnThem.Enabled = true;
             btnIn.Enabled = true;
@@ -440,7 +442,7 @@ namespace _20T1020639_doan.GUI
                 //Xóa hóa đơn
                 sql = "DELETE HDBan WHERE MaHDBan=N'" + txtmahoadon.Text + "'";
                 Database.RunSqlDel(sql);
-                ResetValues();
+                ResetValuesToanBo();
                 LoadDataGridView();
                 btnXoa.Enabled = false;
                 btnIn.Enabled = false;
@@ -518,22 +520,38 @@ namespace _20T1020639_doan.GUI
             FormThongTinNhanVien mna = new FormThongTinNhanVien(tk, dn);
             mna.ShowDialog();
         }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void LoadDataToListView()
-        {
-
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             Hide();
             FormLichSuBanHang mna = new FormLichSuBanHang(tk, dn);
             mna.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+            ResetValuesToanBo();
+            LoadDataGridView();
+        }
+        private void ResetValuesToanBo()
+        {
+            txtmahoadon.Text = "";
+            dtpngayban.Text = DateTime.Now.ToShortDateString();
+            cboMaNhanVien.Text = "";
+            txttennhanvien.Text = "";
+            cboMaKhachHang.Text = "";
+            txttenKhachhang.Text = "";
+            txtDiachi.Text = "";
+            mskDienThoai.Text = "";
+            txtTongtien.Text = "0";
+            lblBangchu.Text = "Bằng chữ: ";
+            cboMaGiay.Text = "";
+            txttengiay.Text = "";
+            txtDonGiaBan.Text = "";
+            txtSoLuong.Text = "";
+            txtgiamgia.Text = "";
+            txtThanhtien.Text = "";
+           
         }
     }
 }

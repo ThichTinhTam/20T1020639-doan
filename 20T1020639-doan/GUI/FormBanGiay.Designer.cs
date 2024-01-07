@@ -38,6 +38,7 @@
             dgvGiay = new DataGridView();
             button2 = new Button();
             button1 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvGiay).BeginInit();
             SuspendLayout();
             // 
@@ -168,12 +169,27 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click_1;
             // 
+            // button3
+            // 
+            button3.BackColor = Color.IndianRed;
+            button3.Font = new Font("Showcard Gothic", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            button3.Image = Properties.Resources.shopping_cart_full_3_48;
+            button3.ImageAlign = ContentAlignment.MiddleRight;
+            button3.Location = new Point(850, 628);
+            button3.Name = "button3";
+            button3.Size = new Size(244, 66);
+            button3.TabIndex = 65;
+            button3.Text = "Mua Hàng";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // FormBanGiay
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MistyRose;
             ClientSize = new Size(1160, 706);
+            Controls.Add(button3);
             Controls.Add(button1);
             Controls.Add(button2);
             Controls.Add(dgvGiay);
@@ -204,5 +220,6 @@
         private DataGridView dgvGiay;
         private Button button2;
         private Button button1;
+        private Button button3;
     }
 }

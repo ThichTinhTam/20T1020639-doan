@@ -79,6 +79,7 @@
             btnTimkiem = new Button();
             button1 = new Button();
             button2 = new Button();
+            button3 = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvHoadon).BeginInit();
@@ -90,7 +91,7 @@
             btnLuu.ForeColor = SystemColors.ActiveCaption;
             btnLuu.Image = Properties.Resources.save_32_32;
             btnLuu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnLuu.Location = new Point(526, 397);
+            btnLuu.Location = new Point(601, 390);
             btnLuu.Name = "btnLuu";
             btnLuu.Size = new Size(201, 54);
             btnLuu.TabIndex = 62;
@@ -104,7 +105,7 @@
             btnXoa.ForeColor = SystemColors.ActiveCaption;
             btnXoa.Image = Properties.Resources.Button_Close;
             btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
-            btnXoa.Location = new Point(295, 395);
+            btnXoa.Location = new Point(232, 390);
             btnXoa.Name = "btnXoa";
             btnXoa.Size = new Size(201, 56);
             btnXoa.TabIndex = 61;
@@ -118,7 +119,7 @@
             btnThem.ForeColor = SystemColors.ActiveCaption;
             btnThem.Image = Properties.Resources.Button_Add;
             btnThem.ImageAlign = ContentAlignment.MiddleLeft;
-            btnThem.Location = new Point(90, 397);
+            btnThem.Location = new Point(16, 391);
             btnThem.Name = "btnThem";
             btnThem.Size = new Size(185, 54);
             btnThem.TabIndex = 59;
@@ -382,6 +383,7 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(button3);
             groupBox2.Controls.Add(btnIn);
             groupBox2.Controls.Add(txtTongtien);
             groupBox2.Controls.Add(label19);
@@ -416,9 +418,9 @@
             btnIn.ForeColor = SystemColors.ActiveCaption;
             btnIn.Image = Properties.Resources.print_30_32;
             btnIn.ImageAlign = ContentAlignment.MiddleLeft;
-            btnIn.Location = new Point(764, 397);
+            btnIn.Location = new Point(823, 390);
             btnIn.Name = "btnIn";
-            btnIn.Size = new Size(201, 50);
+            btnIn.Size = new Size(201, 54);
             btnIn.TabIndex = 81;
             btnIn.Text = "&In hóa đơn";
             btnIn.UseVisualStyleBackColor = true;
@@ -657,6 +659,21 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // button3
+            // 
+            button3.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point);
+            button3.ForeColor = SystemColors.ActiveCaption;
+            button3.Image = Properties.Resources.Button_Add;
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(457, 389);
+            button3.Name = "button3";
+            button3.Size = new Size(117, 56);
+            button3.TabIndex = 82;
+            button3.Text = "&Bỏ qua";
+            button3.TextAlign = ContentAlignment.MiddleRight;
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // FormHoaDon
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -742,5 +759,6 @@
         private Button btnIn;
         private Button button1;
         private Button button2;
+        private Button button3;
     }
 }

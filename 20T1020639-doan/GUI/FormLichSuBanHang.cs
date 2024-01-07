@@ -84,8 +84,8 @@ namespace _20T1020639_doan.GUI
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             Hide();
-            dn.Show();
-            Close();
+            FormDangNhap nma = new FormDangNhap();
+            nma.ShowDialog();
         }
 
         private void dgvHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -130,7 +130,7 @@ namespace _20T1020639_doan.GUI
         {
             if (LSBH.Rows.Count == 0)
             {
-                MessageBox.Show("Không có dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn chưa bán được sản phẩm nào!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             txtMaHDBan.Text = dgvHoaDon.CurrentRow.Cells["MaHDBan"].Value.ToString();

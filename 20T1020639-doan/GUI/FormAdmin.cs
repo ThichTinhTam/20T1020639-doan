@@ -45,8 +45,8 @@ namespace _20T1020639_doan.GUI
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             Hide();
-            dn.Show();
-            Close();
+            FormDangNhap nma = new FormDangNhap();
+            nma.ShowDialog();
         }
 
 

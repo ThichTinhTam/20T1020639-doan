@@ -88,23 +88,15 @@ namespace _20T1020639_doan.GUI
                 MessageBox.Show("Bạn chưa chọn tài khoản nào cả", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (txtPass.Text.Trim().Length == 0)
-            {
-                MessageBox.Show("Bạn phải nhập mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtPass.Focus();
-                return;
-            }
-
-
             if (chkPhanQuyen.Checked == true)
                 gt = "admin";
             else
                 gt = "";
 
-            sql = "UPDATE TaiKhoan SET  Password=N'" + txtPass.Text.Trim().ToString() +
-                    "',Phanquyen=N'" + gt +
+            sql = "UPDATE TaiKhoan SET Phanquyen=N'" + gt +
                     "' WHERE Username=N'" + txtID.Text + "'";
             Database.RunSQL(sql);
+            MessageBox.Show("cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             LoadDataGridView();
             ResetValues();
             btnBoqua.Enabled = false;
@@ -176,8 +168,8 @@ namespace _20T1020639_doan.GUI
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             Hide();
-            dn.Show();
-            Close();
+            FormDangNhap nma = new FormDangNhap();
+            nma.ShowDialog();
         }
     }
 }

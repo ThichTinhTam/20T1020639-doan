@@ -724,6 +724,16 @@ namespace _20T1020639_doan.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap shopping_cart_full_3_48 {
+            get {
+                object obj = ResourceManager.GetObject("shopping-cart-full-3-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap statistical_chart_7_32 {
             get {
                 object obj = ResourceManager.GetObject("statistical-chart-7-32", resourceCulture);
